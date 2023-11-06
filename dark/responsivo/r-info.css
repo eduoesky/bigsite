@@ -1,0 +1,12 @@
+@media screen and (max-width: 400px) {
+    .divvoltar {
+        display: none;
+    }
+
+    .voltarmobile {
+        display: flex;
+        position: relative;
+        top: 80px;
+        justify-content: center;
+    }
+}

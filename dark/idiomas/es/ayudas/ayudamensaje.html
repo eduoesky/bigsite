@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda en el mensaje</title>
+    <link rel="stylesheet" href="css/ajuda-mensagem.css">
+    <link rel="stylesheet" href="css/mensagem.css">
+    <link rel="shortcut icon" href="../../../images/icone/msg.ico" type="image/x-icon">
+    <script defer src="script/mensagem.js"></script>
+    <script defer src="script/ajudamensagem.js"></script>
+</head>
+<body>
+    <header>Ayuda - Mensaje</header>
+    <div class="divbranca"></div>
+    <div class="cetro">
+        <div class="mensfall"></div>
+    </div>
+    <p class="p-inicial">Bienevenido al portal de ayuda! <br>Aquí tendrás acceso al menú de informaciones sobre: Mensaje <br>
+        Selecciona el tipo de ayuda: </p>
+    <div class="titulo" onclick="toggleDiv(1)">OesKy no me respondió</div>
+    <div class="conteudo" id="div1">
+        Asegúrate de que no hayas ingresado incorrectamente una dirección de correo electrónico o de que hayas ingresado una dirección de correo electrónico que no existe. No es posible responder a un correo electrónico que no existe. <br>
+        Recuerda que el tiempo de respuesta es de 12 minutos hasta 6 horas :) <br>
+        Asegúrate también de que mi correo electrónico se haya enviado a otra carpeta, como la <i>spam</i>.
+    </div>
+    <div class="titulo" onclick="toggleDiv(2)">El sitio se tildó al enviar</div>
+    <div class="conteudo" id="div2">
+        Si el sitio se bloqueó al intentar enviar el mensaje, lamento la inconveniencia. Envía un nuevo mensaje en el ¡<a href="../secundarios/mensaje.html">sitio de mensaje</a>!
+    </div>
+    <div class="titulo" onclick="toggleDiv(3)">¿Cuántos mensajes puedo enviar a tu correo?</div>
+    <script defer src="script1.js"></script>
+    <div class="conteudo" id="div3">
+        ¡No hay límites! Puedo enviar tantos mensajes como desees xD.
+    </div>
+    <div class="titulo" onclick="toggleDiv(4)">¿Las respuestas son automáticas?</div>
+    <script defer src="script1.js"></script>
+    <div class="conteudo" id="div4">
+        ¡No! Las respuestas que envío son manuales.    
+    </div>
+    <div class="base-botao">
+        <a href="ayuda.html">
+            <img src="../../../images/botoes/voltar.png" height="80px">
+        </a>
+        <a href="../index_es.html">
+            <img src="../../../images/botoes/home.png" class="casa" height="80px">
+        </a>
+    </div>
+    <footer>.</footer>
+</body>
+</html>

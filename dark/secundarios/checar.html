@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checagem</title>
+    <link rel="stylesheet" href="css/style-check.css">
+    <link rel="stylesheet" href="../responsivo/r-chc.css">
+    <link rel="stylesheet" href="css/validacao.css">
+    <link rel="icon" href="../images/icone/chc.ico" type="image/x-icon">
+    <script defer src="../animacoes/folha.js"></script>
+    <script defer src="../animacoes/check.js"></script>
+    <script defer src="script/checar.js"></script>
+    <script defer src="script/validacao2.js"></script>
+    <script defer src="script/validacao10.js"></script>
+</head>
+<body>
+    <header>
+        <div class="voltarmobile">
+            <a href="../index.html">
+                <img src="../images/botoes/voltar-crd.png" height="40px">
+            </a>
+        </div><div class="divheader"><p class="plike">Checar</p></div></header>
+    <div class="divbranca"></div>
+    <div class="conj">
+        <canvas id="canvas"></canvas>
+        <div class="snowfall"></div>
+    </div>
+    <p class="p-inicial">Bem-vindo ao portal de checagem! <br>Aqui você pode denunciar alguma conta Pou que esteja infrigindo as regras do jogo, selecionando um dos motivos.<br>
+        Ajude-nos a manter o jogo o mais limpo possível!
+    <div class="base-formulario">
+        <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormulario">
+            <div class="formulario-inside">
+                <div class="div-mail">
+                    <div class="div-label-mail"><label for="mail">Seu email<strong class="asterisco">*</strong>:</label></div>
+                    <input class="nf" type="email" name="mail" id="campoEmail" placeholder="exemplo@gmail.com" required>
+                </div>
+                <div class="div-nick-correcao">
+                    <div>
+                        <div class="div-label-nick"><label for="nick">Nome do 'Pou' para ser checado<strong class="asterisco">*</strong>: ⬇️</label></div>
+                        <input class="nr" type="text" id="campoTexto" name="nomedopou-checar" required>
+                    </div>
+                    <div class="mensagem" id="divErro"></div>
+                    <p class="labelreason">Selecione um motivo:</p>
+                    <input type="checkbox" name="fakelikes">
+                    <label for="fakelikes">Fake Likes</label><br>
+                    <input type="checkbox" name="pertubacao">
+                    <label for="pertubacao">Pertubação</label><br>
+                    <input type="checkbox" name="Pourobotizado">
+                    <label for="Pourobotizado">Pou robotizado</label><br>
+                    <input type="checkbox" name="outro" id="outro">
+                    <label for="outro">Outro motivo</label>
+                    <div id="textareaContainer">
+                    <textarea id="texto" name="motivo-outro-texto"></textarea>
+                    </div>
+                </div>
+                <button class="checarbutton" type="submit">CHECAR POU</button>
+            </div>
+            <input type="hidden" name="_next" value="https://oesky.com/secundarios/agradecimento/checado.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <div class="base-botao">
+        <a href="../index.html">
+            <img src="../images/botoes/voltar.png" height="80px">
+        </a>
+    </div>
+    <footer>.</footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Check</title>
+    <link rel="stylesheet" href="css/ajuda-checar.css">
+    <link rel="stylesheet" href="css/check.css">
+    <link rel="shortcut icon" href="../../../images/icone/chc.ico" type="image/x-icon">
+    <script defer src="script/check.js"></script>
+</head>
+<body>
+    <header>Help - Check</header>
+    <div class="divbranca"></div>
+    <div class="cetro">
+        <div class="checkfall"></div>
+    </div>
+    <p class="p-inicial">Welcome to the help portal! <br>Here you will have access to the information menu about: Check <br>
+        Select the help type: </p>
+    <div class="titulo" onclick="toggleDiv(1)">I haven't received a reply by email</div>
+    <div class="conteudo" id="div1">
+        Make sure you haven't entered an incorrect or nonexistent email. It's impossible to respond to an email that doesn't exist. <br>
+        Remember that the response time is 48 hours, as I still need to verify and send the information to the developer. <br>
+        Also, make sure that my email hasn't been sent to another folder, like the <i>spam</i>.
+    </div>
+    <div class="titulo" onclick="toggleDiv(2)">OesKy no checked the Pou</div>
+    <div class="conteudo" id="div2">
+        In some cases, verified Pous have many visits. This influences the verification process of whether I have reviewed the Pou or not. If that's the case, try looking further down or check your email first. To verify it, I will first respond to the report made on the site, not the other way around.
+        <br> Some preselected Pous may also not be valid for checks, like: <br>
+        <p class="difdiv">Pou2tiktok <br> NocTaFly <br> Pou <br> qlw <br> TANFALL <br> and anothers...</p>
+    </div>
+    <div class="titulo" id="titulodif" onclick="toggleDiv(3)">Informations</div>
+    <script defer src="script1.js"></script>
+    <div class="conteudo" id="div3">
+        <p>
+            The verification page doesn't provide the information, so they will be hosted here; take a look! <br>
+            <br> <strong>What are the verification reasons?</strong> <br> The verification reasons are the reasons for which you are reporting a Pou. These are: Fake likes, Pou robotized y Disturbance, but what is it?<br>
+            <br> <strong>Fake likes</strong>: <i>Fake likes</i> It's when a Pou creates accounts (manually or automatically) to give likes to themselves. If you see an account of this kind, check this option. It can be harmful when the account exceeds 30 fake likes.<br><strong>Like robotized</strong>: <i>Like robotized</i> It's when a Pou has robotized likes, meaning likes that are not genuine and are entirely created from scratch, like robots. If you think a Pou is like this, check this option. <br><strong>Pou robotized</strong>: un <i>Pou robotized</i> It's when a Pou has their account made up of robots, where they automatically click on messages (guestbook), visit, like other Pous/remove the like, send many messages, change clothes repeatedly... If you think a Pou is like this, check this option. <br> <strong>Disturbance</strong>: <i>Disturbance</i> "It's when a user (not necessarily a Pou) is sending offensive messages, insulting, or any such cases (not valid for normal conversations). If you think someone is like this, check the option and write the Pou name of the user. If there are 2, write both, separating them only by commas. <br><br> >>>> <a href="../secundarios/verificar.html">Go to the check page</a>!</p>
+    </div>
+    <div class="base-botao">
+        <a href="help.html">
+            <img src="../../../images/botoes/voltar.png" height="80px">
+        </a>
+        <a href="../index_en.html">
+            <img src="../../../images/botoes/home.png" class="casa" height="80px">
+        </a>
+    </div>
+    <footer>.</footer>
+    <script>
+        function toggleDiv(numero) {
+            const div = document.getElementById(`div${numero}`);
+            if (div.style.display === 'none' || div.style.display === '') {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
