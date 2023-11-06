@@ -101,17 +101,29 @@
         </div>
     </div>
     <script>
-        const idiomaNavegador = navigator.language;
+function obterIdiomaDoNavegador() {
+        return (navigator.language || navigator.userLanguage).substring(0, 2).toLowerCase();
+    }
 
-        if (idiomaNavegador.startsWith('pt')) {
-            window.location.href = 'https://www.oesky.com';
-        }
+    // Função para redirecionar o usuário com base no idioma do navegador
+    function redirecionarComBaseNoIdiomaDoNavegador() {
+        const idiomaNavegador = obterIdiomaDoNavegador();
 
-        if (idiomaNavegador.startsWith('es')) {
-            window.location.href = 'https://www.oesky.com/idiomas/es/index_es.html';
-            } else {
-            window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html';
+        switch (idiomaNavegador) {
+            case 'es':
+                window.location.href = 'https://www.oesky.com/idiomas/es/index_es.html';
+                break;
+            case 'pt', 'pt-br':
+                window.location.href = 'https://www.oesky.com';
+                break;
+            // Adicione mais casos para outros idiomas, se necessário
+            default:
+                window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html'; // Redireciona para a página padrão em português
         }
+    }
+
+    // Chame a função de redirecionamento quando a página carregar
+    window.addEventListener('load', redirecionarComBaseNoIdiomaDoNavegador);
     </script>
 </body>
 </html>
