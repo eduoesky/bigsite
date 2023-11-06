@@ -28,23 +28,5 @@
             <img src="../../../images/botoes/voltar.png" height="90px" class="base-botao">
         </a>
     </div>
-    <script>
-        function armazenarIdiomaSelecionado(idioma) {
-            localStorage.setItem('idiomaSelecionado', idioma);
-        }
-    
-        document.querySelectorAll('.idiomas a').forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const idiomaSelecionado = this.getAttribute('data-idioma');
-                armazenarIdiomaSelecionado(idiomaSelecionado);
-                if (idiomaSelecionado === 'pt-br') {
-                    window.location.href = `../index.html`;
-                } else {
-                    window.location.href = `../idiomas/${idiomaSelecionado}/index_${idiomaSelecionado}.html`;
-                }
-            });
-        });
-        </script>
 </body>
 </html>
