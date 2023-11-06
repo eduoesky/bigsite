@@ -1,0 +1,18 @@
+@media screen and (max-width: 560px) {
+    .idiomas {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    body {
+        overflow-y: auto;
+        min-height: 90px;
+        max-height: 90vh;
+    }
+
+    .neve {
+        height: 15vh;
+        position: fixed;
+        z-index: -999;
+    }
+}

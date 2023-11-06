@@ -1,0 +1,9 @@
+@media screen and (max-width: 560px) {
+    .tooltip {
+        top: 320px;
+    }
+
+    #helpdiv5 > img {
+       height: 35px;
+    }
+}

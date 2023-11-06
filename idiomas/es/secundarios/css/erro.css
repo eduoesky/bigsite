@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: century;
+}
+
+@font-face {
+    font-family: century;
+    src: url(../../../../arquivos/century-gothic.ttf);
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #222;
+    overflow: hidden;
+}
+
+.circulo {
+    background-color: white;
+    position: fixed;
+    padding: 50px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    animation: blackHole 4s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes blackHole {
+    0% {
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+    }
+    50% {
+        width: 220px;
+        height: 220px;
+        opacity: 0.8;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+    }
+}
+
+.oesky {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circolo {
+    display: flex;
+    justify-content: cente;
+}
+
+.fora {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+    margin-top: 10px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+button {
+    background-color: black;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all .4s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: grey;
+    transform: scale(1.04);
+    transition: all .4s;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#divErro {
+    font-size: 10px;
+    margin-left: 0;
+    color: red;
+    text-align: center;
+    margin-bottom: -10px;
+    font-weight: bold;
+}
+
+.basebotao {
+    margin-left: 100px;
+    position: fixed;
+    animation-name: flutuando;
+    animation-duration: 12s;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flutuando {
+    0%, 100% {
+        top: 290px;
+    }
+    50% {
+        top: 320px;
+    }
+}
+
+.basecasa {
+    float: right;
+    right: 0;
+    position: absolute;
+    margin-right: 100px;
+    animation-name: flutuando2;
+    animation-duration: 12s;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    transition: all .3s;
+}
+
+@keyframes flutuando2 {
+    0%, 100% {
+        top: 320px;
+        transition: all .3s;
+    }
+    50% {
+        top: 290px;
+        transition: all .3s;
+    }
+}
+
+.basebotoes {
+    display: none;
+}
+
+.estrelas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.estrela {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkle 1s infinite;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.estrelas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.estrellas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.estrela {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkle 1s infinite, cor 1s infinite;
+}
+
+.div-animada {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    animation: divAnimacao 2s linear;
+}
+
+@keyframes divAnimacao {
+    0% {
+        transform: translate(0, -100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+.estrella {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    animation: estrelaAnimacao 2s linear;
+}
+
+@keyframes estrelaAnimacao {
+    0% {
+        transform: translate(-100vw, -100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+.estrellla {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    animation: estrelaAnimacaoo 2s linear;
+}
+
+@keyframes estrelaAnimacaoo {
+    0% {
+        transform: translate(100vw, 100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+.estrellllla {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    animation: estrelaAnimacaoooo 2s linear;
+}
+
+@keyframes estrelaAnimacaoooo {
+    0% {
+        transform: translate(100vw, 100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+.estrelllla {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    animation: estrelaAnimacaooo 2s linear;
+}
+
+@keyframes estrelaAnimacaooo {
+    0% {
+        transform: translateY(-100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(50vh);
+        opacity: 0;
+    }
+}
+@keyframes cor {
+    0% {
+        background-color: fuchsia;
+    }
+    10% {
+        background-color: yellow;
+    }
+    20% {
+        background-color: cyan;
+    }
+    30% {
+        background-color: greenyellow;
+    }
+    40% {
+        background-color: blue;
+    }
+    50% {
+        background-color: paleturquoise;
+    }
+    60% {
+        background-color: blue;
+    }
+    70% {
+        background-color: white;
+    }
+    80% {
+        background-color: black;
+    }
+    90% {
+        background-color: violet;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*.code-container {
+    position: absolute;
+    white-space: nowrap; /* Impede a quebra de linh
+    animation: codeMove 10s linear infinite;
+    transform: translateX(100%);
+}
+
+.code {
+    font-family: monospace;
+    font-size: 20px;
+    color: #00ff00; /* Cor do texto *
+    margin-right: 10px; /* Espaço entre os códigos 
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}*
+
+@keyframes codeMove {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+*/

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: century;
+    src: url(../../arquivos/century-gothic.ttf);
+}
+
+*{
+    margin: 5px;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: century;
+}
+
+p, a, strong {
+    margin: none;
+}
+
+.basedobotao {
+    margin: 0;
+    display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: aqua;
+    color: aqua;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.M Suggestions</title>
+    <link rel="stylesheet" href="css/sugred.css">
+    <link rel="stylesheet" href="css/sugre.css">
+    <link rel="shortcut icon" href="../../../images/icone/redes.ico" type="image/x-icon">
+    <script defer src="script/sugre.js"></script>
+</head>
+<body>
+    <div class="tudo">
+        <div class="titulo" onclick="toggleDiv(1)"><img src="../../../images/vector/play.png" height="70px"></div>
+        <div class="conteudo" id="div1">
+            <div class="base-forme">
+                <div class="forme-youtube">
+                    <div class="inside-forme">
+                        <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="formularioyoutube">
+                            <script defer src="script2.js"></script>
+                            <div class="formulario-inside">
+                                <div class="div-mail">
+                                    <label for="mail">Your email (optional):</label>
+                                    <input class="nm" type="email" name="mail" id="campoEmailYT" placeholder="example@gmail.com">
+                                </div>
+                                <div class="div-sugestaoproximovideo">
+                                    <label for="pou-para-dar-like">
+                                        What do you wish for the next video? <strong class="asterisco">*</strong>:
+                                    </label> <br>
+                                    <textarea name="sugestao-video-youtube" cols="30" rows="4" id="campoTextoYT" required></textarea> <br>
+                                <div class="mensagem" id="divErroYT"></div>
+                                <button class="env-yt" type="submit">SUBMIT</button>
+                            </div>
+                            <input type="hidden" name="_next" value="https://oesky.com/idiomas/en/secondary/helpie/thanks-sugyt.html">
+                            <input type="hidden" name="_captcha" value="false">
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="titulo" onclick="toggleDiv(2)"><img src="../../../images/vector/short.png" height="70px"></div>
+        <div class="conteudo" id="div2">
+            <div class="base-forme-sh">
+                <div class="forme-youtube-sh">
+                    <div class="inside-forme">
+                        <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="formularioshorts">
+                            <script defer src="script2.js"></script>
+                            <div class="formulario-inside">
+                                <div class="div-mail">
+                                    <label for="mail">Your email (optional):</label>
+                                    <input class="nm" type="email" name="mail" id="campoEmailSH" placeholder="example@gmail.com">
+                                </div>
+                                <div class="div-sugestaoproximovideo">
+                                    <label for="pou-para-dar-like">
+                                        What do you wish for the next video? <strong class="asterisco">*</strong>:
+                                    </label> <br>
+                                    <textarea name="sugestao-shorts-yt" cols="30" rows="4" id="campoTextoSH" required></textarea> <br>
+                                <div class="mensagem" id="divErroSH"></div>
+                                <p>Remember: it means YT Shorts</p>
+                                <button class="env-yt" type="submit">SUBMIT</button>
+                            </div>
+                            <input type="hidden" name="_next" value="https://oesky.com/idiomas/en/secondary/helpie/thanks-sugyt.html">
+                            <input type="hidden" name="_captcha" value="false">
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="titulo" onclick="toggleDiv(3)" id="tlig"><img src="../../../images/vector/insta.png" height="70px"></div>
+        <script defer src="script1.js"></script>
+        <div class="conteudo conteudoig" id="div3">
+            <div class="forme-insta">
+                <div class="inside-forme">
+                    <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="formularioinstagram">
+                        <script defer src="script2.js"></script>
+                        <div class="formulario-inside">
+                            <div class="div-mail">
+                                <label for="mail">Your email (optional):</label>
+                                <input class="nm" type="email" name="mail" id="campoEmailIG" placeholder="example@gmail.com">
+                            </div>
+                            Do u want me to post a photo with your Pou on my Instagram?
+                            <div class="div-sugestaoproximovideo">
+                                <label for="pou-para-dar-like">
+                                     Type details you want in the photo (ex: cave background)<strong class="asterisco">*</strong>:
+                                </label> <br>
+                                <textarea name="foto-ig-detalhes" id="campoSG" cols="30" rows="4"></textarea> <br>
+                                <div class="div-mail">
+                                    <label for="mail">Your Pou nick:</label>
+                                    <input class="nm" type="text" name="nomepou-fotoinsta" id="campoTextoIG">
+                                </div>
+                            <div class="mensagem" id="divErroIG"></div>
+                            <button class="env-ig" type="submit">SUBMIT</button>
+                        </div>
+                        <input type="hidden" name="_next" value="https://oesky.com/idiomas/en/secondary/helpie/thanks-sugig.html">
+                        <input type="hidden" name="_captcha" value="false">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="base-botao">
+        <a href="smedia.html">
+            <img src="../../../images/botoes/voltar.png" height="80px">
+        </a>
+    </div>
+    <footer>.</footer>
+    <script>
+        function toggleDiv(numero) {
+            const div = document.getElementById(`div${numero}`);
+            if (div.style.display === 'none' || div.style.display === '') {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        }
+        </script>
+</body>
+</html>

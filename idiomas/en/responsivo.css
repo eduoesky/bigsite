@@ -1,0 +1,186 @@
+@media screen and (max-width: 560px) {
+    .like {
+        top: -65px;
+    }
+
+    .visita {
+        top: -55px;
+    }
+
+    .checar {
+        top: 195px;
+        left: 75%;
+    }
+
+    .sugestao {
+        top: 345px;
+    }
+
+    .cadastro {
+        top: 360px;
+    }
+
+    .mensagem {
+        top: 198px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .checar {
+        top: 188px;
+        left: 75%;
+    }
+
+    .sugestao {
+        top: 325px;
+    }
+
+    .cadastro {
+        top: 345px;
+    }
+
+    .mensagem {
+        top: 190px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .like {
+        top: -60px;
+    }
+
+    .visita {
+        top: -50px;
+    }
+
+    .checar {
+        top: 178px;
+        left: 75%;
+    }
+
+    .sugestao {
+        top: 305px;
+    }
+
+    .cadastro {
+        top: 325px;
+    }
+
+    .mensagem {
+        top: 175px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .like {
+        top: -65px;
+    }
+
+    .visita {
+        top: -55px;
+    }
+
+    .checar {
+        top: 145px;
+        left: 75%;
+    }
+
+    .sugestao {
+        top: 255px;
+    }
+
+    .cadastro {
+        top: 270px;
+    }
+
+    .mensagem {
+        top: 148px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .like {
+        top: -55px;
+        left: 26%;
+        min-width: 50px;
+    }
+
+    .visita {
+        top: -40px;
+        left: 60%;
+        min-width: 10px;
+        max-width: 45px;
+    }
+
+    .checar {
+        top: 140px;
+        left: 76%;
+        min-width: 40px;
+        max-width: 45px;
+    }
+
+    .sugestao {
+        top: 242px;
+        left: 62%;
+        min-width: 40px;
+        max-width: 50px;
+    }
+
+    .cadastro {
+        top: 255px;
+        left: 27%;
+        min-width: 40px;
+        max-width: 45px;
+    }
+
+    .mensagem {
+        top: 140px;
+        min-width: 40px;
+        max-width: 45px;
+        left: 7%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .like {
+        top: -37px;
+        left: 28%;
+        min-width: 35px;
+        max-width: 45px;
+    }
+
+    .visita {
+        top: -30px;
+        left: 61%;
+        min-width: 10px;
+        max-width: 35px;
+    }
+
+    .checar {
+        top: 130px;
+        left: 76%;
+        max-width: 35px;
+        min-width: 35px;
+    }
+
+    .sugestao {
+        top: 220px;
+        left: 62%;
+        max-width: 40px;
+        min-width: 40px;
+    }
+
+    .cadastro {
+        top: 233px;
+        left: 27%;
+        max-width: 35px;
+        min-width: 35px;
+    }
+
+    .mensagem {
+        top: 128px;
+        max-width: 35px;
+        min-width: 35px;
+        left: 7%;
+    }
+}

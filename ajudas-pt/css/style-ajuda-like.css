@@ -1,0 +1,29 @@
+.likefall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.snowflake {
+    position: absolute;
+    background: transparent url('../../images/botoes-index/like-btn.png') no-repeat center center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    animation: fall linear infinite;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(120vh);
+    }
+}
+
+body {
+    overflow-x: hidden;
+}

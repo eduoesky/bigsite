@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda no like</title>
+    <link rel="stylesheet" href="css/ajuda-like.css">
+    <link rel="stylesheet" href="css/style-ajuda-like.css">
+    <link rel="stylesheet" href="../secundarios/css/validacao.css">
+    <script defer src="../secundarios/script/validacao.js"></script>
+    <script defer src="../secundarios/script/validacao4.js"></script>
+    <script defer src="../secundarios/script/validacao5.js"></script>
+    <script defer src="../secundarios/script/validacao6.js"></script>
+    <link rel="shortcut icon" href="../images/icone/star.ico" type="image/x-icon">
+    <script defer src="script/like.js"></script>
+</head>
+<body>
+    <header>Ajuda - Like</header>
+    <div class="divbranca"></div>
+    <div class="cetro">
+        <div class="likefall"></div>
+    </div>
+    <p class="p-inicial">Bem-vindo ao portal de ajuda! <br>Aqui você terá acesso ao menu de informações sobre: Like <br>
+    Selecione o tipo de ajuda:</p>
+    <div class="titulo" onclick="toggleDiv(1)">OesKy me visitou, mas não deu like</div>
+    <div class="conteudo animar-div" id="div1">
+        Eu te visitei, mas não te dei like?
+        <br>
+        1. Certifique-se de que você não confundiu ou pediu uma visita em vez de um like; <br>
+        2. Se realmente você pediu o like, mas o like não foi dado, mesmo eu tendo visitado, <a href="ban.html">acesse aqui</a> para saber se seu Pou foi banido deste site.
+        <br>
+        3. Se você não me deu like antes, OesKy vai te visitar mas não te dará like. (se acontecer isso 2 vezes, o nome do Pou será banido deste site). <br>
+        - Às vezes podem acontecer alguns erros, uma vez que o like é dado através de robôs. Se nada tenha dado certo, peça uma revisão abaixo (ainda neste site)!
+    </div>
+    <div class="titulo" onclick="toggleDiv(2)">O like não foi dado</div>
+    <div class="conteudo animar-div" id="div2">
+        O servidor deste site precisa de um tempo para processar um pedido até que ele seja realizado (se você pediu um like, o servidor leva em torno de 15 minutos, podendo levar até 9 horas para processar os dados).
+        <br> - Se já se passaram mais de 9 horas após o pedido do like, certifique-se de que: <br>
+        1. Seu Pou não tenha sido banido deste site; se seu Pou foi banido deste site, você não terá acesso a nenhum serviço... verifique se você foi banido clicando <a href="ban.html">aqui</a>. <br>
+        2. Você digitou um email verdadeiro. Emails com formatos inválidos ou que não existam NÃO SERÃO ACEITOS. -- exemplo: (oesky@azul.com) ou (oubdjk@ujunjs.co) ou ainda (oesky@0.com)... <br>
+        3. Você digitou o apelido de um Pou que esteja offline desde 29 de dezembro de 2017. Pous com muito tempo de inatividade também não terão meu like dado *_* <br>
+        4. Você me deu like. Se você não deu like antes, OesKy vai te visitar, mas não vai te dar like. (tópico no tipo acima).
+        <br>
+        - Se, mesmo com os quesitos, ainda não está muito confiante do que aconteceu, então peça uma revisão abaixo (ainda neste site)!
+    </div>
+    <div class="titulo" onclick="toggleDiv(3)">Recebi o like, mas me deu deslike</div>
+    <script defer src="script1.js"></script>
+    <div class="conteudo animar-div" id="div3">
+        <p>
+            Os motivos mais 'normais' para isso acontecer são:
+            <br>1. Seu Pou deu deslike primeiro; - tome cuidado, se você deu deslike acidentalmente, o servidor demora 2 dias para perceber que o deslike foi dado, e vai remover o like também! - <br>
+            2. Seu Pou foi banido deste site. <a href="ban.html">Acesse aqui</a> para saber mais sobre isso. <br>
+            - Também pode ter acontecido um engano. Peça o like de novo, pedindo aqui::
+        </p>
+        <br>
+        <form action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormulario">
+            <script defer src="script2.js"></script>
+            <div class="div-mail">
+                <div class="div-label-mail"><label for="mail">Seu email:</label></div>
+                <input class="nf" type="email" name="mail" id="campoEmail" placeholder="exemplo@gmail.com" required>
+            </div>
+            <div class="div-nick-correcao">
+                <div>
+                    <div class="div-label-nick"><label for="nick">Nome do Pou: ⬇️</label></div>
+                    <input class="nr" type="text" id="campoTexto" name="corrigirlike-medeudeslike" required>
+                </div>
+            </div>
+            <div class="mensagem" id="divErro"></div>
+            <button class="env" type="submit">CORRIGIR</button>
+            <input type="hidden" name="_next" value="https://oesky.com/secundarios/agradecimento/agradecimento-like-revisao.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <div class="titulo" onclick="toggleDiv(4)">Nome do meu Pou errado</div>
+    <div class="conteudo animar-div" id="div4">
+        <p>Na hora de receber o like, OesKy deu like no Pou errado por causa de um problema de digitação? Faça a correção aqui embaixo:</p>
+        <br>
+        <form action="https://formsubmit.co/oesky@oesky.me" method="POST" id="correcaoFormulario">
+            <script defer src="script2.js"></script>
+            <div class="div-mail">
+                <div class="div-label-mail"><label for="mail">Seu email:</label></div>
+                <input class="nf" type="email" name="mail" id="campoEmaill" placeholder="exemplo@gmail.com" required>
+            </div>
+            <div class="div-nick-correcao">
+                <div>
+                    <div class="div-label-nick"><label for="nick">Nome Pou errado:</label></div>
+                    <input class="ne" type="text" id="campoPalavras" name="nomepouerrado-like" placeholder="Nome do seu Pou" required>
+                </div>
+                 >> <br>
+                <div><label for="nick" class="div-label-nick-corrigido">Nome Pou corrigido:</label></div>
+                <input class="nc" type="text" id="campoPalavras2" name="nomepoucorrigido-like" placeholder="Nome do seu Pou" required>
+            </div>
+            <div class="mensagem" id="divErrop"></div>
+            <button class="env" type="submit">CORRIGIR</button>
+            <input type="hidden" name="_next" value="https://oesky.com/secundarios/agradecimento/agradecimento-like-revisao.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <div class="titulo" onclick="toggleDiv(5)">O site travou na hora de concluir</div>
+    <div class="conteudo animar-div" id="div5">
+        Me informe o que aconteceu que te dou uma resposta no email:
+        <br>
+        <form action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormularioe">
+            <div class="div-mail">
+                <div class="div-label-mail"><label for="mail">Seu email:</label></div>
+                <input class="nm" type="email" name="mail" id="campoEmaile" placeholder="exemplo@gmail.com" required>
+            </div>
+            <div class="mensagem-travamento">
+                <div class="div-message-conclusion">
+                    <div class="div-label-mensagem"><label class="div-label-trava" for="nick">Escreva uma mensagem:</label></div>
+                    <textarea class="texto-trava" name="site-travou" id="" cols="30" rows="4" required></textarea>
+                </div>
+            </div>
+            <div class="mensagem" id="divErroe"></div>
+            <button class="env" type="submit">CONCLUIR</button>
+            <input type="hidden" name="_next" value="https://oesky.com/secundarios/agradecimento/agradecimento-like-revisao.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+        <br>
+        - tempo de resposta aproximado de 25 minutos - 2 horas.
+    </div>
+    <div class="titulo" onclick="toggleDiv(6)">Quero deslike</div>
+    <div class="conteudo animar-div" id="div6">
+        :( sem problemas. Informe o nome do seu Pou:
+        <form action="https://formsubmit.co/oesky@oesky.me" method="POST" id="formularioDeslike">
+            <div class="div-mail">
+                <div class="div-label-mail"><label for="mail">Seu email:</label></div>
+                <input class="nm" type="email" name="mail" id="campoEmaild" placeholder="exemplo@gmail.com" required>
+            </div>
+            <div class="div-nick">
+                <div class="div-label-nick"><label for="nick">Apelido Pou:</label></div>
+                <input class="nm" type="text" id="campoPalavrasd" name="de-deslike" placeholder="Nome do seu Pou" required>
+            </div>
+            <div class="mensagem" id="divErrod"></div>
+            <button class="env" type="submit">ME DÊ DESLIKE</button>
+            <input type="hidden" name="_next" value="https://oesky.com/secundarios/agradecimento/deslike.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <div class="base-formulario">
+        <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormulariog">
+            <script defer src="script2.js"></script>
+            <div class="formulario-inside">
+                <div class="div-mail">
+                    <div class="div-label-mail"><label for="mail">Seu email:</label></div>
+                    <input class="nf" type="email" name="email" id="campoEmailg" placeholder="exemplo@gmail.com" required>
+                </div>
+                <div class="div-nick-correcao">
+                    <div>
+                        <div class="div-label-nick"><label for="nick">Nome do Pou: ⬇️</label></div>
+                        <input class="nr" type="text" id="campoTextog" name="revisar-like-pou" required>
+                    </div>
+                </div>
+                <div class="mensagem" id="divErrog"></div>
+                <button class="env-rev" type="submit">REVISAR LIKE</button>
+            </div>
+            <input type="hidden" name="_next" value="https://oesky.com/secundarios/agradecimento/agradecimento-like-revisao.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <div class="base-botao">
+        <a href="ajuda.html">
+            <img src="../images/botoes/voltar.png" height="80px">
+        </a>
+        <a href="../index.html">
+            <img src="../images/botoes/home.png" class="casa" height="80px">
+        </a>
+    </div>
+    <footer>.</footer>
+    <script>
+        function toggleDiv(numero) {
+            const div = document.getElementById(`div${numero}`);
+            if (div.style.display === 'none' || div.style.display === '') {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        }
+        </script>
+</body>
+</html>

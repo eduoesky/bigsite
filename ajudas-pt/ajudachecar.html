@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda na checagem</title>
+    <link rel="stylesheet" href="css/ajuda-checar.css">
+    <link rel="stylesheet" href="css/check.css">
+    <link rel="shortcut icon" href="../images/icone/chc.ico" type="image/x-icon">
+    <script defer src="script/check.js"></script>
+</head>
+<body>
+    <header>Ajuda - Checagem</header>
+    <div class="divbranca"></div>
+    <div class="cetro">
+        <div class="checkfall"></div>
+    </div>
+    <p class="p-inicial">Bem-vindo ao portal de ajuda! <br>Aqui você terá acesso ao menu de informações sobre: Checagem <br>
+    Selecione o tipo de ajuda:</p>
+    <div class="titulo" onclick="toggleDiv(1)">Não tive resposta no e-mail</div>
+    <div class="conteudo" id="div1">
+        Certifique se você não digitou um e-mail errado ou se digitou um e-mail que não existe. É impossível responder a um e-mail que não existe. <br>
+        Relembrando que o tempo de resposta é de 48 horas, pois ainda tenho que checar e enviar as informações ao desenvolvedor. <br>
+        Certifique ainda se o meu e-mail foi enviado em alguma outra aba, como o <i>spam</i>.
+    </div>
+    <div class="titulo" onclick="toggleDiv(2)">OesKy não checou o Pou</div>
+    <div class="conteudo" id="div2">
+        Em alguns casos, os Pous checados têm muitas visitas. Isso influi na hora de verificar se chequei ou não o Pou. Se foi isso, tente ver mais abaixo ou verificar o seu  e-mail antes. Para checá-lo, primeiramente eu vou responder a denúncia feita pelo site, e não o contrário.
+        <br> Alguns Pous pré-selecionados também não são válidas as checagens, como: <br>
+        <p class="difdiv">Pou2tiktok <br> NocTaFly <br> Pou <br> qlw <br> TANFALL <br> entre outros...</p>
+    </div>
+    <div class="titulo" id="titulodif" onclick="toggleDiv(3)">Informações</div>
+    <script defer src="script1.js"></script>
+    <div class="conteudo" id="div3">
+        <p>
+            A página de checagem não informa as informações, portanto, elas ficarão hospedadas aqui; confira-a! <br>
+            <br> <strong>O que são os motivos de checagem?</strong> <br> Os motivos de checagem são os motivos pelos quais você está reportando(denunciando) um Pou.. são eles: Fake likes, Pou robotizado e Pertubação, mas o que é isso? <br>
+            <br> <strong>Fake likes</strong>: <i>Fake likes</i> é quando um Pou cria contas (manualmente ou automáticas) para se auto-curtir (dar like a si mesmo). Se vir alguma conta assim, marque esta opção. Pode dar algo ruim quando a conta ultrapassa mais de 30 likes falsos. <br><strong>Like robotizado</strong>: <i>Like robotizado</i> é quando um Pou tem seus likes robotizados, isto é, likes que não são verdadeiros e são totalmente criados do zero, como robôs. Se você acha que um Pou se enquadra nisso, pode marcar esta opção. <br><strong>Pou robotizado</strong>: um <i>Pou robotizado</i> é um Pou que tem a conta totalmente feita de robôs, onde clica em mensagens (guestbook) de forma automática, visita, dá like e remove o like, manda muitas mensagens, muda a roupa constantemente.. se acha que um Pou se encaixa nisso, pode marcar esta opção. <br> <strong>Pertubação</strong>: <i>Pertubação</i> é quando um usuário (não sendo necessariamente um Pou) estiver mandando mensagens abusivas, xingando, insultando, ou qualquer coisa assim (não é válida para conversas normais). Se acha que alguém se enquadra nisso, marque a opção e digite o nome do Pou do usuário. Se houverem 2, digite os dois, separando-os apenas por vírgula. <br><br> >>>> <a href="../secundarios/checar.html">Ir para a página de checagem</a>!</p>
+    </div>
+    <div class="base-botao">
+        <a href="ajuda.html">
+            <img src="../images/botoes/voltar.png" height="80px">
+        </a>
+        <a href="../index.html">
+            <img src="../images/botoes/home.png" class="casa" height="80px">
+        </a>
+    </div>
+    <footer>.</footer>
+    <script>
+        function toggleDiv(numero) {
+            const div = document.getElementById(`div${numero}`);
+            if (div.style.display === 'none' || div.style.display === '') {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OesKy</title>
+    <link rel="stylesheet" href="style-sorteador.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <p><strong>OesKy</strong></p>
+    </header>
+    <div class="div-principal">
+        <div class="container1">
+            <h2>Sorteador</h2>
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="min">Mínimo:</label>
+                    <input type="number" id="min">
+                </div>
+                <div class="input-field">
+                    <label for="max">Máximo:</label>
+                    <input type="number" id="max">
+                </div>
+            </div>
+            <div class="button"><button id="generate">Sortear</button></div>
+            <div id="result">
+                <span>
+                    0
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="div-principal2">
+        <div class="container1">
+            <h2>Sorteador - País</h2>
+            <div class="button" onclick="sortearPais()"><button id="generate">Sortear</button></div>
+            <div id="result">
+                <span id="palavrasorteada">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="div-principal3">
+        <div class="container1">
+            <h2>Sorteador - Grupo (32s)</h2>
+            <div class="button" onclick="sortearGrupo()"><button id="generate">Sortear</button></div>
+            <div id="result">
+                <span id="grupo32sorteado">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="div-principal4">
+        <div class="container1">
+            <h2>Sorteador - Grupo (64s)</h2>
+            <div class="button" onclick="sortearGrupos()"><button id="generate">Sortear</button></div>
+            <div id="result">
+                <span id="grupo64sorteado">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="div-principal5">
+        <div class="container1">
+            <h2>Sorteador - Placar</h2>
+            <div class="button" onclick="sortearPlacar()"><button id="generate">Sortear</button></div>
+            <div id="result">
+                <span id="placarsorteado">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="seta"><a href="index.html">&#8592;</a></div>
+    <footer>.</footer>
+</body>
+</html>
