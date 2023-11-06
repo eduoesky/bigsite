@@ -105,7 +105,6 @@ function obterIdiomaDoNavegador() {
         return (navigator.language || navigator.userLanguage).substring(0, 2).toLowerCase();
     }
 
-    // Função para redirecionar o usuário com base no idioma do navegador
     function redirecionarComBaseNoIdiomaDoNavegador() {
         const idiomaNavegador = obterIdiomaDoNavegador();
 
@@ -113,16 +112,23 @@ function obterIdiomaDoNavegador() {
             case 'es':
                 window.location.href = 'https://www.oesky.com/idiomas/es/index_es.html';
                 break;
-            case 'pt', 'pt-br':
-                window.location.href = 'https://www.oesky.com';
+            case 'en':
+                window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html';
                 break;
-            // Adicione mais casos para outros idiomas, se necessário
+            case 'id':
+                window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html';
+                break;
+            case 'hr':
+                window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html';
+                break;
+            case 'pl':
+                window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html';
+                break;               
             default:
-                window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html'; // Redireciona para a página padrão em português
+                window.location.href = 'https://www.oesky.com';
         }
     }
 
-    // Chame a função de redirecionamento quando a página carregar
     window.addEventListener('load', redirecionarComBaseNoIdiomaDoNavegador);
     </script>
 </body>
