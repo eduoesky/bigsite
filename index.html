@@ -103,6 +103,10 @@
     <script>
         const idiomaNavegador = navigator.language;
 
+        if (idiomaNavegador.startsWith('pt')) {
+            window.location.href = 'https://www.oesky.com';
+        }
+
         if (idiomaNavegador.startsWith('es')) {
             window.location.href = 'https://www.oesky.com/idiomas/es/index_es.html';
             } else {
