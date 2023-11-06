@@ -116,20 +116,16 @@
                     case 'es':
                         window.location.href = 'http://www.oesky.com/idiomas/es/index_es.html';
                         break;
-                    case 'en':
-                        window.location.href = 'http://www.oesky.com/idiomas/en/index_en.html';
-                        break;
-                    case 'id':
-                        window.location.href = 'http://www.oesky.com/idiomas/en/index_en.html';
+                    case 'pt-br':
+                        window.location.href = 'http://www.oesky.com';
                         break;
                     // Adicione mais casos para outros idiomas, se necessário
                     default:
-                        window.location.href = 'http://www.oesky.com'; // Redireciona para a página padrão em português
+                        window.location.href = 'http://www.oesky.com/idiomas/en/index_en.html';
                 }
             }
         }
-    
-        // Chame a função de redirecionamento quando a página carregar
+
         window.addEventListener('load', redirecionarComBaseNoIdioma);
     </script>
     
