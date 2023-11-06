@@ -101,35 +101,34 @@
         </div>
     </div>
     <script>
-function obterIdiomaDoNavegador() {
-        return (navigator.language || navigator.userLanguage).substring(0, 2).toLowerCase();
-    }
-
-    function redirecionarComBaseNoIdiomaDoNavegador() {
-        const idiomaNavegador = obterIdiomaDoNavegador();
-
-        switch (idiomaNavegador) {
-            case 'es':
-                window.location.href = 'https://www.oesky.com/idiomas/es/index_es.html';
-                break;
-            case 'en':
-                window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html';
-                break;
-            case 'id':
-                window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html';
-                break;
-            case 'hr':
-                window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html';
-                break;
-            case 'pl':
-                window.location.href = 'https://www.oesky.com/idiomas/en/index_en.html';
-                break;               
-            default:
-                window.location.href = 'https://www.oesky.com';
+        // Função para obter o idioma da URL (caso o usuário tenha escolhido manualmente)
+        function obterIdiomaDaURL() {
+            const url = new URL(window.location.href);
+            return url.searchParams.get('idioma');
         }
-    }
-
-    window.addEventListener('load', redirecionarComBaseNoIdiomaDoNavegador);
+    
+        // Função para redirecionar o usuário com base no idioma escolhido
+        function redirecionarComBaseNoIdioma() {
+            const idiomaSelecionado = obterIdiomaDaURL();
+    
+            if (idiomaSelecionado) {
+                switch (idiomaSelecionado) {
+                    case 'es':
+                        window.location.href = 'http://www.oesky.com/idiomas/es/index_es.html';
+                        break;
+                    case 'en':
+                        window.location.href = 'http://www.oesky.com/idiomas/en/index_en.html';
+                        break;
+                    // Adicione mais casos para outros idiomas, se necessário
+                    default:
+                        window.location.href = 'http://www.oesky.com'; // Redireciona para a página padrão em português
+                }
+            }
+        }
+    
+        // Chame a função de redirecionamento quando a página carregar
+        window.addEventListener('load', redirecionarComBaseNoIdioma);
     </script>
+    
 </body>
 </html>
