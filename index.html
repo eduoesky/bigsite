@@ -101,33 +101,8 @@
         </div>
     </div>
     <script>
-        // Função para obter o idioma da URL (caso o usuário tenha escolhido manualmente)
-        function obterIdiomaDaURL() {
-            const url = new URL(window.location.href);
-            return url.searchParams.get('idioma');
-        }
-    
-        // Função para redirecionar o usuário com base no idioma escolhido
-        function redirecionarComBaseNoIdioma() {
-            const idiomaSelecionado = obterIdiomaDaURL();
-    
-            if (idiomaSelecionado) {
-                switch (idiomaSelecionado) {
-                    case 'es':
-                        window.location.href = 'http://www.oesky.com/natal/idiomas/es/index_es.html';
-                        break;
-                    case 'pt-br':
-                        window.location.href = 'http://www.oesky.com/natal/index.html';
-                        break;
-                    // Adicione mais casos para outros idiomas, se necessário
-                    default:
-                        window.location.href = 'http://www.oesky.com/natal/idiomas/en/index_en.html';
-                }
-            }
-        }
-
-        window.addEventListener('load', redirecionarComBaseNoIdioma);
-    </script>
-    
+        window.location.href = "https://www.seudominio.com/nova-pagina.html";
+      </script>
+      
 </body>
 </html>
