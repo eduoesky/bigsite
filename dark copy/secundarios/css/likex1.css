@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: pou;
+    src: url(../../arquivos/pou.ttf);
+}
+
+@font-face {
+    font-family: century;
+    src: url(../../arquivos/century-gothic.ttf);
+}
+
+body {
+    background-image: linear-gradient(180deg, rgb(102, 0, 166), black);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.divisoria {
+    background-color: white;
+    padding: 1px;
+}
+
+header {
+    font-family: pou;
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black, -2px 2px 2px black, -2px -2px 2px black, 2px -2px 2px black;
+    background-color: #0000006c;
+    padding: 20px;
+    text-align: center;
+}
+
+.conjunto {
+    display: flex;
+    position: relative;
+    top: 30vh;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #000000a5;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 30px;
+    transition: opacity 0.3s;
+    font-family: pou;
+  }
+
+.estrela, .castelo {
+    filter: drop-shadow(2px 2px 15px #9500ff);
+    transition: all .3s;
+}
+
+.castelo:hover, .estrela:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.likex1 {
+    position: fixed;
+    top: 475px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#canvab, #canvas {
+  position: absolute;
+  z-index: -999;
+}
+
+.baselikex1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .aba-esquerda, .aba-direita {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: #000000ab;
+    color: #fff;
+    width: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .oesky {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+    margin-bottom: -100px;
+    animation-name: brilho;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transition: all .3s;
+  }
+
+  .oesky:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+  }
+
+  @keyframes brilho {
+    0% {
+        filter: drop-shadow(0 0 7px white);
+    }
+    100% {
+        filter: drop-shadow(0 0 34px white);
+    }
+  }
+
+  .aba-esquerda {
+    left: 0;
+  }
+
+  .aba-direita {
+    right: 0;
+  }
+
+  /* Estilo do conteúdo das abas */
+  .aba-conteudo {
+    padding: 20px;
+  }
+
+  .fechar-aba {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .div-like {
+    font-family: century;
+  }
+
+  .env {
+    background-color: black;
+    color: #9500ff;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+    font-family: century;
+    filter: drop-shadow(0 0 6px #9500ff);
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  .env:hover {
+    background-color: #9500ff;
+    color: black;
+    filter: drop-shadow(0 0 0 black);
+    transition: all .3s;
+  }
+
+  p {
+    font-family: pou;
+    color: yellow;
+    text-shadow: 2px 2px 2px black, -2px 2px 2px black, -2px -2px 2px black, 2px -2px 2px black;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: -180px;
+    font-size: 50px;
+  }
+
+  .ps {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pp {
+    color: white;
+  }

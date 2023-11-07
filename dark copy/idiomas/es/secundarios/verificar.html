@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación</title>
+    <link rel="stylesheet" href="css/style-check.css">
+    <link rel="stylesheet" href="../responsivo/r-chc.css">
+    <link rel="stylesheet" href="css/validacao.css">
+    <link rel="icon" href="../../../images/icone/chc.ico" type="image/x-icon">
+    <script defer src="../animacoes/folha.js"></script>
+    <script defer src="script/validacao10.js"></script>
+    <script defer src="../animacoes/check.js"></script>
+    <script defer src="script/checar.js"></script>
+    <script defer src="script/validacao2.js"></script>
+</head>
+<body>
+    <header>
+        <div class="voltarmobile">
+            <a href="../index_es.html">
+                <img src="../../../images/botoes/voltar-crd.png" height="40px">
+            </a>
+        </div><div class="divheader"><p class="plike">Verificar</p></div></header>
+    <div class="divbranca"></div>
+    <div class="conj">
+        <canvas id="canvas"></canvas>
+        <div class="snowfall"></div>
+    </div>
+    <p class="p-inicial">Bienevenido al portal de verificación! <br>Aquí puedes reportar a alguna cuenta que esté contra las regras del juego, seleccionando uno de los motivos.<br>
+        Ayudanos a mantener el juego el más limpio posible!
+    <div class="base-formulario">
+        <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormulario">
+            <script defer src="script2.js"></script>
+            <div class="formulario-inside">
+                <div class="div-mail">
+                    <div class="div-label-mail"><label for="mail">Tu correo<strong class="asterisco">*</strong>:</label></div>
+                    <input class="nf" type="email" name="mail" id="campoEmail" placeholder="ejemplo@gmail.com" required>
+                </div>
+                <div class="div-nick-correcao">
+                    <div>
+                        <div class="div-label-nick"><label for="nick">Nombre del Pou a ser verificado<strong class="asterisco">*</strong>: ⬇️</label></div>
+                        <input class="nr" type="text" id="campoTexto" name="nomedopou-checar" required>
+                    </div>
+                    <div class="mensagem" id="divErro"></div>
+                    <p class="labelreason">Seleccione un motivo:</p>
+                    <input type="checkbox" name="fakelikes">
+                    <label for="fakelikes">Fake Likes</label><br>
+                    <input type="checkbox" name="pertubacao">
+                    <label for="pertubacao">Pertubación</label><br>
+                    <input type="checkbox" name="Pourobotizado">
+                    <label for="Pourobotizado">Pou robotizado</label><br>
+                    <input type="checkbox" name="outro" id="outro">
+                    <label for="outro">Otro motivo</label>
+                    <div id="textareaContainer">
+                    <textarea id="texto" name="motivo-outro-texto"></textarea>
+                    </div>
+                </div>
+                <button class="checarbutton" type="submit">REVISAR EL POU</button>
+            </div>
+            <input type="hidden" name="_next" value="https://oesky.com/idiomas/es/secundarios/agradecimento/verificado.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <div class="base-botao">
+        <a href="../index_es.html">
+            <img src="../../../images/botoes/voltar.png" height="80px">
+        </a>
+    </div>
+    <footer>.</footer>
+</body>
+</html>

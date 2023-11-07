@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like_x1</title>
+    <link rel="shortcut icon" href="images/icone/likex1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="secundarios/css/likex1.css">
+    <link rel="stylesheet" href="responsivo/likex1.css">
+    <link rel="stylesheet" href="secundarios/css/validacao.css">
+    <script defer src="secundarios/script/lk1.js"></script>
+    <script defer src="animacoes/lke.js"></script>
+    <style>
+        .numeross {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 190px;
+            position: relative;
+            align-items: center;
+        }
+
+        button {
+            padding: 20px;
+            background-color: black;
+            font-family: pou;
+            border: none;
+            color: blueviolet;
+            font-size: 20px;
+            gap: 3px;
+            border-right: 2px solid blueviolet;
+            cursor: pointer;
+        }
+
+        #ultimo {
+            border-right: none;
+        }
+
+        button:hover {
+            background-color: blueviolet;
+            color: black;
+            border-right: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <canvas id="canvab"></canvas>
+    <div class="divisoria"></div>
+    <header>
+        Like_x1
+    </header>
+    <div class="divisoria"></div>
+    <div class="oesky">
+        <a href="index.html">
+            <img src="images/botoes-index/likex1.png" height="80px">
+        </a>
+    </div>
+    <div class="numeross">
+        <div class="n1">
+            <button onclick="aumentar(1)">+1</button>
+            <button onclick="diminuir(1)">-1</button>
+            <button onclick="aumentar(3)">+3</button>
+            <button onclick="diminuir(3)">-3</button>
+            <button onclick="aumentar(5)">+5</button>
+        </div> <br>
+        <div class="n2">
+            <button onclick="diminuir(5)">-5</button>
+            <button onclick="aumentar(10)">+10</button>
+            <button onclick="diminuir(10)">-10</button>
+            <button onclick="aumentar(20)">+20</button>
+            <button onclick="diminuir(20)" id="ultimo">-20</button>
+        </div>
+    </div>
+    <div class="conjunto">
+        <input type="number" id="numero" class="numeross" style="width: 99px; height: 30px; position: relative; top: 20px;">
+    </div>
+<script>
+    // Função para aumentar o número
+    function aumentar(valor) {
+        var inputNumero = document.getElementById('numero');
+        inputNumero.value = parseInt(inputNumero.value) + valor;
+    }
+
+    // Função para diminuir o número
+    function diminuir(valor) {
+        var inputNumero = document.getElementById('numero');
+        inputNumero.value = parseInt(inputNumero.value) - valor;
+    }
+</script>
+</body>
+</html>

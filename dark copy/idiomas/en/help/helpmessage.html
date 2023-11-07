@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Message</title>
+    <link rel="stylesheet" href="css/ajuda-mensagem.css">
+    <link rel="stylesheet" href="css/mensagem.css">
+    <link rel="shortcut icon" href="../../../images/icone/msg.ico" type="image/x-icon">
+    <script defer src="script/mensagem.js"></script>
+    <script defer src="script/ajudamensagem.js"></script>
+</head>
+<body>
+    <header>Help - Message</header>
+    <div class="divbranca"></div>
+    <div class="cetro">
+        <div class="mensfall"></div>
+    </div>
+    <p class="p-inicial">Welcome to the help portal! <br>Here you will have access to the information menu about: Message <br>
+        Select the help type: </p>
+    <div class="titulo" onclick="toggleDiv(1)">OesKy no replied me</div>
+    <div class="conteudo" id="div1">
+        Verify if you entered the email correctly or if you entered an existing email. It's impossible to respond to an email that doesn't even exist. <br>
+        Keep in mind that the reply time is from 12 minutes to 6 hours :) <br>
+        Also, check that my email hasn't been sent to another folder, such as <i>spam</i>.
+    </div>
+    <div class="titulo" onclick="toggleDiv(2)">The site bugged when sending</div>
+    <div class="conteudo" id="div2">
+        If the site bugged when trying to send a message, I'm sorry for what happened. Send a new message to the <a href="../secundarios/mensaje.html">message site</a>!
+    </div>
+    <div class="titulo" onclick="toggleDiv(3)">How many messages can I send to your email?</div>
+    <script defer src="script1.js"></script>
+    <div class="conteudo" id="div3">
+        There are no limits! Send as many as you want xD.
+    </div>
+    <div class="titulo" onclick="toggleDiv(4)">The replies are automatic?</div>
+    <script defer src="script1.js"></script>
+    <div class="conteudo" id="div4">
+        No! My replies are manual.    
+    </div>
+    <div class="base-botao">
+        <a href="help.html">
+            <img src="../../../images/botoes/voltar.png" height="80px">
+        </a>
+        <a href="../index_en.html">
+            <img src="../../../images/botoes/home.png" class="casa" height="80px">
+        </a>
+    </div>
+    <footer>.</footer>
+</body>
+</html>

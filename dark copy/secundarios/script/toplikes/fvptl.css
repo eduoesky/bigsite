@@ -1,0 +1,15 @@
+#divErro, #divErroa, #divErrobb, #divErroc, #divErrod, #divErroe, #divErroff, #divErrog, #divErroh, #divErroi, #divErroj, #divErrok, #divErrol, #divErrom, #divErron, #divErroo, #divErrop, #divErroqq, #divError {
+    color: red;
+    font-weight: bold;
+    font-family: pou;
+    margin-top: 5px;
+    z-index: 999;
+    margin-left: 5px;
+    text-align: center;
+}
+
+
+@font-face {
+    font-family: pou;
+    src: url(../../arquivos/pou.ttf);
+}
