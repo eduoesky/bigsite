@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like - OesKy</title>
+    <link rel="stylesheet" href="css/like.css">
+    <link rel="stylesheet" href="../responsivo/r-like.css">
+    <link rel="stylesheet" href="css/validacao.css">
+    <script defer src="../animacoes/like.js"></script>
+    <script defer src="script/validacao.js"></script>
+    <script defer src="../animacoes/resp/like.js"></script>
+    <link rel="shortcut icon" href="../../../images/icone/star.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="estrelas">
+        <div class="snowfall"></div>
+    </div>
+    <header>
+        <div class="voltarmobile">
+            <a href="../index_es.html">
+                <img src="../../../images/botoes/voltar-crd.png" height="40px">
+            </a>
+        </div>
+        <div class="divheader"><p class="plike">Like</p></div></header>
+    <div class="base-forme">
+        <div class="forme">
+            <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormulario">
+                <script defer src="script2.js"></script>
+                <div class="formulario-inside">
+                    <div class="div-mail">
+                        <label for="mail">Tu email <strong class="asterisco">*</strong>:</label>
+                        <input class="nm" type="email" name="email" id="campoEmail" placeholder="ejemplo@gmail.com" required>
+                    </div>
+                    <div class="div-nick-pou">
+                        <label for="pou-para-dar-like">
+                            Escribe el nombre de tú Pou <strong class="asterisco">*</strong>:
+                        </label>
+                        <input type="text" name="pou-para-dar-like" id="campoTexto">
+                        
+                    <div class="mensagem" id="divErro"></div>
+                    <button class="env" type="submit">ME DAS LIKE ⭐</button>
+                </div>
+                <input type="hidden" name="_next" value="https://oesky.com/natal/idiomas/es/secundarios/agradecimento/agradecimento-like.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+        <div class="paragrafobase">
+            Si lo deseas, puedes escribir el apodo de 2-3 Pous, pero sepáralos por comas, (ej: oesky, pou, pou_)
+        </div>
+        <div class="info-paragrafo">↓↓ Lee la información sobre el Like ↓↓</div>
+        <a href="info-like.html"><button class="env-infolike">INFO</button></a>
+    </div>
+        <div class="basedobotao">
+            <a href="../index_es.html">
+                <img src="../../../images/botoes/voltar.png" height="50px">
+            </a>
+        </div>
+</body>
+</html>

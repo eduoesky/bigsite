@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: century;
+}
+
+@font-face {
+    font-family: century;
+    src: url(../../../../arquivos/century-gothic.ttf);
+}
+
+@font-face {
+    font-family: pou;
+    src: url(../../../../arquivos/pou.ttf);
+}
+
+.cetro {
+    height: 30px;
+    max-height: 30px;
+    min-height: 30px;
+    position: fixed;
+    z-index: -999;
+    top: -20px;
+}
+
+.casa {
+    margin-left: 20px;
+}
+
+.base-botao {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    z-index: 999;
+}
+
+.base-botao > a > img, .base-botaoo > a > img {
+    transition: all .3s;
+}
+
+.base-botao > a > img:hover, .base-botaoo > a > img:hover {
+    transition: all .3s;
+    scale: 1.1;
+}
+
+body {
+    background-image: url(../../../../images/bg/bg-natal.png);
+    background-size: 230px;
+    height: 100vh;
+    overflow-y: auto;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+#div6 > form {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.div6 {
+    text-align: left;
+    margin-top: none;
+}
+
+.div-nick {
+    margin-top: 8px;
+}
+
+.div-nick, .div-mail {
+    display: flex;
+    margin-left: 25%;
+}
+
+
+
+.divbranca {
+    background-color: white;
+    padding: 2px;
+}
+
+.env, .env-rev {
+    background-color: #ffd700;
+    padding: 8px;
+    border: 1px solid #00c231;
+    border-radius: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.env:hover {
+    background-color: #00c231;
+}
+
+.env:active {
+    background-color: #005b1d;
+}
+
+.env-rev {
+    background-color: rgb(180, 0, 0);
+    border: none;
+}
+
+.env-rev:hover {
+    background-color: #cb0000;
+    color: gold;
+}
+
+.env-rev:active{
+    background-color: rgb(255, 186, 36);
+    color: #800000;
+}
+
+header {
+    padding: 30px;
+    background-color: #e5ff006e;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: pou;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
+}
+
+.nm {
+    border: none;
+    margin-left: 3px;
+}
+
+.titulo {
+    cursor: pointer;
+    background-color: #0a6300;
+    border: 1px solid gold;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+.titulo:hover {
+    background-color: #0e930b;
+}
+
+#div4 > form {
+    margin-top: -13px;
+}
+
+#div5 > form {
+    text-align: center;
+}
+
+.texto-trava {
+    text-align: center;
+    margin-left: 0%;
+}
+
+.div-label-mensagem {
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+    border: cadetblue 1px solid;
+}
+
+.div-label-nick-corrigido {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-nick-correcao {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#div4, #div3{
+    text-align: center;
+}
+
+#div4 > p, #div3 > p {
+
+    text-align: left;
+}
+
+.ne, .nc{
+    border: black 1px solid;
+    width: 160px;
+}
+
+.nf {
+    border: none;
+    margin-left: 5px;
+}
+
+.ne {
+    background-color: #fc8c8c;
+    color: black;
+    border: 2px solid #660000;
+}
+
+.nc {
+    background-color: lime;
+    color: black;
+    border: 2px solid green;
+}
+
+.nc::placeholder, .ne::placeholder {
+    color: black;
+}
+
+#textarea {
+    margin-top: 5px;
+    width: 200px;
+    text-align: justify;
+}
+
+.formulario-revisao {
+    background-color: #ffe100;
+    width: 400px;
+    text-align: center;
+    border-radius: 40px;
+    filter: drop-shadow(4px 4px 10px rgb(255, 191, 0));
+}
+
+.formulario-revisao input {
+    color: #800000;
+    background-color: #ffe100;
+    border: none;
+}
+
+.formulario-revisao input::placeholder {
+    color: #800000;
+}
+
+.base-formulario {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.formulario-inside {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.p-inicial {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
+    text-align: justify;
+}
+
+#div6 > form {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.div6 {
+    text-align: left;
+    margin-top: none;
+}
+
+.div-nick {
+    margin-top: 8px;
+}
+
+.div-nick, .div-mail {
+    display: flex;
+    margin-left: 25%;
+}
+
+footer {
+    position: relative;
+    margin-top: 50px;
+    color: transparent;
+    user-select: none;
+}
+
+#campoEmail, #campoEmaill, #campoTexto, textarea, #campoEmaile {
+    background-color: #c10000;
+}
+
+#campoTexto {
+    border: 1px solid gold;
+}
+
+#campoEmail::placeholder, #campoEmail::placeholder, #campoEmaile::placeholder {
+    color: gold;
+}
+
+#campoEmail {
+    color: gold;
+}
+
+input {
+    color: gold;
+}
+
+textarea {
+    border: 1px solid gold;
+    color: gold;
+}
+
+#campoEmaild, #campoEmaild::placeholder, #campoPalavrasd, #campoPalavrasd::placeholder {
+    background-color: #c10000;
+    color: gold;
+}
+
+.conteudo {
+    display: none;
+    padding: 10px;
+    border: 2px solid gold;
+    background-color: #c10000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-align: justify;
+    max-height: 300px;
+    overflow-y: auto;
+    transition: all .3s;
+    color: white;
+}
+
+a {
+    color: gold;
+}

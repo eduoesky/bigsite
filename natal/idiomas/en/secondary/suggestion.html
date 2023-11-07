@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion - OesKy</title>
+    <link rel="stylesheet" href="css/sugestao.css">
+    <link rel="stylesheet" href="../responsivo/r-sug.css">
+    <link rel="stylesheet" href="css/validacao.css">
+    <script defer src="../animacoes/sugestao.js"></script>
+    <script defer src="script/validacao.js"></script>
+    <script defer src="../animacoes/resp/sugestao.js"></script>
+    <link rel="shortcut icon" href="../../../images/icone/sug.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="suges">
+        <div class="snowfall"></div>
+        <div class="c2fall"></div>
+        <div class="c3fall"></div>
+    </div>
+    <header>
+        <div class="voltarmobile">
+            <a href="../index_en.html">
+                <img src="../../../images/botoes/voltar-crd.png" height="40px">
+            </a>
+        </div>
+        <div class="divheader"><p class="psugestao">Suggestion</p></div>
+    </header>
+    <div class="base-forme">
+        <div class="forme">
+            <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormulario">
+                <script defer src="script2.js"></script>
+                <div class="formulario-inside">
+                    <div class="title-sug">
+                        <label for="title-sug">
+                            Suggestion title <strong class="asterisco">*</strong>:
+                        </label>
+                        <input type="text" name="titulo-sugestao">
+                    </div>
+                    <div class="text-sug">
+                        <label for="title-sug">
+                            Type your suggestion <strong class="asterisco">*</strong>:
+                        </label>
+                        <textarea name="sugestao" id="textarea" cols="21" rows="3"></textarea>
+                    </div>
+                    <div class="div-mail">
+                        <label for="email-sugestao" style="margin-left: -17px;">Your email (optional):</label>
+                        <input type="email" name="email" id="campoEmail">
+                    </div> <br>
+                    <div class="mensagem" id="divErro"></div>
+                    <button class="env" type="submit">SEND SUGGESTION 💬</button>
+                <input type="hidden" name="_next" value="https://oesky.com/natal/idiomas/en/secondary/helpie/thanks-suggestion.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+        <div class="info-paragrafo">↓↓ Read the info about the suggestions ↓↓</div>
+        <a href="info-suggestion.html"><button class="env-infolike">INFO</button></a>
+    </div>
+        <div class="basedobotao">
+            <a href="../index_en.html">
+                <img src="../../../images/botoes/voltar.png" height="50px">
+            </a>
+        </div>
+    </body>
+</html>

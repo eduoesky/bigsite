@@ -1,0 +1,43 @@
+@font-face {
+    font-family: century;
+    src: url(../../arquivos/century-gothic.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(../../images/bg/bg-natal.png);
+    background-size: 290px;
+    color: rgb(255, 238, 0);
+    font-family: century;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+}
+
+h1 {
+    background-color: #00c2310b;
+}
+
+#credits {
+    position: absolute;
+    top: -30;
+    animation: roll 50s linear infinite;
+}
+
+@keyframes roll {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -250%;
+    }
+}
+
+    #voltar {
+        position: relative;
+        z-index: 1;
+        top: -230px;
+    }   
