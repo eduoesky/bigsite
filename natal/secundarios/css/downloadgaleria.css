@@ -27,16 +27,46 @@ body {
 }
 
 .todos button {
-    background-color: black;
+    background-color: gold;
     border-radius: 40px;
     padding: 10px;
     font-family: pou;
     cursor: pointer;
-    color: white;
+    color: #800000;
+    border: none;
+    filter: drop-shadow(0 0 15px gold);
+    animation-name: piscabotao;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes piscabotao {
+    0% {
+        filter: drop-shadow(0 0 5px gold);
+    }
+    100% {
+        filter: drop-shadow(0 0 15px gold);
+    }
+}
+
+@keyframes piscabotaohover {
+    0% {
+        filter: drop-shadow(0 0 5px #006c00);
+    }
+    100% {
+        filter: drop-shadow(0 0 15px #006c00);
+    }
 }
 
 .todos button:hover {
-    background-color: #222;
+    background-color: #006c00;
+    animation-name: piscabotaohover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 header {
@@ -48,6 +78,7 @@ header {
 header strong {
     font-family: pou;
     font-size: 60px;
+    text-shadow: 2px 2px 2px black, -2px -2px 2px black, -2px 2px 2px black, 2px -2px 2px black;
 }
 
 .paragrafos {
@@ -60,6 +91,7 @@ header strong {
 p {
     color: white;
     background-color: #00c2317b;
+    text-shadow: 0 0 2px gold;
 }
 
 nav {
@@ -93,18 +125,6 @@ nav a {
     cursor: pointer;
     position: relative;
     top: -50px;
-}
-
-.menu-mobile span {
-    display: block;
-    z-index: 999;
-    width: 32px;
-    height: 3px;
-    border-radius: 30px;
-    border: solid 3px black;
-    background-color: white;
-    margin: 5px;
-    position: relative;
 }
 
 .div-imagem-pt {
@@ -192,11 +212,13 @@ a {
 
 
 .quadrado:hover {
-    background-color: #ffcc00;
+    background-color: #cb0303;
+    filter: drop-shadow(0 0 10px gold);
 }
 
 .quadrada:hover {
-    background-color: #51cbd4;
+    background-color: #2cdb00;
+    filter: drop-shadow(0 0 10px gold);
 }
 
 .quadrada {

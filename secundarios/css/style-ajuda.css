@@ -14,13 +14,13 @@
 }
 
 body {
-    background-image: url(../../images/bg/bg-natal.png);
-    background-size: 290px;
+    background-image: url(../../images/bg/xd.png);
+    background-size: 120px;
 }
 
 header {
     text-align: center;
-    background-color: #0074007b;
+    background-color: #00f7ff7b;
     padding: 15px;
 }
 
@@ -72,7 +72,7 @@ header strong {
 
 .snowflake {
     position: absolute;
-    background: #ff0000ac;
+    background: #ffffffac;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;
@@ -80,7 +80,7 @@ header strong {
 
 .snewflake {
     position: absolute;
-    background: #ffcc0061;
+    background: #ffffff61;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;
@@ -88,7 +88,7 @@ header strong {
 
 .snewfleke {
     position: absolute;
-    background: #bb7070;
+    background: #ffffff;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;
@@ -111,7 +111,7 @@ header strong {
 }
 
 body {
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 p {
@@ -191,26 +191,8 @@ nav > ul {
     top: 40px;
 }
 
-.tooltip {
-    display: none;
-    position: absolute;
-    background-color: #004b02;
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 5px;
-    transition: opacity 0.3s;
-    top: 430px;
-    font-family: pou;
-  }
-
-footer {
-    position: relative;
-    top: 150px;
-    color: transparent;
-}
-
 .ajudaopcao {
-    background-color: #1fab00e6;
+    background-color: rgba(64, 230, 255, 0.596);
     position: relative;
     top: 40px;
     padding: 10px;
@@ -222,7 +204,7 @@ footer {
     font-weight: bold;
     border-left: black 4px solid;
     border-right: black 4px solid;
-    color: white;
+    color: black;
 }
 
 #helpdiv, #helpdiv5 {
@@ -230,17 +212,16 @@ footer {
 }
 
 #helpdiv1 {
-    border-top: #ffbf00 4px solid;
+    border-top: black 4px solid;
 }
 
 #helpdiv5 {
-    border-bottom: #ffbf00 4px solid;
+    border-bottom: black 4px solid;
 }
 
 .ajudaopcao:hover {
-    background-color: #80000075;
+    background-color: #e4f7ff;
     font-size: 18px;
-    color: #ffbf00;
 }
 
 .imagem {
@@ -258,19 +239,19 @@ a {
 
 @media screen and (max-width:1920px) {
     .ajudaopcao {
-        background-color: #00560698;
+        background-color: rgba(64, 230, 255, 0.596);
         position: relative;
         top: 40px;
         padding: 10px;
         width: 950px;
         height: 50px;
         font-family: century;
-        border: #ffbf00 2px solid;
+        border: black 2px solid;
         cursor: pointer;
         text-align: center;
         font-weight: bold;
-        border-left: #ffbf00 4px solid;
-        border-right: #ffbf00 4px solid;
+        border-left: black 4px solid;
+        border-right: black 4px solid;
         font-size: 30px;
     }
 
@@ -281,24 +262,24 @@ a {
 
 @media screen and (max-width: 680px){
     .ajudaopcao {
-        background-color: #c1000098;
+        background-color: rgba(64, 230, 255, 0.596);
         position: relative;
         top: 40px;
         padding: 10px;
         width: 350px;
         height: 30px;
         font-family: century;
-        border: #ffbf00 2px solid;
+        border: black 2px solid;
         cursor: pointer;
         text-align: center;
         font-weight: bold;
-        border-left: #ffbf00 4px solid;
-        border-right: #ffbf00 4px solid;
+        border-left: black 4px solid;
+        border-right: black 4px solid;
         font-size: 17px;
     }
 
     .ajudaopcao:hover {
-        background-color: #007c239b;
+        background-color: #e4f7ff;
         font-size: 18px;
     }
 }

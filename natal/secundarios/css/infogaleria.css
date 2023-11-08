@@ -48,7 +48,6 @@ p {
 .conteudo {
     display: none;
     padding: 10px;
-    border: 1px solid #ccc;
     background-color: #780000;
     border: #059400da solid 3px;
     margin-left: 10px;
@@ -76,7 +75,7 @@ p {
 }
 
 .titulo:hover {
-    background-color: #327b92;
+    background-color: #0a9800;
 }
 
 .basedobotao {

@@ -14,13 +14,13 @@
 }
 
 body {
-    background-image: url(../../../../images/bg/xd-natal6.png);
+    background-image: url(../../../../images/bg/bg-natal.png);
     background-size: 290px;
 }
 
 header {
     text-align: center;
-    background-color: #bd35357b;
+    background-color: #0074007b;
     padding: 15px;
 }
 
@@ -72,7 +72,7 @@ header strong {
 
 .snowflake {
     position: absolute;
-    background: #ffffffac;
+    background: #ff0000ac;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;
@@ -80,7 +80,7 @@ header strong {
 
 .snewflake {
     position: absolute;
-    background: #ffffff61;
+    background: #ffcc0061;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;
@@ -210,7 +210,7 @@ footer {
 }
 
 .ajudaopcao {
-    background-color: #ff404098;
+    background-color: #1fab00e6;
     position: relative;
     top: 40px;
     padding: 10px;
@@ -230,17 +230,17 @@ footer {
 }
 
 #helpdiv1 {
-    border-top: #ffffff 4px solid;
+    border-top: #ffbf00 4px solid;
 }
 
 #helpdiv5 {
-    border-bottom: white 4px solid;
+    border-bottom: #ffbf00 4px solid;
 }
 
 .ajudaopcao:hover {
-    background-color: #ffb1b1;
+    background-color: #80000075;
     font-size: 18px;
-    color: #800000;
+    color: #ffbf00;
 }
 
 .imagem {
@@ -258,19 +258,19 @@ a {
 
 @media screen and (max-width:1920px) {
     .ajudaopcao {
-        background-color: #c1000098;
+        background-color: #00560698;
         position: relative;
         top: 40px;
         padding: 10px;
         width: 950px;
         height: 50px;
         font-family: century;
-        border: white 2px solid;
+        border: #ffbf00 2px solid;
         cursor: pointer;
         text-align: center;
         font-weight: bold;
-        border-left: #fff 4px solid;
-        border-right: #fff 4px solid;
+        border-left: #ffbf00 4px solid;
+        border-right: #ffbf00 4px solid;
         font-size: 30px;
     }
 
@@ -288,17 +288,17 @@ a {
         width: 350px;
         height: 30px;
         font-family: century;
-        border: black 2px solid;
+        border: #ffbf00 2px solid;
         cursor: pointer;
         text-align: center;
         font-weight: bold;
-        border-left: black 4px solid;
-        border-right: black 4px solid;
+        border-left: #ffbf00 4px solid;
+        border-right: #ffbf00 4px solid;
         font-size: 17px;
     }
 
     .ajudaopcao:hover {
-        background-color: #e4f7ff;
+        background-color: #007c239b;
         font-size: 18px;
     }
 }

@@ -117,7 +117,7 @@ body {
 
 .flocodeneve {
     position: absolute;
-    background: transparent url('images/animacoes/flocodeneve.png') no-repeat center center;
+    background: transparent url('../../images/animacoes/flocodeneve.png') no-repeat center center;
     background-size: contain;
     width: 32px;
     height: 32px;

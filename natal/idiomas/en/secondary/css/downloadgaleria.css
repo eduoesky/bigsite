@@ -15,8 +15,8 @@
 }
 
 body {
-    background-image: url(../../../../images/bg/xd.png);
-    background-size: 120px;
+    background-image: url(../../../../images/bg/bg-natal.png);
+    background-size: 290px;
 }
 
 .todos {
@@ -27,27 +27,58 @@ body {
 }
 
 .todos button {
-    background-color: black;
+    background-color: gold;
     border-radius: 40px;
     padding: 10px;
     font-family: pou;
     cursor: pointer;
-    color: white;
+    color: #800000;
+    border: none;
+    filter: drop-shadow(0 0 15px gold);
+    animation-name: piscabotao;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes piscabotao {
+    0% {
+        filter: drop-shadow(0 0 5px gold);
+    }
+    100% {
+        filter: drop-shadow(0 0 15px gold);
+    }
+}
+
+@keyframes piscabotaohover {
+    0% {
+        filter: drop-shadow(0 0 5px #006c00);
+    }
+    100% {
+        filter: drop-shadow(0 0 15px #006c00);
+    }
 }
 
 .todos button:hover {
-    background-color: #222;
+    background-color: #006c00;
+    animation-name: piscabotaohover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 header {
     text-align: center;
-    background-color: #00f7ff7b;
+    background-color: #00c2317b;
     padding: 15px;
 }
 
 header strong {
     font-family: pou;
     font-size: 60px;
+    text-shadow: 2px 2px 2px black, -2px -2px 2px black, -2px 2px 2px black, 2px -2px 2px black;
 }
 
 .paragrafos {
@@ -58,10 +89,9 @@ header strong {
 }
 
 p {
-    font-size: 20px;
     color: white;
-    text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
-    font-family: century;
+    background-color: #00c2317b;
+    text-shadow: 0 0 2px gold;
 }
 
 nav {
@@ -95,18 +125,6 @@ nav a {
     cursor: pointer;
     position: relative;
     top: -50px;
-}
-
-.menu-mobile span {
-    display: block;
-    z-index: 999;
-    width: 32px;
-    height: 3px;
-    border-radius: 30px;
-    border: solid 3px black;
-    background-color: white;
-    margin: 5px;
-    position: relative;
 }
 
 .div-imagem-pt {
@@ -182,38 +200,49 @@ a {
     width: 70px;
     height: 70px;
     margin: 5px;
-    background-color: #004449; /* Cor de fundo amarela */
+    background-color: #8d0000;
     text-align: center;
     line-height: 70px;
     font-size: 20px;
     text-decoration: none;
     color: #333;
     justify-content: center;
+    border: 1px solid gold;
 }
 
+
 .quadrado:hover {
-    background-color: #007b84;
+    background-color: #cb0303;
+    filter: drop-shadow(0 0 10px gold);
 }
 
 .quadrada:hover {
-    background-color: #51cbd4;
+    background-color: #2cdb00;
+    filter: drop-shadow(0 0 10px gold);
 }
 
 .quadrada {
     width: 70px;
     height: 70px;
     margin: 5px;
-    background-color: #4abbc4; /* Cor de fundo amarela */
+    background-color: #00a216;
     text-align: center;
     line-height: 70px;
     font-size: 20px;
     text-decoration: none;
-    color: #333;
+    color: #42c600;
     justify-content: center;
+    border: 1px solid gold;
 }
 
 .imagem {
     margin-top: 10px;
+    transition: all .3s;
+}
+
+.imagem:hover  {
+    transform: scale(1.1);
+    transition: all .3s;
 }
 
 footer {

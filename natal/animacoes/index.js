@@ -30,6 +30,6 @@ function createFlocodeneve() {
 }
 
     // quantidade
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 9; i++) {
     createFlocodeneve();
 }
