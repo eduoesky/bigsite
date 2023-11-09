@@ -93,7 +93,7 @@ a {
 }
 
 body {
-    background-image: url(../images/bg/xd-e.png);
+    background-image: url(../images/bg/xd-b.png);
     background-size: 120px;
     overflow: hidden;
 }
@@ -117,7 +117,7 @@ body {
 
 .flocodeneve {
     position: absolute;
-    background: transparent url('images/animacoes/flocodeneve.png') no-repeat center center;
+    background: transparent url('../natal/images/animacoes/flocodeneve.png') no-repeat center center;
     background-size: contain;
     width: 32px;
     height: 32px;
@@ -134,14 +134,14 @@ body {
 
 header {
     text-align: center;
-    background-color: #20bac07b;
+    background-color: #18418f7b;
     padding: 15px;
 }
 
 header strong {
     font-family: pou;
     font-size: 60px;
-    color: rgb(196, 255, 255);
+    color: #c4edff;
 }
 
 .burger {

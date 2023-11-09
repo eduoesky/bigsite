@@ -1,0 +1,750 @@
+@media screen and (max-width: 1920px){
+    .estrela {
+        position: relative;
+        top: -350px;
+        left: 630px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -335px;
+        left: 770px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -60px;
+        left: 800px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 110px;
+        left: 650px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 115px;
+        left: 350px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: -55px;
+        left: 160px;
+    }
+}
+
+@media screen and (max-width: 1520px){
+    .estrela {
+        position: relative;
+        top: -350px;
+        left: 595px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -335px;
+        left: 730px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -60px;
+        left: 750px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 110px;
+        left: 610px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 115px;
+        left: 320px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: -55px;
+        left: 120px;
+    }
+}
+
+@media screen and (max-width: 1390px){
+    .estrela {
+        position: relative;
+        top: -350px;
+        left: 555px;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -335px;
+        left: 690px;
+    }
+
+    .burger {
+        display: none;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -60px;
+        left: 710px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 110px;
+        left: 570px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 115px;
+        left: 280px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: -55px;
+        left: 80px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .estrela {
+        position: relative;
+        top: -350px;
+        left: 495px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -335px;
+        left: 630px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -60px;
+        left: 650px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 110px;
+        left: 510px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 115px;
+        left: 220px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: -55px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    .estrela {
+        position: relative;
+        top: -350px;
+        left: 455px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -335px;
+        left: 590px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -60px;
+        left: 610px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 110px;
+        left: 470px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 115px;
+        left: 180px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: -55px;
+        left: -20px;
+    }
+}
+
+@media screen and (max-width: 1060px){
+    .estrela {
+        position: relative;
+        top: -350px;
+        left: 395px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -335px;
+        left: 530px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -60px;
+        left: 550px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 110px;
+        left: 410px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 115px;
+        left: 120px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: -55px;
+        left: -80px;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .estrela {
+        position: relative;
+        top: -350px;
+        left: 345px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -335px;
+        left: 480px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -60px;
+        left: 500px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 110px;
+        left: 360px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 115px;
+        left: 70px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: -55px;
+        left: -130px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .estrela {
+        position: relative;
+        top: -350px;
+        left: 295px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -335px;
+        left: 430px;
+    }
+
+    .galeria, .dark, .lingua, .redes, .div-privados, .likex1 {
+        display: none;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -60px;
+        left: 450px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 110px;
+        left: 310px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 115px;
+        left: 20px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: -55px;
+        left: -190px;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .div-imagem-pt > img {
+        height: 250px;
+        position: relative;
+        top: 30px;
+    }
+
+    header strong {
+        font-size: 90px;
+    }
+
+    .estrela {
+        position: relative;
+        top: -145px;
+        left: 305px;
+        height: 40px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -135px;
+        left: 395px;
+        height: 40px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -35px;
+        left: 415px;
+        height: 40px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 140px;
+        left: 325px;
+        height: 40px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 145px;
+        left: 145px;
+        height: 30px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: 35px;
+        left: 15px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 690px){
+    .div-imagem-pt > img {
+        height: 250px;
+        position: relative;
+        top: 30px;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+
+
+    .estrela {
+        position: relative;
+        top: -145px;
+        left: 255px;
+        height: 40px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -135px;
+        left: 340px;
+        height: 40px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -35px;
+        left: 360px;
+        height: 40px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 140px;
+        left: 270px;
+        height: 40px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 145px;
+        left: 80px;
+        height: 30px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: 35px;
+        left: -40px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .div-imagem-pt > img {
+        height: 250px;
+        position: relative;
+        top: 30px;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+
+    .estrela {
+        position: relative;
+        top: -145px;
+        left: 200px;
+        height: 40px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -135px;
+        left: 285px;
+        height: 40px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -35px;
+        left: 305px;
+        height: 40px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 140px;
+        left: 210px;
+        height: 40px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 145px;
+        left: 25px;
+        height: 30px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: 35px;
+        left: -95px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .div-imagem-pt > img {
+        height: 250px;
+        position: relative;
+        top: 30px;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+
+    .estrela {
+        position: relative;
+        top: -145px;
+        left: 170px;
+        height: 40px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -135px;
+        left: 260px;
+        height: 40px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -35px;
+        left: 280px;
+        height: 40px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 140px;
+        left: 180px;
+        height: 40px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 145px;
+        left: 0;
+        height: 30px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: 35px;
+        left: -120px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .div-imagem-pt > img {
+        height: 240px;
+        position: relative;
+        top: 30px;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+
+    .estrela {
+        position: relative;
+        top: -135px;
+        left: 120px;
+        height: 40px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -130px;
+        left: 200px;
+        height: 40px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -25px;
+        left: 220px;
+        height: 40px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 140px;
+        left: 125px;
+        height: 40px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 145px;
+        left: -50px;
+        height: 30px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: 35px;
+        left: -170px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .div-imagem-pt > img {
+        height: 230px;
+        position: relative;
+        top: 30px;
+    }
+
+    header strong {
+        font-size: 60px;
+    }
+
+    .estrela {
+        position: relative;
+        top: -125px;
+        left: 110px;
+        height: 40px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -120px;
+        left: 190px;
+        height: 40px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -25px;
+        left: 210px;
+        height: 40px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 140px;
+        left: 115px;
+        height: 40px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 145px;
+        left: -60px;
+        height: 30px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: 45px;
+        left: -180px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .div-imagem-pt > img {
+        height: 220px;
+        position: relative;
+        top: 30px;
+    }
+
+    header strong {
+        font-size: 80px;
+    }
+
+    .estrela {
+        position: relative;
+        top: -115px;
+        left: 100px;
+        height: 40px;
+    }
+    
+    .visita-btn {
+        position: relative;
+        top: -110px;
+        left: 170px;
+        height: 40px;
+    }
+    
+    .lupa-btn {
+        position: relative;
+        top: -20px;
+        left: 190px;
+        height: 40px;
+    }
+    
+    .status-btn {
+        position: relative;
+        top: 140px;
+        left: 95px;
+        height: 40px;
+    }
+    
+    .cadastro-btn {
+        position: relative;
+        top: 145px;
+        left: -70px;
+        height: 30px;
+    }
+    
+    .mensagem-btn {
+        position: relative;
+        top: 45px;
+        left: -180px;
+        height: 35px;
+    }
+}

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: century;
+    src: url(../../../../arquivos/century-gothic.ttf);
+}
+
+@font-face {
+  font-family: pou;
+  src: url(../../../../arquivos/pou.ttf);
+}
+
+body {
+    background-image: url(../../../../images/bg/xd.png);
+    background-size: 90px;
+    height: 100vh;
+    overflow-y: auto;
+    max-height: 100%; 
+    overflow: hidden;
+}
+
+.image-caption {
+    font-weight: bold;
+    font-family: century;
+}
+
+header {
+    text-align: center;
+    background-color: #00f7ff7b;
+    padding: 15px;
+    color: white;
+    font-size: 60px;
+    font-family: pou;
+    text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
+}
+
+.gallery {
+    text-align: center;
+  }
+  
+  .image-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+    transition: opacity 0.5s; /* Efeito de transição de opacidade */
+  }
+  
+  .controls button {
+    margin: 10px;
+  }
+  
+  #next, #prev {
+    background-color: #0000007b;
+    padding: 15px;
+    color: white;
+    font-family: century;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .basedobotao {
+    display: flex;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.download {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  margin-left: 5px;
+}
+
+.info {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  margin-right: 5px;
+}
+
+img {
+  top: 465px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.basedobotao > a > img {
+    transition: all .3s;
+}
+
+.basedobotao > a > img:hover {
+    transition: all .3s;
+    scale: 1.1;
+}

@@ -1,0 +1,67 @@
+@media screen and (max-width: 520px) {
+    .psugestao {
+        font-size: 50px;
+    }
+
+    .forme {
+        filter: drop-shadow(2px 2px 7px black);
+        width: 300px;
+        height: 400px;
+        position: relative;
+        top: 100px;
+    }
+
+    .suges {
+        position: fixed;
+        height: 10px;
+        top: -10px;
+    }
+    
+    .basedobotao {
+        display: none;
+    }
+
+    .voltarmobile {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 45px;
+        margin-left: 5px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .title-sug {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .text-sug {
+        justify-content: center;
+        margin-left: 47px;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        gap: -10px;
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+
+    .text-sug > label {
+        top: 0;
+    }
+
+    .div-mail {
+        justify-content: center;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        padding: 40px;
+    }
+
+    .divheader {
+        margin-left: -70px;
+    }
+}

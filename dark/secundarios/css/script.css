@@ -39,7 +39,7 @@
 
 .snowflake {
     position: absolute;
-    background: #ffffffac;
+    background: #7ba4d6ac;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;
@@ -48,7 +48,7 @@
 
 .snewflake {
     position: absolute;
-    background: #ffffff61;
+    background: #256e9f61;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;
@@ -57,7 +57,7 @@
 
 .snewfleke {
     position: absolute;
-    background: #ffffff;
+    background: #8badc6;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;

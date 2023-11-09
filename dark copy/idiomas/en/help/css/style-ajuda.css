@@ -13,14 +13,20 @@
     src: url(../../../../arquivos/pou.ttf);
 }
 
+footer {
+    position: relative;
+    top: 150px;
+    color: transparent;
+}
+
 body {
-    background-image: url(../../../../images/bg/bg-natal.png);
-    background-size: 290px;
+    background-image: url(../../../../images/bg/xd.png);
+    background-size: 120px;
 }
 
 header {
     text-align: center;
-    background-color: #00c2317b;
+    background-color: #00f7ff7b;
     padding: 15px;
 }
 
@@ -72,7 +78,7 @@ header strong {
 
 .snowflake {
     position: absolute;
-    background: #0400ffac;
+    background: #ffffffac;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;
@@ -80,7 +86,7 @@ header strong {
 
 .snewflake {
     position: absolute;
-    background: #2aa80061;
+    background: #ffffff61;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;
@@ -88,7 +94,7 @@ header strong {
 
 .snewfleke {
     position: absolute;
-    background: #fff700;
+    background: #ffffff;
     border-radius: 50%;
     opacity: 0.8;
     animation: snowfall linear infinite;
@@ -113,6 +119,19 @@ header strong {
 body {
     overflow-y: auto;
 }
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+    top: 430px;
+    font-family: pou;
+  }
+
 
 p {
     font-size: 20px;
@@ -191,26 +210,8 @@ nav > ul {
     top: 40px;
 }
 
-.tooltip {
-    display: none;
-    position: absolute;
-    background-color: #ffe100;
-    color: #0a6300;
-    padding: 5px;
-    border-radius: 5px;
-    transition: opacity 0.3s;
-    top: 430px;
-    font-family: pou;
-  }
-
-footer {
-    position: relative;
-    top: 150px;
-    color: transparent;
-}
-
 .ajudaopcao {
-    background-color: #69ff4098;
+    background-color: rgba(64, 230, 255, 0.596);
     position: relative;
     top: 40px;
     padding: 10px;
@@ -222,7 +223,7 @@ footer {
     font-weight: bold;
     border-left: black 4px solid;
     border-right: black 4px solid;
-    color: white;
+    color: black;
 }
 
 #helpdiv, #helpdiv5 {
@@ -230,17 +231,16 @@ footer {
 }
 
 #helpdiv1 {
-    border-top: #ffffff 4px solid;
+    border-top: black 4px solid;
 }
 
 #helpdiv5 {
-    border-bottom: white 4px solid;
+    border-bottom: black 4px solid;
 }
 
 .ajudaopcao:hover {
-    background-color: gold;
+    background-color: #e4f7ff;
     font-size: 18px;
-    color: #800000;
 }
 
 .imagem {
@@ -258,19 +258,19 @@ a {
 
 @media screen and (max-width:1920px) {
     .ajudaopcao {
-        background-color: #2ac10098;
+        background-color: rgba(64, 230, 255, 0.596);
         position: relative;
         top: 40px;
         padding: 10px;
         width: 950px;
         height: 50px;
         font-family: century;
-        border: white 2px solid;
+        border: black 2px solid;
         cursor: pointer;
         text-align: center;
         font-weight: bold;
-        border-left: #fff 4px solid;
-        border-right: #fff 4px solid;
+        border-left: black 4px solid;
+        border-right: black 4px solid;
         font-size: 30px;
     }
 
@@ -281,7 +281,7 @@ a {
 
 @media screen and (max-width: 680px){
     .ajudaopcao {
-        background-color: #2ac10098;
+        background-color: rgba(64, 230, 255, 0.596);
         position: relative;
         top: 40px;
         padding: 10px;

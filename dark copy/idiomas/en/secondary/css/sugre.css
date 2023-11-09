@@ -1,0 +1,10 @@
+#divErroYT, #divErroSH, #divErroIG {
+    color: black;
+    font-family: pou;
+    margin-top: 5px;
+}
+
+@font-face {
+    font-family: pou;
+    src: url(../../arquivos/pou.ttf);
+}

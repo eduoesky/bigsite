@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visita - OesKy</title>
+    <link rel="stylesheet" href="css/visita.css">
+    <link rel="stylesheet" href="../responsivo/r-vis.css">
+    <link rel="stylesheet" href="css/validacao.css">
+    <script defer src="../animacoes/visita.js"></script>
+    <script defer src="script/visita.js"></script>
+    <script defer src="script/validacao.js"></script>
+    <script defer src="../animacoes/resp/visita.js"></script>
+    <link rel="shortcut icon" href="../../../images/icone/vis.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="casas">
+        <div class="snowfall"></div>
+    </div>
+    <header>
+        <div class="voltarmobile">
+            <a href="../index_es.html">
+                <img src="../../../images/botoes/voltar-crd.png" height="40px">
+            </a>
+        </div>
+        <div class="divheader"><p class="pvisita">Visita</p></div></header>
+    <div class="base-forme">
+        <div class="forme">
+            <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormulario">
+                <script defer src="script2.js"></script>
+                <div class="formulario-inside">
+                    <div class="div-mail">
+                        <label for="mail">Tu email (opcional):</label>
+                        <input class="nm" type="email" name="mail" id="campoEmail" placeholder="ejemplo@gmail.com">
+                    </div>
+                    <div class="div-nick-pou">
+                        <label for="pou-para-dar-like">
+                            Escribe el nombre de tú Pou <strong class="asterisco">*</strong>:
+                        </label>
+                        <input type="text" name="pou-para-visitar" id="campoTexto"> <br>
+                        <div class="cmsg" id="comensagem">
+                            <input type="checkbox" name="commensagem" id="commensagem">
+                            <label for="commensagem">Con mensaje</label> <br>
+                        </div>
+                        <div class="mensagens-opcoes" id="mensagens">
+                            <p><strong>Elige el mensaje:</strong></p>
+                            <select>
+                                <option value="oi">¡Hola, #! ^_^</option>
+                                <option value="tudobem">¿Cómo estás?</option>
+                                <option value="tobemobg">¡Estoy bien, gracias!</option>
+                                <option value="amavel">¡Eres muy dulce! ^_^</option>
+                                <option value="casa">¡Qué linda casa!</option>
+                                <option value="carro">¡Bonito auto!</option>
+                                <option value="jardim">¡Precioso jardín!</option>
+                                <option value="roupalegal">¡Vistes muy bien!</option>
+                                <option value="bola">¡Buena pelota!</option>
+                                <option value="conquistas">¡Me gustan tus logros!</option>
+                                <option value="gostodevoce">¡Me gustas! ^_^</option>
+                                <option value="vamosamigos">¡Seamos amigos!</option>
+                                <option value="valeupelolike">¡Gracias por gustar de mí!</option>
+                                <option value="vamosjogarjuntos">¡Juguemos juntos!</option>
+                                <option value="parabens">¡Felicidades!</option>
+                                <option value="obg">¡Gracias! ^_^</option>
+                                <option value="bomdia">¡Ten un buen día!</option>
+                                <option value="boanoite">¡Buenas noches! Zzz</option>
+
+                            </select>
+                        </div>
+                    <div class="mensagem" id="divErro"></div>
+                    <button class="env" type="submit">ME VISITAS 🏠</button>
+                </div>
+                <input type="hidden" name="_next" value="https://oesky.com/idiomas/es/secundarios/agradecimento/agradecimento-visita.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+        <div class="info-paragrafo">↓↓ Lee las informaciones sobre la Visita ↓↓</div>
+        <a href="info-visita.html"><button class="env-infolike">INFO</button></a>
+    </div>
+        <div class="basedobotao">
+            <a href="../index_es.html">
+                <img src="../../../images/botoes/voltar.png" height="50px">
+            </a>
+        </div>
+</body>
+</html>

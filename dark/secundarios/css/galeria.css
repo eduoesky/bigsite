@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image: url(../../images/bg/xd.png);
+    background-image: url(../../../../images/bg/xd-b.png);
     background-size: 90px;
     height: 100vh;
     overflow-y: auto;
@@ -29,9 +29,9 @@ body {
 
 header {
     text-align: center;
-    background-color: #00f7ff7b;
+    background-color: #18418f7b;
     padding: 15px;
-    color: white;
+    color: #c4deff;
     font-size: 60px;
     font-family: pou;
     text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
@@ -59,9 +59,9 @@ header {
   }
   
   #next, #prev {
-    background-color: #0000007b;
+    background-color: #ffffff7b;
     padding: 15px;
-    color: white;
+    color: black;
     font-family: century;
     font-size: 20px;
     border: none;
@@ -81,6 +81,10 @@ header {
   left: 0;
   top: 25px;
   margin-left: 5px;
+}
+
+p  {
+  color: white;
 }
 
 .info {

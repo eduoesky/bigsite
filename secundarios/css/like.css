@@ -20,6 +20,19 @@ body {
     background-size: 120px;
 }
 
+.par {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    margin-left: 15px;
+    font-size: 50px;
+    font-family: pou;
+    color: white;
+    text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
+}
+
 #divErro {
     color: red;
     font-weight: bold;

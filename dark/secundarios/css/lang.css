@@ -9,15 +9,15 @@
 }
 
 body {
-    background-image: url(../../images/bg/xd.png);
+    background-image: url(../../../../images/bg/xd-b.png);
     background-size: 120px;
     overflow: hidden;
 }
 
 header {
-    background-color: #00f7ff7b;
+    background-color: #18418f7b;
     font-family: pou;
-    color: white;
+    color: #c4deff;
     text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
     padding: 15px;
     text-align: center;

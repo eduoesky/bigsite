@@ -1,0 +1,73 @@
+body {
+    background-image: url(../../images/bg/xd.png);
+    background-size: 120px;
+    font-family: century;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: century;
+    src: url(../../arquivos/century-gothic.ttf);
+}
+
+.base-info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 45px;
+}
+
+.info-texto {
+    background-color: #fff;
+    width: 475px;
+    text-align: justify;
+    font-family: century;
+    border-radius: 40px;
+}
+
+.info-texto p {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.input {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+    opacity: 100%;
+    cursor: default;
+    position: relative;
+    top: -77px;
+}
+
+.voltarmobile {
+    display: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+.divvoltar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 95px;
+    transition: all .3s;
+}
+
+.divvoltar:hover {
+    transition: all .3s;
+    transform: scale(1.1);
+}
