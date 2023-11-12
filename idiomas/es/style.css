@@ -172,6 +172,13 @@ p {
     z-index: 1;
 }
 
+.cripto {
+    right: 0;
+    position: absolute;
+    top: 25px;
+    margin-right: 140px;
+}
+
 .likex1 {
     left: 100px;
     position: absolute;

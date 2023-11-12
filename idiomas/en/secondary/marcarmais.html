@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register your Pou</title>
+    <link rel="stylesheet" href="css/cripto.css">
+    <link rel="stylesheet" href="../responsivo/r-cri.css">
+    <script defer src="script/marcar/checkbox.js"></script>
+    <script defer src="script/marcar/codigo.js"></script>
+    <script defer src="script/marcar/completar.js"></script>
+    <script defer src="script/marcar/email.js"></script>
+    <script defer src="script/marcar/frase.js"></script>
+    <script defer src="script/marcar/nomepou.js"></script>
+    <script defer src="script/marcar/senha.js"></script>
+    <link rel="shortcut icon" href="../../../images/icone/blue.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="base-botao">
+        <a href="criptografados.html">
+            <div>
+                <img src="../../../images/botoes/voltar.png" height="80px">
+            </div>
+        </a>
+        <a href="../index_en.html">
+            <div>
+                 <img src="../../../images/botoes/home.png" class="casa" height="80px">
+            </div>
+        </a>
+    </div>
+    <div class="inicio">
+        <p>Welcome to the Pou name marker! ^_^ <br> <br> Read the rules:</p>
+    </div>
+    <div class="regras">
+        <p>
+            To mark the name of your Pou on the board, you must follow the following rules: <br>
+            <strong>1. No profanity</strong> <br>
+            It is crucial to maintain respect in words, so do not use profanity. <br>
+            <strong>2. Do not harm!</strong> <br>
+            If the Pou's name you are marking is not your own, do not mark it on the board; you may harm the player when editing or if they do not want the nickname on the board. <br>
+            <strong>3. Mention the name correctly</strong> <br>
+            If your name has any lowercase letters or any observations (e.g., my Pou's name is written with 'O' and 'K' in uppercase in 'OesKy'). <br>
+            <strong>4. Minimum and maximum limit of sentences</strong> <br>
+            For each sentence, the required minimum is at least 20 characters and a maximum of 130. <br>
+            <strong>5. Avoid abbreviations</strong> <br>
+            If you use an abbreviation that is not recognized, the sentence will not be added. <br>
+            <strong>6. Do not include the Pou's name in the password</strong> <br>
+            When entering the access password for the Pou's name, never include the Pou's password, or their name together, or any of your data. <br>
+            <strong>7. Be respectful</strong> <br>
+            Maintaining respect for others is always good! xD - if someone disrespects your Pou, please let me know here > <a href="check.html">CHECK PAGE</a> <br> <br>
+            <strong>OPTIONAL :)</strong> <br>
+            <strong>1. Emojis</strong> <br>
+            It is possible to use emojis :), literally any, unless it is disrespectful. Disrespectful emojis will be replaced by others. Maximum limit of emojis: 9 <br>
+            <strong>2. Name of another Pou</strong> <br>
+            If you have 2 or more Pous, feel free to put the names of your Pous together with yours. REMEMBER: The sentence CANNOT have only the names of the Pous; type something before or after. <br>
+            <strong>3. Choose between password and code</strong> <br>
+            A 15-character code is generated for you to save the Pou's name. The password is something you create with personal hints that you remember, so make the right choice; if you forgot your code or password, click 'Forgot my password or code' on the editing page, and enter the email you provided when marking your Pou's name. However, the choice between the code and the password is entirely optional, but you cannot enter both at the same time!!! <br> <br>
+            <strong>IF I DIDN'T PUT MY POU'S NAME, BUT IT APPEARS ON THE BOARD, WHAT TO DO??</strong> <br>
+            In these cases, you have to show that the Pou is yours, and then I can take necessary action :) <br> <br>
+            <strong>NOTES</strong> <br>
+            <strong>1. If your Pou's name has already been marked on the board, only that time will be allowed. That is, marking the name of the same Pou twice will not result in anything, not even in changes of positions, unless it is edited.</strong> <br>
+            <strong>2. This service works only to register Pou names, so whether I like it or not, it will not prevent your Pou's name from being marked!</strong> <br>
+            <strong>3. Names of Pous that have been banned from this site will not be marked</strong> <br>
+            <strong>4. As I mentioned before, uppercase and lowercase matter, meaning you can edit the name of a Pou that has a wrong uppercase/lowercase!</strong> <br>
+            <i>.</i>
+        </p>        
+    </div>
+    <div class="ajustes">
+        <div class="forme">
+            <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="marcarpou">
+                <div class="formulario-inside">
+                    <div class="tudoform">
+                        <div class="div-mail">
+                            <label for="mail">Your email <strong class="asterisco">*</strong>:</label>
+                            <input class="nm" type="email" name="email" id="campoEmail" placeholder="exemplo@gmail.com" required>
+                        </div>
+                        <div class="nomes">
+                            <div class="div-nick-pou">
+                                <label for="pou-para-marcar-mural">
+                                    Enter your Pou nick <strong class="asterisco">*</strong>:
+                                </label>
+                                <input type="text" name="pou-para-marcar-mural" id="campoTexto" required>
+                            </div>
+                            <div class="div-nick-pou2">
+                                <label for="pou-para-marcar-mural">
+                                    Repeat the Pou nick <strong class="asterisco">*</strong>:
+                                </label>
+                                <input type="text" name="pou-para-marcar-mural2" id="campoTexto2" required>
+                            </div>
+                        </div>
+                        <div class="frase-total">
+                            <div class="digiteafrase">
+                                <p id="US">Type your phrase, <span id="nomeUsuario"></span>! (optional)</p>
+                            </div>
+                            <div class="digitarafrase-txt">
+                                <label for="digiteafrase">
+                                    <textarea id="meuTextarea" name="frase" rows="4" cols="50" oninput="contarCaracteres()" minlength="15" maxlength="100" placeholder="Ex: I wanted to be a TopLiker soon, like me on Pou 😃"></textarea>
+                                    <div id="contadorCaracteres">Until 100!</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="detalhe-escolha">
+                            What do you prefer?
+                        </div>
+                        <div class="opcoes">
+                            <input type="checkbox" name="senha" id="senha" onchange="atualizarDivs('senha')">
+                            <label for="senha">PASSWORD</label>
+                        
+                            <input type="checkbox" name="codigo" id="codigo" onchange="atualizarDivs('codigo')">
+                            <label for="codigo">CODE</label>
+                        </div>
+                        <div class="paswore">
+                            <div class="password" id="password">
+                                    <textarea name="minhasenha" id="Senha" cols="50" rows="1" style="resize: none;" oninput="contarCaracteress()" minlength="5" maxlength="15"></textarea>
+                                    <div id="contadorCaracteress">Min 5, max 15!</div>
+                            </div>
+                        </div>
+                        <div class="codego" id="codego">
+                            <div class="code">
+                                <div class="paraocodigo-botao">
+                                    <button type="button" class="codebtn" onclick="gerarCodigo()">Generate Code</button>
+                                </div>
+                                <div class="paraocodigo-aparecer">
+                                    <textarea id="codigoaparece" name="codigo" readonly></textarea>
+                                </div>
+                                <div class="copiarcodigo">
+                                    <button type="button" class="codebtno" id="codebtn" onclick="copiarCodigo()">Copy Code</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="mensagem" id="divErro6"></div>
+                    <div class="enviar"><button class="env" type="submit">ENTER MY POU</button></div>
+                </div>
+                <input type="hidden" name="_next" value="https://oesky.com/idiomas/en/secondary/helpie/marcado.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </div>
+    <footer>.</footer>
+    <script>
+        function copiarCodigo() {
+            var textarea = document.getElementById("codigoaparece");
+
+            textarea.select();
+            textarea.setSelectionRange(0, 99999);
+
+            document.execCommand("copy");
+
+
+            var botao = document.querySelector(".codebtno");
+            botao.innerHTML = "Copied!";
+
+            setTimeout(function() {
+                botao.innerHTML = "Copy Code";
+            }, 2000);
+        }
+      </script>
+</body>
+</html>

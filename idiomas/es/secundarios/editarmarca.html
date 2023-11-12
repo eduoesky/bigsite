@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cripto.css">
+    <link rel="stylesheet" href="../responsivo/r-cri.css">
+    <script defer src="script/marcar/checkbox.js"></script>
+    <script defer src="script/marcar/codigo.js"></script>
+    <script defer src="script/marcar/completar2.js"></script>
+    <script defer src="script/marcar/frase.js"></script>
+    <script defer src="script/marcar/nomepou.js"></script>
+    <script defer src="script/marcar/senha.js"></script>
+    <script defer src="script/marcar/cb.js"></script>
+    <script defer src="script/marcar/cb2.js"></script>
+    <link rel="shortcut icon" href="../../../images/icone/blue.ico" type="image/x-icon">
+    <title>Editar a marcação</title>
+</head>
+<body>
+    <div class="regras">
+        <p>
+            1. Para editar tus datos, infórmame el código o la contraseña que guardaste al poner tu nombre. <br>
+            2. El sitio cuenta con un servidor interno, lo que dificulta a alguien que intente hacer un inicio de sesión falso: <b>NO SE MUESTRA CUANDO LA CONTRASEÑA O CÓDIGO SON INCORRECTOS</b>. <br>
+            3. Ten cuidado, ya que se enviará un correo electrónico al propietario de los datos indicándole que hay intentos de acceso a sus datos. <br>
+            4. Si todo sale bien, se te enviará un correo electrónico de confirmación y el sitio se actualizará en 1 día ^^. <br><br>
+            <b><u>OBSERVACIONES</u></b> <br><br>
+            Si deseas eliminar tus datos, se eliminarán en un plazo de hasta 3 días. <br>
+            <i>.</i>
+        </p>
+    </div>
+    <div class="ajustes">
+        <div class="formit">
+            <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="form-edicao">
+                <div class="formulario-inside">
+                    <div class="tudoform">
+                        <div class="div-maile">
+                            <div class="label-do-email"><label for="mail">Escribre el email que usaste para marcar el apodo de tu Pou <strong class="asterisco">*</strong>:</label></div>
+                            <div class="oemail"><input class="nm" type="email" name="emailcadastrado" id="campoEmailEDIT" required></div>
+                        </div>
+                        <div class="nomes">
+                            <div class="div-nick-pou">
+                                <div class="label-nome-pou">
+                                    <label for="pou-para-marcar-mural">
+                                        Escribe el nombre del Pou que marcaste <strong class="asterisco">*</strong>:
+                                    </label>
+                                </div>
+                                <div class="onomedopou"><input type="text" name="pou-marcado-mural" id="campoTextoEDIT" required></div>
+                            </div>
+                        </div>
+                        <div class="detalhe-escolha">
+                            Inserte el método que registró:
+                        </div>
+                        <div class="opcoes">
+                            <input type="checkbox" name="senha" id="senha" onchange="atualizarDivs('senha')">
+                            <label for="senha">CONTRASEÑA</label>
+                        
+                            <input type="checkbox" name="codigo" id="codigo" onchange="atualizarDivs('codigo')">
+                            <label for="codigo">CÓDIGO</label>
+                        </div>
+                        <div class="paswore">
+                            <div class="password" id="password">
+                                <div class="inssenha">
+                                    <label for="senha">
+                                        Inserte tu contraseña:
+                                    </label>
+                                </div>
+                                    <textarea name="minhasenha" id="Senha" cols="50" rows="1" style="resize: none;" oninput="contarCaracteress()" minlength="5" maxlength="15"></textarea>
+
+                            </div>
+                        </div>
+                        <div class="codego" id="codego">
+                            <div class="code">
+                                <div class="labelcodigo">
+                                    <label for="codigo">
+                                        Inserte el código que te fue fornecido:
+                                    </label>
+                                </div>
+                                <div class="paraocodigo-aparecer">
+                                    <textarea id="codigoaparece" name="meucodigo" minlength="8"  maxlength="8"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opcoes2">
+                            <div>
+                                <input type="checkbox" name="nome-errado" id="nmerrado" onchange="toggleDiv('errado-div', this, 'nome-errado')">
+                                <label for="nome-errado">Nombre equivocado</label>
+                            </div>
+                        
+                            <div>
+                                <input type="checkbox" name="frase" id="altfrase" onchange="toggleDiv('frase-div', this, 'frase')">
+                                <label for="frase">Cambiar frase</label>
+                            </div>
+                        
+                            <div>
+                                <input type="checkbox" name="deletar-tudo" id="delpou" onchange="atualizarDivss('delpou')">
+                                <label for="deletar-tudo">Eliminar Pou del mural</label>
+                                
+                            </div>
+                        
+                            <div>
+                                <input type="checkbox" name="alterar-o-email" id="altemail" onchange="toggleDiv('email-div', this, 'alterar-o-email')">
+                                <label for="alterar-o-email">Cambiar email</label>
+                            </div>
+                            
+                        </div>
+                        <div id="errado-div">
+                            <div class="nomeerrado">
+                                <div class="nomeerrado-1">
+                                    <label for="nomepouparasercorrigido">Escribe el nombre de tu Pou corregido:</label>
+                                </div>
+                                <div class="nomeerrado-2">
+                                    <input type="text" id="nomeCorrigido" name="nomepouparasercorrigido">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="frase-div">
+                            <div class="alterarfrase">
+                                <div class="frase-total">
+                                    <div class="digiteafrase">
+                                        <p id="US">Escribe tu <u>nueva</u> frase, ¡<span id="nomeUsuario"></span>! (opcional)</p>
+                                    </div>
+                                    <div class="digitarafrase-txt">
+                                        <label for="digiteafrase">
+                                            <textarea id="meuTextarea" name="frase-editada" rows="4" cols="50" oninput="contarCaracteres()" minlength="15" maxlength="100" ></textarea>
+                                            <div id="contadorCaracteres">¡Hasta 100!</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="email-div">
+                            <div class="alteraremail">
+                                <div class="altereoemail">
+                                    <label for="emailalterar">
+                                        Escribe tu nuevo email:
+                                    </label>
+                                </div>
+                                <div class="emailalterado">
+                                    <input type="email" name="alteraremail" id="eMail">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="mensagem" id="divErroEDIT"></div>
+                    <div id="enviar-div">
+                        <div class="enviar"><button class="env" type="submit">EDITAR</button></div>
+                    </div>
+                    <div id="deletar-div">
+                        <div class="deletar"><button class="del" type="submit">ELIMINAR</button></div>
+                    </div>
+                </div>
+                <input type="hidden" name="_next" value="https://oesky.com/idiomas/es/secundarios/agradecimento/atu.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </div>
+    <div class="base-botao">
+        <a href="criptografados.html">
+            <div>
+                <img src="../../../images/botoes/voltar.png" height="80px">
+            </div>
+        </a>
+        <a href="../index_es.html">
+            <div>
+                 <img src="../../../images/botoes/home.png" class="casa" height="80px">
+            </div>
+        </a>
+    </div>
+    <script>
+function toggleDiv(divId, checkbox, groupName) {
+    var checkboxes = document.querySelectorAll('input[name="' + groupName + '"]');
+
+    checkboxes.forEach(function (cb) {
+        if (cb !== checkbox) {
+            cb.checked = false;
+        }
+    });
+
+    var allChecked = Array.from(checkboxes).every(function (cb) {
+        return cb.checked;
+    });
+
+    // Se todas estiverem marcadas, desmarcar a checkbox com id='delpou'
+    if (allChecked) {
+        var delpouCheckbox = document.getElementById('delpou');
+        delpouCheckbox.checked = false;
+    }
+
+    var div = document.getElementById(divId);
+    div.style.display = checkbox.checked ? 'block' : 'none';
+
+    // Verifica se a checkbox com id='delpou' está desmarcada
+    var delpouCheckbox = document.getElementById('delpou');
+    if (!delpouCheckbox.checked) {
+        // Se desmarcada, ajuste para mostrar 'enviar-div' e esconder 'deletar-div'
+        var enviarDiv = document.getElementById('enviar-div');
+        var deletarDiv = document.getElementById('deletar-div');
+        enviarDiv.style.display = 'block';
+        deletarDiv.style.display = 'none';
+    }
+}
+
+    </script>
+</body>
+</html>

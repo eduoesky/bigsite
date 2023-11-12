@@ -1,0 +1,10 @@
+@media screen and (max-width: 560px) {
+    .forme, .formit {
+        width: 350px;
+        flex-direction: column;
+    }
+
+    .inicio {
+        font-size: 20px;
+    }
+}

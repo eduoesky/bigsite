@@ -182,6 +182,13 @@ p {
     z-index: 1;
 }
 
+.cripto {
+    right: 0;
+    position: absolute;
+    top: 25px;
+    margin-right: 140px;
+}
+
 .galeria {
     left: 50px;
     position: absolute;
@@ -277,7 +284,7 @@ p {
         display: block;
     }
 
-    .likex1, .dark, .redes, .div-privados, .galeria, .lingua {
+    .likex1, .dark, .redes, .div-privados, .galeria, .lingua, .cripto {
         display: none;
     }
 }

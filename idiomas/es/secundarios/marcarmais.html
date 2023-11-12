@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar seu Pou</title>
+    <link rel="stylesheet" href="css/cripto.css">
+    <link rel="stylesheet" href="../responsivo/r-cri.css">
+    <script defer src="script/marcar/checkbox.js"></script>
+    <script defer src="script/marcar/codigo.js"></script>
+    <script defer src="script/marcar/completar.js"></script>
+    <script defer src="script/marcar/email.js"></script>
+    <script defer src="script/marcar/frase.js"></script>
+    <script defer src="script/marcar/nomepou.js"></script>
+    <script defer src="script/marcar/senha.js"></script>
+    <link rel="shortcut icon" href="../../../images/icone/blue.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="base-botao">
+        <a href="criptografados.html">
+            <div>
+                <img src="../../../images/botoes/voltar.png" height="80px">
+            </div>
+        </a>
+        <a href="../index.html">
+            <div>
+                 <img src="../../../images/botoes/home.png" class="casa" height="80px">
+            </div>
+        </a>
+    </div>
+    <div class="inicio">
+        <p>¡Bienevenido(a) al marcador de nombres de Pous! ^_^ <br> <br>Lee las reglas:</p>
+    </div>
+    <div class="regras">
+        <p>
+            Para marcar el nombre de tu Pou en el mural, deberás seguir las siguientes reglas: <br>
+            <strong>1. Sin palabrotas</strong> <br>
+            Será de extrema importancia mantener el respeto en las palabras, así que no escribas palabrotas. <br>
+            <strong>2. ¡No perjudiques!</strong> <br>
+            Por favor, si el nombre del Pou que vas a marcar no es el de tu Pou, no lo marques en el mural; podrías perjudicar al jugador en el momento de editar o si no desea el apodo en el mural. <br>
+            <strong>3. Menciona el nombre correctamente</strong> <br>
+            Si tu nombre tiene alguna letra minúscula u observaciones (por ejemplo, el nombre de mi Pou se escribe con 'O' y 'K' mayúsculas en 'OesKy'). <br>
+            <strong>4. Límite mínimo y máximo de las frases</strong> <br>
+            Para cada frase, el mínimo requerido será de al menos 20 caracteres y, como máximo, 130. <br>
+            <strong>5. Evita abreviaturas</strong> <br>
+            Si pones alguna abreviatura que no sea identificada, la frase no será colocada. <br>
+            <strong>6. No pongas el nombre del Pou en la contraseña</strong> <br>
+            Al poner la contraseña de acceso del nombre del Pou, nunca coloques la contraseña del Pou o su nombre junto, ni ningún dato tuyo. <br>
+            <strong>7. Ten respeto</strong> <br>
+            ¡Mantener el respeto hacia los demás siempre es bueno! xD - si alguna vez faltan al respeto a tu Pou, por favor avísame aquí > <a href="verificar.html">PÁGINA DE VERIFICACIÓN</a> <br> <br>
+            <strong>OPCIONAL :)</strong> <br>
+            <strong>1. Emojis</strong> <br>
+            Es posible, sí, usar emojis :), literalmente cualquiera, a menos que sea irrespetuoso. Los emojis irrespetuosos serán reemplazados por otros emojis. Límite máximo de emojis: 9 <br>
+            <strong>2. Nombre de otro Pou</strong> <br>
+            Si tienes 2 o más Pous, siéntete libre de poner los nombres de tus Pous junto al tuyo. RECUERDA: La frase NO PUEDE tener solo el nombre de los Pous; escribe algo antes o después. <br>
+            <strong>3. Elige entre la contraseña y el código</strong> <br>
+            Se genera un código de 15 caracteres para que puedas guardar el nombre de tu Pou. La contraseña es algo hecho por ti, con pistas personales que recuerdas, así que elige correctamente; si olvidaste tu código o tu contraseña, haz clic en 'Olvidé mi contraseña o código' en la página de edición e ingresa el correo electrónico que proporcionaste al marcar el nombre de tu Pou. Sin embargo, la elección entre el código y la contraseña es totalmente opcional, ¡pero no puedes poner ambos al mismo tiempo! <br> <br>
+            <strong>SI NO PUSE EL NOMBRE DE MI POU, PERO APARECE EN EL MURAL, ¿QUÉ HACER?</strong> <br>
+            En estos casos, debes demostrar que el Pou es tuyo y así puedo tomar alguna medida necesaria :) <br> <br>
+            <strong>OBSERVACIONES</strong> <br>
+            <strong>1. Si el nombre de tu Pou ya fue marcado en el mural, solo se permitirá esa vez. Es decir, marcar el nombre del mismo Pou dos veces no resultará en nada, ni en cambios de posiciones, a menos que se edite.</strong> <br>
+            <strong>2. Este servicio funciona solo para registrar nombres de Pou, por lo tanto, recibir o no mi like no evitará que el nombre de tu Pou sea marcado.</strong> <br>
+            <strong>3. Nombres de Pous que hayan sido prohibidos en este sitio no serán marcados.</strong> <br>
+            <strong>4. Como mencioné antes, mayúsculas y minúsculas cuentan, es decir, ¡puedes editar el nombre de un Pou que tenga alguna mayúscula/minúscula incorrecta!</strong> <br>
+            <i>.</i>
+        </p>
+    </div>
+    <div class="ajustes">
+        <div class="forme">
+            <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="marcarpou">
+                <div class="formulario-inside">
+                    <div class="tudoform">
+                        <div class="div-mail">
+                            <label for="mail">Tu email <strong class="asterisco">*</strong>:</label>
+                            <input class="nm" type="email" name="email" id="campoEmail" placeholder="exemplo@gmail.com" required>
+                        </div>
+                        <div class="nomes">
+                            <div class="div-nick-pou">
+                                <label for="pou-para-marcar-mural">
+                                    Escribe el nombre del Pou <strong class="asterisco">*</strong>:
+                                </label>
+                                <input type="text" name="pou-para-marcar-mural" id="campoTexto" required>
+                            </div>
+                            <div class="div-nick-pou2">
+                                <label for="pou-para-marcar-mural">
+                                    Repite el nombre del Pou <strong class="asterisco">*</strong>:
+                                </label>
+                                <input type="text" name="pou-para-marcar-mural2" id="campoTexto2" required>
+                            </div>
+                        </div>
+                        <div class="frase-total">
+                            <div class="digiteafrase">
+                                <p id="US">Escribe tu frase, ¡<span id="nomeUsuario"></span>! (opcional)</p>
+                            </div>
+                            <div class="digitarafrase-txt">
+                                <label for="digiteafrase">
+                                    <textarea id="meuTextarea" name="frase" rows="4" cols="50" oninput="contarCaracteres()" minlength="15" maxlength="100" placeholder="Ej: Quisiera que mi Pou sea un TopLiker pronto, likea mi Pou 😃"></textarea>
+                                    <div id="contadorCaracteres">¡Hasta 100!</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="detalhe-escolha">
+                            ¿Cuál eliges?
+                        </div>
+                        <div class="opcoes">
+                            <input type="checkbox" name="senha" id="senha" onchange="atualizarDivs('senha')">
+                            <label for="senha">CONTRASEÑA</label>
+                        
+                            <input type="checkbox" name="codigo" id="codigo" onchange="atualizarDivs('codigo')">
+                            <label for="codigo">CÓDIGO</label>
+                        </div>
+                        <div class="paswore">
+                            <div class="password" id="password">
+                                    <textarea name="minhasenha" id="Senha" cols="50" rows="1" style="resize: none;" oninput="contarCaracteress()" minlength="5" maxlength="15"></textarea>
+                                    <div id="contadorCaracteress">¡Mínimo de 5, máximo de 15!</div>
+                            </div>
+                        </div>
+                        <div class="codego" id="codego">
+                            <div class="code">
+                                <div class="paraocodigo-botao">
+                                    <button type="button" class="codebtn" onclick="gerarCodigo()">Generar Código</button>
+                                </div>
+                                <div class="paraocodigo-aparecer">
+                                    <textarea id="codigoaparece" name="codigo" readonly></textarea>
+                                </div>
+                                <div class="copiarcodigo">
+                                    <button type="button" class="codebtno" id="codebtn" onclick="copiarCodigo()">Copiar Código</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="mensagem" id="divErro6"></div>
+                    <div class="enviar"><button class="env" type="submit">MARCAR MI POU</button></div>
+                </div>
+                <input type="hidden" name="_next" value="https://oesky.com/idiomas/es/secundarios/agradecimento/marcado.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </div>
+    <footer>.</footer>
+    <script>
+        function copiarCodigo() {
+            var textarea = document.getElementById("codigoaparece");
+
+            textarea.select();
+            textarea.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+
+            var botao = document.querySelector(".codebtno");
+            botao.innerHTML = "Código Copiado!";
+
+            setTimeout(function() {
+                botao.innerHTML = "Copiar Código";
+            }, 2000);
+        }
+      </script>
+</body>
+</html>
