@@ -187,6 +187,13 @@ p {
     margin-right: 140px;
 }
 
+.atualizacao {
+    left: 0;
+    position: absolute;
+    top: 25px;
+    margin-left: 160px;
+}
+
 .likex11 {
     position: relative;
     top: 4px;
@@ -268,7 +275,7 @@ p {
         display: block;
     }
 
-    .likex1, .dark, .redes, .div-privados, .galeria, .lingua {
+    .likex1, .dark, .redes, .div-privados, .galeria, .lingua, .cripto, .atualizacao {
         display: none;
     }
 }

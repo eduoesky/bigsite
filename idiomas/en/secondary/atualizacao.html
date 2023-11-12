@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates</title>
+    <link rel="stylesheet" href="css/atualizacao.css">
+    <link rel="shortcut icon" href="../../../images/icone/blue.ico" type="image/x-icon">
+</head>
+<body>
+    <header>Updates</header>
+    <div class="divbranca"></div>
+    <div class="cetro">
+        <div class="likefall"></div>
+    </div>
+    <p class="p-inicial">Look the updates I did on this site!</p>
+    <div class="lancamento">
+        <div class="titulo" onclick="toggleDiv(1)">RELEASED</div>
+        <div class="conteudo animar-div" id="div1">
+            The website has been released in November 6, 2023.
+        </div>
+    </div>
+    
+    <div class="u-divs">
+        <div class="u1">
+            <div class="titulo" onclick="toggleDiv(2)">UPDATE 1</div>
+            <div class="conteudo animar-div" id="div2">
+                1. Fix of the English language gallery, where there was a nonexistent link; <br>
+                Published on: November 6, 2023
+            </div>
+        </div>
+        <div class="u2">
+            <div class="titulo" onclick="toggleDiv(3)">UPDATE 2</div>
+            <script defer src="script1.js"></script>
+            <div class="conteudo animar-div" id="div3">
+                1. Overhaul of the 'info-sugestao.html', 'info-sugerencia.html', and 'info-suggestion.html' pages; <br>
+                Published on: November 7, 2023
+            </div>
+        </div>
+        <div class="u3">
+            <div class="titulo" onclick="toggleDiv(4)">UPDATE 3</div>
+            <div class="conteudo animar-div" id="div4">
+                1. Update of the 'espanhol.png' image to select the Spanish language, with the addition of 'By NocTaFly' in the image; <br>
+                Published on: November 7, 2023
+            </div>
+        </div>
+        <div class="u4">
+            <div class="titulo" onclick="toggleDiv(5)">UPDATE 4</div>
+            <div class="conteudo animar-div" id="div5">
+                1. Addition of the Christmas theme, where 798 new versions of pages were added, updated for Christmas; <br>
+                Published on: November 9, 2023
+            </div>
+        </div>
+        <div class="u5">
+            <div class="titulo" onclick="toggleDiv(6)">UPDATE 5</div>
+            <div class="conteudo animar-div" id="div6">
+                1. Addition of a Pou promotion panel (37 files added); <br>
+                2. Addition of the update tab (this page, +5 files added); <br>
+                Published on: November 12, 2023
+            </div>
+        </div>
+    </div>
+    <div class="base-botao">
+        <a href="../index_en.html">
+            <img src="../../../images/botoes/voltar.png" height="80px">
+        </a>
+    </div>
+    <footer>.</footer>
+    <script>
+        function toggleDiv(numero) {
+            const div = document.getElementById(`div${numero}`);
+            if (div.style.display === 'none' || div.style.display === '') {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        }
+        </script>
+</body>
+</html>

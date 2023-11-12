@@ -189,6 +189,13 @@ p {
     margin-right: 140px;
 }
 
+.atualizacao {
+    left: 0;
+    position: absolute;
+    top: 25px;
+    margin-left: 160px;
+}
+
 .galeria {
     left: 50px;
     position: absolute;
@@ -284,7 +291,7 @@ p {
         display: block;
     }
 
-    .likex1, .dark, .redes, .div-privados, .galeria, .lingua, .cripto {
+    .likex1, .dark, .redes, .div-privados, .galeria, .lingua, .cripto, .atualizacao {
         display: none;
     }
 }
