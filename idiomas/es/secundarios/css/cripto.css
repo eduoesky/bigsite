@@ -439,3 +439,19 @@ textarea {
 .hidden {
     display: none;
 }
+
+.cyber, .wither {
+
+    font-family: pou;
+}
+
+@media screen and (max-width: 560px) {
+    .cyber, .wither {
+        margin-left: -15px;
+        font-family: pou;
+    }
+
+    .cyber {
+        margin-left: -10px;
+    }
+}

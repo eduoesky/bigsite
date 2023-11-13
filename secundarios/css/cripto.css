@@ -64,6 +64,8 @@ body {
     background-image: linear-gradient(45deg, rgb(0, 234, 255), #0096d1);
     width: 500px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     font-family: pou;
     padding: 30px;
     color: white;
@@ -438,4 +440,20 @@ textarea {
 
 .hidden {
     display: none;
+}
+
+.cyber, .wither {
+
+    font-family: pou;
+}
+
+@media screen and (max-width: 560px) {
+    .cyber, .wither {
+        margin-left: -15px;
+        font-family: pou;
+    }
+
+    .cyber {
+        margin-left: -10px;
+    }
 }
