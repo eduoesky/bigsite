@@ -12,7 +12,7 @@ document.getElementById("form-edicao").addEventListener("submit", function (even
     const campoEmailEDIT = document.getElementById("campoEmailEDIT");
     const senhaTextarea = document.getElementById("Senha");
 
-    const palavrasPermitidas = ['noctafly', 'qlw', 'pou2tiktok'];
+    const palavrasPermitidas = ['noctafly', 'qlw', 'pou2tiktok', 'coki_818', 'cocoadolli', 'guaio_21', 'cyberattack', 'wither_do_rj', 'debappp_nfa', 'santababy01', 'lizzypeep', 'h401217', 'pou_irkm9j', 'pouicecreamrose'];
 
     if (!palavrasPermitidas.includes(campoTextoEDIT.toLowerCase())) {
         divErroEDIT.textContent = 'The Pou you entered is not marked.';
@@ -27,7 +27,16 @@ document.getElementById("form-edicao").addEventListener("submit", function (even
     const frasesAssociadas = {
         'pou2tiktok': "I want the happiness of all players 😄",
         'noctafly': "With your like you will be part of my Pou",
-        'qlw': "This is qLw Pou, from Indonesia ^_^ I wanted that my Pou to get TopLikes futurely 😃 🌟"
+        'qlw': "This is qLw Pou, from Indonesia ^_^ I wanted that my Pou to get TopLikes futurely 😃 🌟",
+        'coki_818': "I'm small on Pou and wanted to grow, give a like to my Pou ^_^",
+        'cocoadolli': "Pou is my favorite game, and I love my little Pou, visit me there 💕 💗 💘 💜",
+        'guaio_21': "Hi, I want to be famous on Pou, give a like to my Pou, my name is guaio_21 🌟",
+        'cyberattack': "Hey pous! I'm Cyberattack (real name is Ena), I am from Croatia, and I love my friends! 🇭🇷 🌠",
+        'wither_do_rj': "While you were thinking about a Pou that was one of the most beautiful in history, I was there on the podium. I'm from Brazil 🇧🇷 🇧🇷 🇧🇷",
+        'debappp_nfa': "Hi all Pous, I want you to have fun and play with me when you can, hugs ❤️ ❤️ ❤️",
+        'santababy01': "Thank you Oesky for the opportunity to promote my fabulous Pou, she is part of my life and I really wanted her to represent me",
+        'lizzypeep': "Sorry, I don't have a phrase, but I would like to be promoted to get more interesting likes 🌙",
+        'h401217': "I like to play Food Swap, you can request me a Tic Tac Pou match. My other pou is H40dev 🇵🇪"
     };
 
     const fraseAssociada = frasesAssociadas[campoTextoEDIT.toLowerCase()];
@@ -37,7 +46,7 @@ document.getElementById("form-edicao").addEventListener("submit", function (even
     return false;
     }
 
-    const formasAceitas = ['NocTaFly', 'Pou2tiktok', 'qLw'];
+    const formasAceitas = ['NocTaFly', 'Pou2tiktok', 'qLw', 'Coki_818', 'cocoadolli', 'guaio_21', 'Cyberattack', 'Wither_DO_RJ', 'debappp_nfa', 'SantaBaby01', 'LizzyPeep', 'pou_IRKM9J', 'H401217', 'PouIceCreamRose'];
 
     if (!formasAceitas.includes(campoTextoEDIT)) {
         divErroEDIT.textContent = 'This Pou was marked on the bulletin board, but not the way you typed it. Please check the bulletin board again and review the name of the marked Pou. Remember that uppercase and lowercase matter!';

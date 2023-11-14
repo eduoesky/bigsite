@@ -440,18 +440,22 @@ textarea {
     display: none;
 }
 
-.cyber, .wither {
+.cyber, .wither, .ICE1 {
 
     font-family: pou;
 }
 
 @media screen and (max-width: 560px) {
-    .cyber, .wither {
+    .cyber, .wither, .ICE1 {
         margin-left: -15px;
         font-family: pou;
     }
 
-    .cyber {
+    .cyber, .ICE1 {
         margin-left: -10px;
+    }
+
+    .ICE1 {
+        font-size: 30px;
     }
 }

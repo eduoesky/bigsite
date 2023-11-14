@@ -12,7 +12,7 @@ document.getElementById("form-edicao").addEventListener("submit", function (even
     const campoEmailEDIT = document.getElementById("campoEmailEDIT");
     const senhaTextarea = document.getElementById("Senha");
 
-    const palavrasPermitidas = ['noctafly', 'qlw', 'pou2tiktok'];
+    const palavrasPermitidas = ['noctafly', 'qlw', 'pou2tiktok', 'coki_818', 'cocoadolli', 'guaio_21', 'cyberattack', 'wither_do_rj', 'debappp_nfa', 'santababy01', 'lizzypeep', 'h401217', 'pou_irkm9j', 'pouicecreamrose'];
 
     if (!palavrasPermitidas.includes(campoTextoEDIT.toLowerCase())) {
         divErroEDIT.textContent = 'El Pou que justo escribiste no está marcado.';
@@ -27,7 +27,16 @@ document.getElementById("form-edicao").addEventListener("submit", function (even
     const frasesAssociadas = {
         'pou2tiktok': "Quiero la felicidad de todos los jugadores 😄",
         'noctafly': "Con tu like harías parte de mi Pou",
-        'qlw': "Ese es el Pou qLw, de Indonésia ^_^ Quisiera que mi Pou fuera un TopLiker futuramente 😃 🌟"
+        'qlw': "Ese es el Pou qLw, de Indonésia ^_^ Quisiera que mi Pou fuera un TopLiker futuramente 😃 🌟",
+        'coki_818': "Soy pequeño en el pou y quisiera crecer, den like en mi Pou ^_^",
+        'cocoadolli': "Pou es mi juego favorito y amo a mi poucita, visítenme allí 💕 💗 💘 💜",
+        'guaio_21': "Hola, quiero ser famoso en el pou, da like en mi Pou, mi nombre es guaio_21 🌟",
+        'cyberattack': "¡Hola pous! Soy Cyberattack (mi nombre real es Ena), soy de Croacia y ¡amo a mis amigos! 🇭🇷 🌠",
+        'wither_do_rj': "Mientras pensabas en un Pou que era uno de los más bonitos de la historia, yo estaba allí en el podio.        Soy de Brasil 🇧🇷 🇧🇷 🇧🇷",
+        'debappp_nfa': "Hola a todos los pous, quiero que se diviertan y jueguen conmigo cuando puedan. Abrazos ❤️ ❤️ ❤️",
+        'santababy01': "Gracias Oesky por la oportunidad de promocionar a mi Pouzinha diva, ella es parte de mi vida y realmente quiero que me represente.",
+        'lizzypeep': "Lo sentís, no tengo una frase, pero me gustaría ser compartida para obtener más likers interesantes 🌙",
+        'h401217': "Me gusta jugar a Food Swap, puedes pedirme una partida de Tic Tac Pou. Mi otro pou es H40dev 🇵🇪"
     };
 
     const fraseAssociada = frasesAssociadas[campoTextoEDIT.toLowerCase()];
@@ -37,7 +46,7 @@ document.getElementById("form-edicao").addEventListener("submit", function (even
     return false;
     }
 
-    const formasAceitas = ['NocTaFly', 'Pou2tiktok', 'qLw'];
+    const formasAceitas = ['NocTaFly', 'Pou2tiktok', 'qLw', 'Coki_818', 'cocoadolli', 'guaio_21', 'Cyberattack', 'Wither_DO_RJ', 'debappp_nfa', 'SantaBaby01', 'LizzyPeep', 'pou_IRKM9J', 'H401217', 'PouIceCreamRose'];
 
     if (!formasAceitas.includes(campoTextoEDIT)) {
         divErroEDIT.textContent = 'Ese Pou fue marcado en el mural, pero no de la forma como escribiste. Vee el mural más una vez y revee el nombre del Pou que fue marcado. Recuerda que mayúsculas y minúsculas cuentan!';
