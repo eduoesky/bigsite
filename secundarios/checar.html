@@ -51,10 +51,11 @@
                     <input type="checkbox" name="outro" id="outro">
                     <label for="outro">Outro motivo</label>
                     <div id="textareaContainer">
-                    <textarea id="texto" name="motivo-outro-texto"></textarea>
+                    <textarea id="texto" name="motivo-outro-texto" minlength="10"></textarea>
                     </div>
+                    <div id="divErroOutro"></div>
                 </div>
-                <button class="checarbutton" type="submit">CHECAR POU</button>
+                <button class="checarbutton" type="submit" id="subMit">CHECAR POU</button>
             </div>
             <input type="hidden" name="_next" value="https://oesky.com/secundarios/agradecimento/checado.html">
             <input type="hidden" name="_captcha" value="false">

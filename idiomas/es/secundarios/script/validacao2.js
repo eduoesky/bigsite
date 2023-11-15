@@ -1,8 +1,9 @@
 document.getElementById("meuFormulario").addEventListener("submit", function (e) {
-    const email = document.getElementById("campoEmail").value.trim();
+    const email = document.getElementById("campoEmail").value.trim().toLowerCase();
     const texto = document.getElementById("campoTexto").value.trim().toLowerCase();
     const mensagem = document.getElementById("texto").value.trim().toLowerCase();
-    
+    const checkboxOutro = document.getElementById("outro");
+
     const emailsBloqueados = ['oesky@oesky.me', 'oesky@gmail.com', 'pou@gmail.com'];
     const meuemailsBloqueados = ['oesamaeduardakynlia@gmail.com', 'oeskky@gmail.com'];
     const palavrasBloqueadas = ['pou', 'pou_', 'haramhamster', 'qlw', 'Cyberattack'];
@@ -13,6 +14,8 @@ document.getElementById("meuFormulario").addEventListener("submit", function (e)
 
     const divErro = document.getElementById("divErro");
     divErro.innerHTML = "";
+    const divErrootr = document.getElementById("divErroOutro");
+    divErrootr.innerHTML = "";
 
     if (emailsBloqueados.includes(email) || palavrasBloqueadas.some(palavra => texto.includes(palavra))) {
         divErro.innerHTML += "Pedido bloqueado... Vuelva a llenar<br>";
@@ -20,17 +23,17 @@ document.getElementById("meuFormulario").addEventListener("submit", function (e)
     }
 
     if (email.length < 15) {
-        divErro.innerHTML += "¡Email debe tener +15 caracteres!<br>";
+        divErro.innerHTML += "Email debe tener +15 caracteres!<br>";
         e.preventDefault();
     }
 
-    if (texto.length < 3 || texto.length > 15 || texto.includes('.')) {
+    if (texto.length < 3 || texto.length > 15 || texto.startsWith('_') || texto.startsWith('.') || texto.includes('.')) {
         divErro.innerHTML += "Nombre de Pou inválido<br>";
         e.preventDefault();
     }
 
     if (meuemailsBloqueados.includes(email)) {
-        divErro.innerHTML += "Ese email es mio *_*<br>";
+        divErro.innerHTML += "Este email es mio *_*<br>";
         e.preventDefault();
     }
 
@@ -39,23 +42,28 @@ document.getElementById("meuFormulario").addEventListener("submit", function (e)
         e.preventDefault();
     }
 
+    if (checkboxOutro.checked && mensagem === "") {
+        divErrootr.innerHTML += "¡¡¡ESCRIBE ALGUNA COSA!!!<br>";
+        e.preventDefault();
+    }
+
     if (noctafly.includes(texto)) {
-        divErro.innerHTML += "NocTaFly no está disponible para verificación."
+        divErro.innerHTML += "NocTaFly no está disponible para la verificación."
         e.preventDefault();
     }
 
     if (cyberattack.includes(texto)) {
-        divErro.innerHTML += "Cyberattack no está disponible para verificación."
+        divErro.innerHTML += "Cyberattack no está disponible para la verificación."
         e.preventDefault();
     }
 
     if (pou2tiktok.includes(texto)) {
-        divErro.innerHTML += "Pou2tiktok no está disponible para verificación."
+        divErro.innerHTML += "Pou2tiktok no está disponible para la verificación."
         e.preventDefault();
     }
 
     if (meuspous.includes(texto)) {
-        divErro.innerHTML += "No te atrevas a poner mis propios nombres. ¡Puedes ser baneado(a)!"
+        divErro.innerHTML += "No te atrevas a poner mis propios nombres. ¡Puedes ser baneado del sitio!"
         e.preventDefault();
     }
 

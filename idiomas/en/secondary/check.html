@@ -30,7 +30,6 @@
         Help us to keep the game most easy possible!
     <div class="base-formulario">
         <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormulario">
-            <script defer src="script2.js"></script>
             <div class="formulario-inside">
                 <div class="div-mail">
                     <div class="div-label-mail"><label for="mail">Your email<strong class="asterisco">*</strong>:</label></div>
@@ -41,6 +40,7 @@
                         <div class="div-label-nick"><label for="nick">Pou nick to check<strong class="asterisco">*</strong>: ⬇️</label></div>
                         <input class="nr" type="text" id="campoTexto" name="nomedopou-checar" required>
                     </div>
+                    <div class="mensagem" id="divErro"></div>
                     <p class="labelreason">Select a reason:</p>
                     <input type="checkbox" name="fakelikes">
                     <label for="fakelikes">Fake Likes</label><br>
@@ -53,8 +53,8 @@
                     <div id="textareaContainer">
                     <textarea id="texto" name="motivo-outro-texto"></textarea>
                     </div>
+                    <div id="divErroOutro"></div>
                 </div>
-                <div class="mensagem" id="divErro"></div>
                 <button class="checarbutton" type="submit">CHECK THE POU</button>
             </div>
             <input type="hidden" name="_next" value="https://oesky.com/idiomas/en/secondary/helpie/checked.html">

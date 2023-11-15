@@ -1,8 +1,9 @@
 document.getElementById("meuFormulario").addEventListener("submit", function (e) {
-    const email = document.getElementById("campoEmail").value.trim();
+    const email = document.getElementById("campoEmail").value.trim().toLowerCase();
     const texto = document.getElementById("campoTexto").value.trim().toLowerCase();
     const mensagem = document.getElementById("texto").value.trim().toLowerCase();
-    
+    const checkboxOutro = document.getElementById("outro");
+
     const emailsBloqueados = ['oesky@oesky.me', 'oesky@gmail.com', 'pou@gmail.com'];
     const meuemailsBloqueados = ['oesamaeduardakynlia@gmail.com', 'oeskky@gmail.com'];
     const palavrasBloqueadas = ['pou', 'pou_', 'haramhamster', 'qlw', 'Cyberattack'];
@@ -13,6 +14,8 @@ document.getElementById("meuFormulario").addEventListener("submit", function (e)
 
     const divErro = document.getElementById("divErro");
     divErro.innerHTML = "";
+    const divErrootr = document.getElementById("divErroOutro");
+    divErrootr.innerHTML = "";
 
     if (emailsBloqueados.includes(email) || palavrasBloqueadas.some(palavra => texto.includes(palavra))) {
         divErro.innerHTML += "Pedido bloqueado... Preencha novamente<br>";
@@ -24,7 +27,7 @@ document.getElementById("meuFormulario").addEventListener("submit", function (e)
         e.preventDefault();
     }
 
-    if (texto.length < 3 || texto.length > 15 || texto.includes('.')) {
+    if (texto.length < 3 || texto.length > 15 || texto.startsWith('_') || texto.startsWith('.') || texto.includes('.')) {
         divErro.innerHTML += "Nome Pou inválido<br>";
         e.preventDefault();
     }
@@ -36,6 +39,11 @@ document.getElementById("meuFormulario").addEventListener("submit", function (e)
 
     if (!email.endsWith("@gmail.com")) {
         divErro.innerHTML += "São permitidos apenas gmails *_*<br>";
+        e.preventDefault();
+    }
+
+    if (checkboxOutro.checked && mensagem === "") {
+        divErrootr.innerHTML += "DIGITE ALGUMA COISA!!!!!<br>";
         e.preventDefault();
     }
 

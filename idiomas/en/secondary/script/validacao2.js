@@ -1,8 +1,9 @@
 document.getElementById("meuFormulario").addEventListener("submit", function (e) {
-    const email = document.getElementById("campoEmail").value.trim();
+    const email = document.getElementById("campoEmail").value.trim().toLowerCase();
     const texto = document.getElementById("campoTexto").value.trim().toLowerCase();
     const mensagem = document.getElementById("texto").value.trim().toLowerCase();
-    
+    const checkboxOutro = document.getElementById("outro");
+
     const emailsBloqueados = ['oesky@oesky.me', 'oesky@gmail.com', 'pou@gmail.com'];
     const meuemailsBloqueados = ['oesamaeduardakynlia@gmail.com', 'oeskky@gmail.com'];
     const palavrasBloqueadas = ['pou', 'pou_', 'haramhamster', 'qlw', 'Cyberattack'];
@@ -13,9 +14,11 @@ document.getElementById("meuFormulario").addEventListener("submit", function (e)
 
     const divErro = document.getElementById("divErro");
     divErro.innerHTML = "";
+    const divErrootr = document.getElementById("divErroOutro");
+    divErrootr.innerHTML = "";
 
     if (emailsBloqueados.includes(email) || palavrasBloqueadas.some(palavra => texto.includes(palavra))) {
-        divErro.innerHTML += "Blocked order... Try again<br>";
+        divErro.innerHTML += "Form blocked... Try again<br>";
         e.preventDefault();
     }
 
@@ -24,18 +27,23 @@ document.getElementById("meuFormulario").addEventListener("submit", function (e)
         e.preventDefault();
     }
 
-    if (texto.length < 3 || texto.length > 15 || texto.includes('.')) {
+    if (texto.length < 3 || texto.length > 15 || texto.startsWith('_') || texto.startsWith('.') || texto.includes('.')) {
         divErro.innerHTML += "Invalid Pou nickname<br>";
         e.preventDefault();
     }
 
     if (meuemailsBloqueados.includes(email)) {
-        divErro.innerHTML += "It's my email *_*<br>";
+        divErro.innerHTML += "This is my email *_*<br>";
         e.preventDefault();
     }
 
     if (!email.endsWith("@gmail.com")) {
-        divErro.innerHTML += "Are allowed only *_*<br>";
+        divErro.innerHTML += "Are allowed only gmails *_*<br>";
+        e.preventDefault();
+    }
+
+    if (checkboxOutro.checked && mensagem === "") {
+        divErrootr.innerHTML += "TYPE SOMETHING!!!!!<br>";
         e.preventDefault();
     }
 
@@ -55,7 +63,7 @@ document.getElementById("meuFormulario").addEventListener("submit", function (e)
     }
 
     if (meuspous.includes(texto)) {
-        divErro.innerHTML += "Don't dare to put my own names. You can be banned!"
+        divErro.innerHTML += "You cannot to put my nicknames. You can be banned from this website!"
         e.preventDefault();
     }
 
