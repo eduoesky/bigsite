@@ -12,7 +12,7 @@ document.getElementById("form-edicao").addEventListener("submit", function (even
     const campoEmailEDIT = document.getElementById("campoEmailEDIT");
     const senhaTextarea = document.getElementById("Senha");
 
-    const palavrasPermitidas = ['noctafly', 'qlw', 'pou2tiktok', 'coki_818', 'cocoadolli', 'guaio_21', 'cyberattack', 'wither_do_rj', 'debappp_nfa', 'santababy01', 'lizzypeep', 'h401217', 'pou_irkm9j', 'pouicecreamrose'];
+    const palavrasPermitidas = ['noctafly', 'qlw', 'pou2tiktok', 'coki_818', 'cocoadolli', 'guaio_21', 'cyberattack', 'wither_do_rj', 'debappp_nfa', 'santababy01', 'lizzypeep', 'h401217', 'pou_irkm9j', 'pouicecreamrose', 'toolboxlikes', 'pou_9veif0', 'chaeyeot', 'rafaellll', 'lizardo13', 'dahzz', 'fachipou2013', 'letmebanyou', 'trendy_winter', 'issosimple', 'olapaa', 'like_x11', 'nachito_2019', 'tempestes', 'ketotzz', 'aqua_nando', 'a_r_e_a'];
 
     if (!palavrasPermitidas.includes(campoTextoEDIT.toLowerCase())) {
         divErroEDIT.textContent = 'The Pou you entered is not marked.';
@@ -36,7 +36,21 @@ document.getElementById("form-edicao").addEventListener("submit", function (even
         'debappp_nfa': "Hi all Pous, I want you to have fun and play with me when you can, hugs ❤️ ❤️ ❤️",
         'santababy01': "Thank you Oesky for the opportunity to promote my fabulous Pou, she is part of my life and I really wanted her to represent me",
         'lizzypeep': "Sorry, I don't have a phrase, but I would like to be promoted to get more interesting likes 🌙",
-        'h401217': "I like to play Food Swap, you can request me a Tic Tac Pou match. My other pou is H40dev 🇵🇪"
+        'h401217': "I like to play Food Swap, you can request me a Tic Tac Pou match. My other pou is H40dev 🇵🇪",
+        'toolboxlikes': "I'm small in Pou and would like to grow, give a like to my Pou ^_^",
+        'pou_9veif0': "Hello everyone! Well, I want to say that everyone who likes my Pou is my friend and everyone is welcome. I'm from Lithuania 🇱🇹🇱🇹 and I have more than 90 thousand likes on Pou! ^_^",
+        'chaeyeot': "Hello, how are you all?",
+        'rafaellll': "I'm noted in Pou and would like to have new friends 😆😆😆😆😆😆😆",
+        'dahzz': "Like my cute Pou, my name is dahzz with two z's",
+        'fachipou2013': "I'm a Pou YouTuber. For now, I have 19 likes. One day I would like to translate Pou",
+        'letmebanyou': "I'm from Brazil and I would like, hope you like my Pou",
+        'trendy_winter': "Feel at home when visiting me! I'm from Poland 🇵🇱🇵🇱🇵🇱",
+        'olapaa': "Help my dalmatian grow in the game, but I wish the game were more updated",
+        'like_x11': "I'm a big fan of your second Pou, Oesky",
+        'nachito_2019': "Follow me on Pou",
+        'tempestes': "From Peru to everyone, welcome=",
+        'aqua_nando': "I enjoy playing Jump to the Sky and falling in Pou",
+
     };
 
     const fraseAssociada = frasesAssociadas[campoTextoEDIT.toLowerCase()];
