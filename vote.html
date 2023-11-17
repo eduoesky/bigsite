@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+    <link rel="shortcut icon" href="images/icone/blue.ico" type="image/x-icon">
+    <style>
+        body {
+            animation-name: backmuda;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            user-select: none;
+        }
+
+        @keyframes backmuda {
+            0% {
+                background-image: url(images/bg/xd.png);
+                background-size: 120px;
+                transition: all .3s;
+            }
+            50% {
+                background-image: url(images/bg/xd-e.png);
+                background-size: 120px;
+                transition: all .3s;
+            }
+            100% {
+                background-image: url(images/bg/xd-a.png);
+                background-size: 120px;
+                transition: all .3s;
+            }
+        }
+
+        .oesky {
+            position: relative;
+            top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #temporizador {
+            font-family: pou;
+            color: white;
+            text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 190px;
+        }
+    </style>
+</head>
+<body>
+    <div class="oesky">
+        <img src="images/solidos/gif/oeskymaint.gif" height="250px">
+    </div>
+
+    <div id="temporizador"></div>
+
+<script>
+// Função para atualizar o temporizador
+function atualizarTemporizador() {
+    // Obter a data atual
+    const agora = new Date();
+    
+    // Configurar a data para 0h do dia seguinte
+    const dataFutura = new Date(agora);
+    dataFutura.setDate(agora.getDate() + 1);
+    dataFutura.setHours(0, 0, 0, 0);
+
+    // Calcular a diferença entre as datas
+    const diferenca = dataFutura - agora;
+
+    // Calcular horas, minutos e segundos
+    const horas = Math.floor(diferenca / (1000 * 60 * 60));
+    const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+    // Atualizar o elemento HTML com o temporizador
+    document.getElementById('temporizador').innerHTML = `${horas}h ${minutos}min ${segundos}s`;
+
+    // Atualizar a cada segundo
+    setTimeout(atualizarTemporizador, 1000);
+}
+
+// Chamar a função pela primeira vez para iniciar o temporizador
+atualizarTemporizador();
+</script>
+</body>
+</html>
