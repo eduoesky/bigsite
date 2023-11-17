@@ -63,6 +63,10 @@ li {
     font-family: pou;
 }
 
+li #v {
+    background-color: yellow;
+}
+
 li:hover {
     background-color: #00f7ff;
 }
@@ -113,6 +117,10 @@ body {
     max-height: 30px;
     min-height: 30px;
     position: fixed;
+}
+
+#v {
+    background-color: yellow;
 }
 
 .flocodeneve {

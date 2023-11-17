@@ -98,6 +98,10 @@ body {
     position: fixed;
 }
 
+#v {
+    background-color: yellow;
+}
+
 .flocodeneve {
     position: absolute;
     background: transparent url('../../images/animacoes/flocodeneve.png') no-repeat center center;

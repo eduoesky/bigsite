@@ -75,6 +75,10 @@ a {
     top: 5px;
 }
 
+#v {
+    background-color: yellow;
+}
+
 body {
     background-image: url(../../images/bg/xd.png);
     background-size: 120px;
