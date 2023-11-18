@@ -63,34 +63,31 @@
 
     <div id="temporizador"></div>
 
-<script>
-// Função para atualizar o temporizador
-function atualizarTemporizador() {
-    // Obter a data atual
-    const agora = new Date();
-    
-    // Configurar a data para 0h do dia seguinte
-    const dataFutura = new Date(agora);
-    dataFutura.setDate(agora.getDate() + 1);
-    dataFutura.setHours(0, 0, 0, 0);
+    <script>
+        function iniciarTemporizador() {
+            // Data de publicação do site (substitua isso pela data real de publicação)
+            var dataPublicacao = new Date('2023-01-01T00:00:00Z');
 
-    // Calcular a diferença entre as datas
-    const diferenca = dataFutura - agora;
+            // Adicionar 15 horas à data de publicação
+            var dataFinal = new Date(dataPublicacao);
+            dataFinal.setHours(dataFinal.getHours() + 15);
 
-    // Calcular horas, minutos e segundos
-    const horas = Math.floor(diferenca / (1000 * 60 * 60));
-    const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-    const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+            // Calcular a diferença entre as datas
+            var diferenca = dataFinal - new Date();
 
-    // Atualizar o elemento HTML com o temporizador
-    document.getElementById('temporizador').innerHTML = `${horas}h ${minutos}min ${segundos}s`;
+            // Calcular horas, minutos e segundos
+            var horas = Math.floor(diferenca / (1000 * 60 * 60));
+            var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+            var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
 
-    // Atualizar a cada segundo
-    setTimeout(atualizarTemporizador, 1000);
-}
+            // Atualizar o conteúdo na página
+            document.getElementById("temporizador").innerHTML = horas + "h " + minutos + "m " + segundos + "s";
+        }
 
-// Chamar a função pela primeira vez para iniciar o temporizador
-atualizarTemporizador();
-</script>
+        // Iniciar o temporizador quando a página carregar
+        window.onload = function () {
+            iniciarTemporizador();
+        };
+    </script>
 </body>
 </html>
