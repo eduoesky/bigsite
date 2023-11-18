@@ -12,6 +12,7 @@
             animation-direction: alternate;
             animation-iteration-count: infinite;
             user-select: none;
+            overflow: auto;
         }
 
         @font-face {
@@ -46,7 +47,7 @@
 
         #temporizador {
             font-family: pou;
-            color: white;
+            color: rgb(255, 0, 0);
             text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
             font-size: 50px;
             display: flex;
@@ -54,19 +55,71 @@
             position: relative;
             top: 190px;
         }
+
+        button {
+            background-color: #fff;
+            border: none;
+            border-radius: 40px;
+            padding: 20px;
+            color: black;
+            font-weight: bold;
+            transition: all .3s;
+            filter: drop-shadow(0 0 10px #fff);
+            font-size: 50px;
+            cursor: pointer;
+            animation-name: animar;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            font-family: pou;
+        }
+        
+        button:hover {
+            transition: all .3s;
+            transform: scale(1.1);
+        }
+
+        button:active {
+            background-color: black;
+            filter: drop-shadow(0 0 10px #000);
+            color: white;
+        }
+
+        .botao {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 120px;
+        }
+
+        @keyframes animar {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="oesky">
-        <img src="images/solidos/gif/oeskymaint.gif" height="250px">
+        <img src="images/galeria/oeskymaint.png" height="310px">
+    </div>
+
+    <div class="botao">
+        <a href="https://forms.gle/NYm4djD5czvXxNqY8"><button>
+            VOTE 1
+        </button></a>
     </div>
 
     <div id="temporizador"></div>
 
-    <script>
+     <script>
         function atualizarTemporizador() {
             // Data de publicação do site (substitua isso pela data real de publicação)
-            var dataPublicacao = new Date('2023-11-18T00:00:00Z');
+            var dataPublicacao = new Date('2023-11-19T00:00:00Z');
 
             // Adicionar 15 horas à data de publicação
             var dataFinal = new Date(dataPublicacao);
