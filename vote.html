@@ -64,29 +64,38 @@
     <div id="temporizador"></div>
 
     <script>
-        function iniciarTemporizador() {
+        function atualizarTemporizador() {
             // Data de publicação do site (substitua isso pela data real de publicação)
-            var dataPublicacao = new Date('2023-01-01T00:00:00Z');
+            var dataPublicacao = new Date('2023-11-18T00:00:00Z');
 
             // Adicionar 15 horas à data de publicação
             var dataFinal = new Date(dataPublicacao);
             dataFinal.setHours(dataFinal.getHours() + 15);
 
-            // Calcular a diferença entre as datas
-            var diferenca = dataFinal - new Date();
+            // Atualizar o temporizador a cada segundo
+            var intervalo = setInterval(function () {
+                // Calcular a diferença entre as datas
+                var diferenca = dataFinal - new Date();
 
-            // Calcular horas, minutos e segundos
-            var horas = Math.floor(diferenca / (1000 * 60 * 60));
-            var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-            var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+                // Se a diferença for menor que ou igual a 0, parar o temporizador
+                if (diferenca <= 0) {
+                    clearInterval(intervalo);
+                    document.getElementById("temporizador").innerHTML = "STARTS SOON!GIT ";
+                } else {
+                    // Calcular horas, minutos e segundos
+                    var horas = Math.floor(diferenca / (1000 * 60 * 60));
+                    var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+                    var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
 
-            // Atualizar o conteúdo na página
-            document.getElementById("temporizador").innerHTML = horas + "h " + minutos + "m " + segundos + "s";
+                    // Atualizar o conteúdo na página
+                    document.getElementById("temporizador").innerHTML = horas + "h " + minutos + "m " + segundos + "s";
+                }
+            }, 1000);
         }
 
         // Iniciar o temporizador quando a página carregar
         window.onload = function () {
-            iniciarTemporizador();
+            atualizarTemporizador();
         };
     </script>
 </body>
