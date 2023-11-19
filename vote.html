@@ -45,7 +45,7 @@
             justify-content: center;
         }
 
-        #temporizador {
+        #temporizador, #aviso {
             font-family: pou;
             color: rgb(255, 0, 0);
             text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
@@ -56,28 +56,27 @@
             top: 190px;
         }
 
+        #aviso {
+            color: #cfcfcf;
+            text-align: center;
+        }
+
         button {
-            background-color: #fff;
+            background-color: #000;
             border: none;
             border-radius: 40px;
             padding: 20px;
-            color: black;
+            color: #666;
             font-weight: bold;
             transition: all .3s;
-            filter: drop-shadow(0 0 10px #fff);
+            filter: drop-shadow(0 0 10px #000);
             font-size: 50px;
-            cursor: pointer;
             animation-name: animar;
             animation-duration: 1s;
             animation-direction: alternate;
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
             font-family: pou;
-        }
-        
-        button:hover {
-            transition: all .3s;
-            transform: scale(1.1);
         }
 
         button:active {
@@ -93,6 +92,7 @@
             top: 120px;
         }
 
+        /*
         @keyframes animar {
             0% {
                 transform: scale(1);
@@ -101,6 +101,7 @@
                 transform: scale(1.2);
             }
         }
+        */
 
         .votos {
             display: flex;
@@ -117,20 +118,23 @@
 </head>
 <body>
     <div class="votos">
-        TOTAL [6h]: 4.424 votes
+        TOTAL: 4.827 votes
     </div>
     <div class="oesky">
-        <img src="images/galeria/oeskymaint.png" height="310px">
+        <img src="images/solidos/gif/carrg.gif" height="310px">
     </div>
 
     <div class="botao">
-        <a href="https://forms.gle/NYm4djD5czvXxNqY8"><button>
+        <button disabled>
             VOTE 1
         </button></a>
     </div>
-
+    <div id="aviso">
+        The result will be out in 4 hours
+    </div>
     <div id="temporizador"></div>
 
+    <!--
      <script>
         function atualizarTemporizador() {
             // Data de publicação do site (substitua isso pela data real de publicação)
@@ -166,5 +170,6 @@
             atualizarTemporizador();
         };
     </script>
+<!-->
 </body>
 </html>
