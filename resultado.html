@@ -70,7 +70,7 @@
             text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black, -2px -2px 2px black;
             font-weight: bold;
             transition: all .3s;
-            filter: drop-shadow(0 0 10px #00ff04);
+            filter: drop-shadow(0 0 10px #000);
             font-size: 50px;
             animation-name: animar;
             animation-duration: 1s;
@@ -80,21 +80,22 @@
             font-family: pou;
         }
 
-
+        /*
         button:active {
             background-color: black;
             filter: drop-shadow(0 0 10px #000);
             color: white;
         }
-
+*/
 
         .botao {
             display: flex;
             justify-content: center;
             position: relative;
-            top: 150px;
+            top: 120px;
         }
 
+        /*
         @keyframes animar {
             0% {
                 transform: scale(1);
@@ -103,9 +104,9 @@
                 transform: scale(1.2);
             }
         }
+        */
 
-
-        .votos {
+        .tota {
             display: flex;
             position: relative;
             justify-content: center;
@@ -116,57 +117,42 @@
             font-size: 30px;
             text-align: center;
         }
+
+        .resuts {
+            position: relative;
+            top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: #000 2px 2px 2px, #000 -2px 2px 2px, #000 -2px -2px 2px, #000 2px -2px 2px;
+            font-size: 30px;
+            font-family: pou;
+        }
     </style>
 </head>
 <body>
-    <div class="oesky">
-        <img src="images/galeria/oeskypintando.png" height="310px">
+    <div class="tota">
+        TOTAL: 4.827 VOTES
+    </div>
+    <div class="resuts">
+        <p>WIGS</p>
+        <div class="1">
+            <img src="images/vt/total.png" height="300px">
+        </div>
+    </div>
+    <div class="resuts">
+        <p>DARK MODE</p>
+        <div class="1">
+            <img src="images/vt/darkm.png" height="170px">
+        </div>
     </div>
     <div class="botao">
-        <a href="resultado.html">
-            <button>
-                VOTE 1
-            </button>
-        </a>
+        <div class="basedobotao">
+            <a href="vote.html">
+                <img src="images/botoes/voltar.png" height="80px">
+            </a>
+        </div>
     </div>
-    <div id="temporizador"></div>
-
-    <!--
-     <script>
-        function atualizarTemporizador() {
-            // Data de publicação do site (substitua isso pela data real de publicação)
-            var dataPublicacao = new Date('2023-11-19T00:00:00Z');
-
-            // Adicionar 15 horas à data de publicação
-            var dataFinal = new Date(dataPublicacao);
-            dataFinal.setHours(dataFinal.getHours() + 12);
-
-            // Atualizar o temporizador a cada segundo
-            var intervalo = setInterval(function () {
-                // Calcular a diferença entre as datas
-                var diferenca = dataFinal - new Date();
-
-                // Se a diferença for menor que ou igual a 0, parar o temporizador
-                if (diferenca <= 0) {
-                    clearInterval(intervalo);
-                    document.getElementById("temporizador").innerHTML = "STARTS SOON! ";
-                } else {
-                    // Calcular horas, minutos e segundos
-                    var horas = Math.floor(diferenca / (1000 * 60 * 60));
-                    var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-                    var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
-
-                    // Atualizar o conteúdo na página
-                    document.getElementById("temporizador").innerHTML = horas + "h " + minutos + "m " + segundos + "s";
-                }
-            }, 1000);
-        }
-
-        // Iniciar o temporizador quando a página carregar
-        window.onload = function () {
-            atualizarTemporizador();
-        };
-    </script>
-<!-->
 </body>
 </html>
