@@ -117,7 +117,7 @@
 </head>
 <body>
     <div class="votos">
-        TOTAL [0h]: 3.847 votes
+        TOTAL [6h]: 4.424 votes
     </div>
     <div class="oesky">
         <img src="images/galeria/oeskymaint.png" height="310px">
@@ -138,7 +138,7 @@
 
             // Adicionar 15 horas à data de publicação
             var dataFinal = new Date(dataPublicacao);
-            dataFinal.setHours(dataFinal.getHours() + 15);
+            dataFinal.setHours(dataFinal.getHours() + 12);
 
             // Atualizar o temporizador a cada segundo
             var intervalo = setInterval(function () {
@@ -148,7 +148,7 @@
                 // Se a diferença for menor que ou igual a 0, parar o temporizador
                 if (diferenca <= 0) {
                     clearInterval(intervalo);
-                    document.getElementById("temporizador").innerHTML = "STARTS SOON!GIT ";
+                    document.getElementById("temporizador").innerHTML = "STARTS SOON! ";
                 } else {
                     // Calcular horas, minutos e segundos
                     var horas = Math.floor(diferenca / (1000 * 60 * 60));
