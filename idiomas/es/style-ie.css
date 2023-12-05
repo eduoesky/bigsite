@@ -10,7 +10,7 @@ body {
 
 @font-face {
     font-family: pou;
-    src: url(arquivos/pou.ttf);
+    src: url(../../arquivos/pou.ttf);
 }
 
 p {
