@@ -120,7 +120,7 @@ body {
 }
 
 #v {
-    background-color: yellow;
+    background-color: red;
 }
 
 .flocodeneve {
@@ -202,6 +202,14 @@ p {
     position: absolute;
     top: 25px;
     margin-left: 160px;
+    display: none;
+}
+
+.natal {
+    right: 0;
+    position: absolute;
+    top: 12px;
+    margin-right: 180px;
 }
 
 .galeria {
@@ -299,7 +307,7 @@ p {
         display: block;
     }
 
-    .likex1, .dark, .redes, .div-privados, .galeria, .lingua, .cripto, .atualizacao {
+    .likex1, .dark, .redes, .div-privados, .galeria, .lingua, .cripto, .atualizacao, .natal {
         display: none;
     }
 }

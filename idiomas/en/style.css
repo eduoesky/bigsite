@@ -76,7 +76,7 @@ a {
 }
 
 #v {
-    background-color: yellow;
+    background-color: #ff0000;
 }
 
 body {
@@ -191,6 +191,13 @@ p {
     margin-right: 140px;
 }
 
+.natal {
+    right: 0;
+    position: absolute;
+    top: 12px;
+    margin-right: 180px;
+}
+
 .atualizacao {
     left: 0;
     position: absolute;
@@ -279,7 +286,7 @@ p {
         display: block;
     }
 
-    .likex1, .dark, .redes, .div-privados, .galeria, .lingua, .cripto, .atualizacao {
+    .likex1, .dark, .redes, .div-privados, .galeria, .lingua, .cripto, .atualizacao, .natal {
         display: none;
     }
 }
