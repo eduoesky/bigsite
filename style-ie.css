@@ -145,3 +145,43 @@ img:hover {
     transform: scale(1.1);
     transition: all .3s;
 }
+
+.ag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a89 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.569);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 85px;
+    margin-bottom: 35px;
+    width: 325px;
+    padding: 5px;
+}
+
+.a90, .a91, .x {
+    position: relative;
+}
+
+.att {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 45px;
+}
+
+.a90 p {
+    color: lime;
+}
+
+.a91 p {
+    color: red;
+}
