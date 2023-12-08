@@ -50,12 +50,9 @@ p {
 }
 
 .live {
-    animation-name: lived;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    color: lime;
+    color: purple;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px white, 2px -2px 2px white, -2px 2px 2px white, -2px -2px 2px white;
 }
 
 @keyframes lived {
@@ -184,4 +181,5 @@ img:hover {
 
 .a91 p {
     color: red;
+    filter: drop-shadow(0 0 7px yellow);
 }
