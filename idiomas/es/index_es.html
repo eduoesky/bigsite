@@ -175,11 +175,8 @@
 
     audio.addEventListener('ended');
 
-    // Garante a reprodução automática após interação do usuário
-    document.addEventListener('click', () => {
-      if (audio.paused) {
-        audio.play();
-      }
+    window.addEventListener('load', () => {
+      audio.play();
     });
   </script>
 </body>
