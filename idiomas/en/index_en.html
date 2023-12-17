@@ -1,120 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OesKy</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="secondary/css/script.css">
-    <link rel="stylesheet" href="responsivo.css">
-    <link rel="shortcut icon" href="../../images/icone/blue.ico" type="image/x-icon">
-    <script defer src="animacoes/neve.js"></script>
-    <script defer src="animacoes/index.js"></script>
-    <script defer src="secondary/script/menuindex.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../images/icone/blue.ico" type="image/x-icon">
+  <title>OesKy</title>
+  <link rel="stylesheet" href="../../responsivio.css">
+  <style>
+#image-container {
+      width: 600px;
+      height: 600px;
+      overflow: hidden;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .imgpc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+        background-image: url(../../images/bg/xd.png);
+        background-size: 120px;
+    }
+
+    #myAudio {
+      display: none; /* Oculta os controles de áudio */
+    }
+
+    @font-face {
+        font-family: pou;
+        src: url(../../arquivos/pou.ttf);
+    }
+
+    p {
+        font-family: pou;
+        font-size: 30px;
+        color: white;
+        text-shadow: 2px 2px 2px black, -2px 2px 2px black, -2px -2px 2px black, 2px -2px 2px black;
+    }
+
+    .td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -130px;
+        text-align: center;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -100px;
+    }
+
+    button {
+        padding: 20px;
+        background-color: skyblue;
+        color: black;
+        font-family: pou; 
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: cyan;
+    }
+
+    button:active {
+        background-color: turquoise;
+    }
+
+    .gif {
+      display: flex;
+      position: relative;
+      top: -800px;
+      flex-direction: row;
+    }
+
+    .gif img {
+      height: 35px;
+    }
+
+    a {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      gap: 10px;
+    }
+
+    a p {
+      font-size: 20px;
+      position: relative;
+      top: -12px;
+    }
+
+    .des {
+      opacity: 50%;
+      cursor: not-allowed;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="centro">
-            <div class="snowflake"></div>
-            <div class="snewflake"></div>
-            <div class="snewfleke"></div>
-            <div class="snowflakes"></div>
-            <div class="snewflakes"></div>
-            <div class="snewflekes"></div>
-            <div class="flocodeneve"></div>
-        </div>
-        <div class="div-privados"><a href="help/help.html"><img src="../../images/botoes-index/ajuda.png" height="40px"></a></div>
-        <div id="btn-idx" class="redes"><a href="secondary/smedia.html"><img src="../../images/botoes-index/redes-button.png" height="40px"></a></div>
-        <div class="lingua">
-            <a href="secondary/langs.html"><img src="../../images/botoes-index/lang.png" height="40px"><a></div>
-        <div class="cripto">
-            <a href="secondary/criptografados.html"><img src="../../images/botoes-index/carimbo.png" height="40px"><a></div>
-        <div class="atualizacao">
-            <a href="secondary/atualizacao.html"><img src="../../images/botoes-index/historico.png" height="40px"><a></div>       
-        <div class="dark">
-            <a href="secondary/credits.html"><img src="../../images/botoes-index/creditos-btn.png" height="40px"></a>
-        </div>
-        <div class="galeria">
-            <a href="secondary/gallery.html"><img src="../../images/botoes-index/galeria-btn.png" height="40px"></a>
-        </div>
-        <div class="likex1">
-            <a href="likex1.html"><img src="../../images/botoes-index/likex1.png" height="50px"></a>
-        </div>
-        <div class="natal">
-            <a href="ie.html"><img src="../../images/botoes-index/dsss.png" height="60px"></a>
-        </div>
-        <div class="burger"><img id="openMenuButton" class="mobile-hidden" src="../../images/botoes-index/burger.png" height="40px"></div>
-        <p><strong>OesKy</strong></p>
-    </header>
-    <div id="menu" class="closed">
-        <img id="closeMenuButton" src="../../images/botoes-index/x.png" height="30px">
-        <ul>
-            <a href="secondary/langs.html">
-                <div>
-                    <li>Languages 🌐</li>
-                </div>
-            </a>
-            <a href="secondary/gallery.html">
-                <div>
-                    <li>Gallery 🖼️</li>
-                </div>
-            </a>
-            <a href="secondary/smedia.html">
-                <div>
-                    <li>Social Media 👁️‍🗨️</li>
-                </div>
-            </a>
-            <a href="help/help.html">
-                <div>
-                    <li>Help ❓</li>
-                </div>
-            </a>
-            <a href="secondary/credits.html">
-                <div>
-                    <li>Credits ☀️</li>
-                </div>
-            </a>
-            <a href="help/prvacity.html">
-                <div>
-                    <li>Privacity 🔒</li>
-                </div>
-            </a>
-            <a href="secondary/criptografados.html">
-                <div>
-                    <li>Share your Pou! 🌟</li>
-                </div>
-            </a>
-            <a href="likex1.html">
-                <div>
-                    <li>Like_x1 <img class="likex11" src="../../images/botoes-index/likex1.png" height="25px"></li>
-                </div>
-            </a>
-            <a href="ie.html">
-                <div>
-                    <li id="v">CHRSTMAS UPDATE</li>
-                </div>
-            </a>
-        </ul>
+  <div class="imgpc">
+      <div id="image-container"></div>
+  </div>
+  <div class="td">
+    <p>OesKy went on vacation and will only return in February or March 2024! <br>
+      I'll be back soon, but remember: keep an eye on your email! ^_^</p>
+  </div>
+  <div class="btn">
+    <a href="secondary/register.html"><button>Subscribe</button></a>
+  </div>
+  <div class="gif">
+    <div class="es">
+      <a href="../es/index_es.html">
+        <img src="../../images/solidos/gif/espanhol.gif" alt="">
+        <p>Español</p>
+      </a>
+      <a href="../../index.html">
+        <img src="../../images/solidos/gif/portugues.gif" alt="">
+        <p>Português</p>
+      </a>
+      <a class="des">
+        <img src="../../images/solidos/gif/ingles.gif" alt="">
+        <p>English</p>
+      </a>
     </div>
-    <div id="content">
-        <!-- Seu conteúdo principal aqui -->
-    </div>
-    <div>
-        <div class="snowflakes"></div>
-        <div class="snewflakes"></div>
-        <div class="snewflekes"></div>
-        <div class="snowfall"></div>
-        <div class="container">
-                <img src="../../natal/images/solidos/oesky-opt-en-natal-1.png" class="image">
-            <div class="botoes-index">
-                <a href="secondary/like.html"><img src="../../images/botoes-index/like-btn.png" class="like"></a>
-                <a href="secondary/visit.html"><img src="../../images/botoes-index/visita-btn.png" class="visita"></a>
-                <a href="secondary/check.html"><img src="../../images/botoes-index/lupa-btn.png" class="checar"></a>
-                <a href="secondary/suggestion.html"><img src="../../images/botoes-index/sugestao-btn.png" class="sugestao"></a>
-                <a href="secondary/register.html"><img src="../../images/botoes-index/cadastro-btn.png" class="cadastro"></a>
-                <a href="secondary/message.html"><img src="../../images/botoes-index/mensagem-btn.png" class="mensagem"></a>
-            </div>
-        </div>
-    </div>
+  </div>
+  <audio id="myAudio" controls autoplay>
+    <source src="../../arquivos/dark.mp3" type="audio/mp3">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+
+  <script>
+    const imageContainer = document.getElementById('image-container');
+
+    // Adiciona as 32 imagens ao contêiner
+    for (let i = 1; i <= 32; i++) {
+      const imageName = `../../images/solidos/gif/eplonisongif/eplonison${i}.png`;
+      const imageElement = document.createElement('img');
+      imageElement.src = imageName;
+      imageElement.alt = `Image ${i}`;
+      imageElement.classList.add('image');
+      imageContainer.appendChild(imageElement);
+
+      // Agendar a remoção da imagem após 0.4 segundos
+      setTimeout(() => {
+        imageContainer.removeChild(imageElement);
+      }, 200 * i); // 400 milissegundos multiplicados pelo número da imagem
+    }
+
+    const audio = document.getElementById('myAudio');
+
+    function restartAudio() {
+      audio.currentTime = 0;
+      audio.play();
+    }
+
+    audio.addEventListener('ended');
+
+    // Garante a reprodução automática após interação do usuário
+    document.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+      }
+    });
+  </script>
 </body>
 </html>
