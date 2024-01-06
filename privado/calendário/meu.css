@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: century;
+}
+
+@font-face {
+    font-family: century;
+    src: url(../arquivos/century-gothic.ttf);
+}
+
+@font-face {
+    font-family: pou;
+    src: url(../arquivos/pou.ttf);
+}
+
+body {
+    background-image: url(../images/bg/bg.png);
+}
+
+header {
+    /*background-color: #bababa8c;*/
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #e6e6e6;
+    font-family: pou;
+    text-shadow: 2px 2px 2px #000, -2px 2px 2px #000, 2px -2px 2px #000, -2px -2px 2px #000;
+    background: linear-gradient(to right,
+    transparent, 
+    #ff000080,
+    #ff7f0080,
+    #ffff0080,
+    #00ff0080,
+    #7dffff7e,
+    #0000ff80,
+    #9400d380,
+    transparent
+  );
+    padding: 30px;
+    background-size: 500% 100%;
+    animation-name: degrade;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+.barra1 {
+    padding: 2px;
+    background-color: #bababa;
+}
+
+.barra2 {
+    padding: 1px;
+    background-color: #777777;
+}

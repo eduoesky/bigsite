@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url(../../images/bg/bg.png);
+    }
+
+    .calendar {
+      text-align: center;
+    }
+
+    .month-selector {
+      margin-bottom: 20px;
+    }
+
+    .month {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
+
+    .day {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .day-number {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .day-name {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .notes-button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #fff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    .day.selected {
+      background-color: red;
+      border-color: red;
+    }
+
+    /* Adiciona estilos para o mês atual */
+    .month.current {
+      background-color: #333;
+      border-radius: 50%;
+      padding: 5px;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calendar">
+    <div class="month-selector">
+      <button onclick="prevMonth()">❮</button>
+      <span class="month" id="currentMonth">Janeiro 2024</span>
+      <button onclick="nextMonth()">❯</button>
+    </div>
+
+    <div class="days" id="calendarDays">
+      <!-- Days will be dynamically added here with JavaScript -->
+    </div>
+  </div>
+
+  <script>
+    const monthNames = [
+      "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+      "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+    ];
+
+    let currentMonthIndex = new Date().getMonth(); // Inicializa com o mês atual
+
+    function updateCalendar() {
+      const calendarDays = document.getElementById("calendarDays");
+      const currentMonthSpan = document.getElementById("currentMonth");
+
+      const daysInMonth = new Date(2024, currentMonthIndex + 1, 0).getDate();
+      const firstDayIndex = new Date(2024, currentMonthIndex, 1).getDay();
+
+      calendarDays.innerHTML = "";
+
+      for (let i = 0; i < firstDayIndex; i++) {
+        const emptyDay = document.createElement("div");
+        calendarDays.appendChild(emptyDay);
+      }
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dayDiv = document.createElement("div");
+        dayDiv.classList.add("day");
+
+        if (day === new Date().getDate() && currentMonthIndex === new Date().getMonth()) {
+          dayDiv.classList.add("selected"); // Destaca o dia atual
+        }
+
+        const dayNumber = document.createElement("span");
+        dayNumber.classList.add("day-number");
+        dayNumber.innerText = day;
+
+        const dayName = document.createElement("span");
+        dayName.classList.add("day-name");
+        dayName.innerText = new Date(2024, currentMonthIndex, day).toLocaleDateString("pt-BR", { weekday: 'short' });
+
+        dayDiv.appendChild(dayNumber);
+        dayDiv.appendChild(dayName);
+
+        const notesButton = document.createElement("button");
+        notesButton.classList.add("notes-button");
+        notesButton.innerText = ".";
+        notesButton.onclick = function() {
+          const selectedDate = new Date(2024, currentMonthIndex, day);
+          const formattedDate = formatDateString(selectedDate);
+          window.location.href = `data/${formattedDate}.html`; // Redireciona para a página correspondente
+        };
+
+        dayDiv.appendChild(notesButton);
+
+        calendarDays.appendChild(dayDiv);
+      }
+
+      currentMonthSpan.innerText = `${monthNames[currentMonthIndex]} 2024`;
+    }
+
+    function formatDateString(date) {
+      const year = date.getFullYear();
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      const day = date.getDate().toString().padStart(2, '0');
+      return `${day}-${month}-${year}`;
+    }
+
+    function prevMonth() {
+      currentMonthIndex = (currentMonthIndex - 1 + 12) % 12;
+      updateCalendar();
+    }
+
+    function nextMonth() {
+      currentMonthIndex = (currentMonthIndex + 1) % 12;
+      updateCalendar();
+    }
+
+    // Inicializa o calendário
+    updateCalendar();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    @font-face {
+        font-family: pou;
+        src: url(../../../arquivos/pou.ttf);
+    }
+
+    @font-face {
+        font-family: century;
+        src: url(../../../arquivos/century-gothic.ttf);
+    }
+
+    body {
+        background-image: url(../../../images/bg/bg.png);
+    }
+
+    header {
+        color: white;
+        font-size: 40px;
+        font-family: pou;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .tudo {
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        position: relative;
+        top: 60px;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .caixa {
+        background-color: rgb(0, 0, 0);
+        width: 200px;
+        height: 200px;
+        border: 10px outset #ff0000;
+        border-radius: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s;
+        cursor: pointer;
+    }
+
+    .caixa:hover {
+        width: 202px;
+        height: 202px;
+        margin-left: -1px;
+        margin-right: -1px;
+        filter: drop-shadow(0 0 12px white);
+        transition: all .3s;
+    }
+
+    img {
+        transition: all .3s;
+    }
+
+    .caixa:hover img {
+        filter: drop-shadow(0 0 12px white);
+        transition: all .3s;
+    }
+
+    .agua-cont {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 230px;
+        background-color: #000;
+        border: 3px solid #fff;
+        border-radius: 20px;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 4px;
+        font-family: century;
+        color: #fff;
+    }
+
+    .estudos-cont {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .input1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-family: century;
+    }
+
+    #numeroInput {
+        width: 60px;
+        height: 60px;
+        font-family: century;
+        font-size: 34px;
+        background-color: black;
+        color: white;
+        border: 2px solid #fff;
+        border-radius: 10px;
+    }
+
+    .contagem {
+        display: flex;
+        gap: 3px;
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ml-cont {
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 600px) {
+     .tudo {
+        padding-bottom: 20px;
+     }
+     
+     .caixa {
+        width: 160px;
+        height: 160px;
+        border: 2px solid #fff;
+    }
+
+    .caixa:hover {
+        width: 162px;
+        height: 162px;
+        margin: -1.3px;
+    }
+
+    .agua img {
+        height: 100px;
+    }
+
+    .estudos img {
+        height: 75px;
+    }
+
+    .exercicio img {
+        height: 30px;
+    }
+
+    .peso img {
+        height: 100px;
+    }
+
+    .resumo img {
+        height: 70px;
+    }
+    }
+</style>
+<body>
+    <header>01Jan2024</header>
+    <div class="tudo">
+        <div class="agua caixa">
+            <img src="../../../images/privado/agua.png" height="130px">
+        </div>
+        <div class="estudos caixa">
+            <img src="../../../images/privado/estudos.png" height="100px">
+        </div>
+        <div class="exercicio caixa">
+            <img src="../../../images/privado/exercicio.png" height="40px">
+        </div>
+        <div class="peso caixa">
+            <img src="../../../images/privado/peso.png" height="120px">
+        </div>
+        <div class="sono caixa">
+            <img src="../../../images/privado/sono.png" alt="">
+        </div>
+        <div class="dente caixa">
+            <img src="../../../images/privado/dente.png" height="110px">
+        </div>
+        <div class="banho caixa">
+            <img src="../../../images/privado/chuveiro.png" height="110px">
+        </div>
+        <div class="resumo caixa">
+            <img src="../../../images/privado/lapis.png" height="100px">
+        </div>
+    </div>
+    <div class="agua-cont">
+        <div class="contagem">Garrafas d'água: <div id="nm">0</div></div> <br>
+        <div class="input1">
+            <input type="number" id="numeroInput" min="0"oninput="updateNumber()">
+        </div> <br>
+        <div class="info-agua">
+            <p>Cada garrafa contém: 500ml</p> <br>
+            Contagem de ML: <div class="ml-cont"></div>
+        </div>
+    </div>
+    <div class="estudos-cont"></div>
+    <script>
+    function updateNumber() {
+      const numeroInput = document.getElementById('numeroInput');
+      const nmElement = document.getElementById('nm');
+      const mlContElement = document.querySelector('.ml-cont');
+
+      // Atualiza o conteúdo do elemento 'nm' com o valor do input
+      nmElement.textContent = numeroInput.value;
+
+      // Atualiza a contagem de ML multiplicando o número por 500
+      const mlCont = numeroInput.value * 500;
+      mlContElement.textContent = mlCont;
+      mlContElement.style.color = mlCont > 0 ? 'green' : 'black'; // Muda a cor se a contagem for maior que 0
+    }
+
+    // Carrega o número salvo ao iniciar a página
+    window.onload = function() {
+      const numeroSalvo = localStorage.getItem('numeroSalvo');
+      const numeroInput = document.getElementById('numeroInput');
+      const nmElement = document.getElementById('nm');
+      const mlContElement = document.querySelector('.ml-cont');
+
+      if (numeroSalvo) {
+        numeroInput.value = numeroSalvo;
+        nmElement.textContent = numeroSalvo; // Atualiza também a div 'nm'
+        updateNumber(); // Atualiza a contagem de ML
+      }
+    };
+      </script>
+</body>
+</html>

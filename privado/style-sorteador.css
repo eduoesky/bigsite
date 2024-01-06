@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: century;
-    src: url(arquivos/century-gothic.ttf);
+    src: url(../arquivos/century-gothic.ttf);
 }
 
 body {
-    background-image: url(images/xd.png);
+    background-image: url(../images/bg/xd.png);
     background-size: 120px;
 }
 

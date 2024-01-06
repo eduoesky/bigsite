@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/icone/blue.ico" type="image/x-icon">
+  <link rel="stylesheet" href="responsivio.css">
+  <title>OesKy</title>
+  <style>
+#image-container {
+      width: 600px;
+      height: 600px;
+      overflow: hidden;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .imgpc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+        background-image: url(images/bg/xd.png);
+        background-size: 120px;
+    }
+
+    #myAudio {
+      display: none;
+    }
+
+    @font-face {
+        font-family: pou;
+        src: url(arquivos/pou.ttf);
+    }
+
+    p {
+        font-family: pou;
+        font-size: 30px;
+        color: white;
+        text-shadow: 2px 2px 2px black, -2px 2px 2px black, -2px -2px 2px black, 2px -2px 2px black;
+    }
+
+    .td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -130px;
+        text-align: center;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -100px;
+    }
+
+    button {
+        padding: 20px;
+        background-color: skyblue;
+        color: black;
+        font-family: pou; 
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: cyan;
+    }
+
+    button:active {
+        background-color: turquoise;
+    }
+
+    .gif {
+      display: flex;
+      position: relative;
+      top: -750px;
+      flex-direction: row;
+    }
+
+    .gif img {
+      height: 35px;
+    }
+
+    a {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      gap: 10px;
+    }
+
+    a p {
+      font-size: 20px;
+      position: relative;
+      top: -12px;
+    }
+
+    .des {
+      opacity: 50%;
+      cursor: not-allowed;
+    }
+
+    @media screen and (max-width: 490px) {
+    .gif {
+        top: -900px;
+    }
+}
+  </style>
+</head>
+<body>
+  <div class="imgpc">
+      <div id="image-container"></div>
+  </div>
+  <div class="td">
+    <p>OesKy entrou de férias e voltará em fevereiro ou março de 2024 <br>
+    Volto em breve, mas lembre-se: fique atento(a) ao e-mail! ^_^</p>
+  </div>
+  <div class="btn">
+    <a href="secundarios/cadastro.html"><button>Inscreva-se</button></a>
+  </div>
+  <div class="gif">
+    <div class="es">
+      <a href="idiomas/es/index_es.html">
+        <img src="images/solidos/gif/espanhol.gif" alt="">
+        <p>Español</p>
+      </a>
+      <a class="des">
+        <img src="images/solidos/gif/portugues.gif" alt="">
+        <p>Português</p>
+      </a>
+      <a href="idiomas/en/index_en.html">
+        <img src="images/solidos/gif/ingles.gif" alt="">
+        <p>English</p>
+      </a>
+    </div>
+  </div>
+  <audio id="myAudio" controls autoplay>
+    <source src="arquivos/dark.mp3" type="audio/mp3">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+
+  <script>
+    const imageContainer = document.getElementById('image-container');
+
+    // Adiciona as 32 imagens ao contêiner
+    for (let i = 1; i <= 32; i++) {
+      const imageName = `images/solidos/gif/eplonisongif/eplonison${i}.png`;
+      const imageElement = document.createElement('img');
+      imageElement.src = imageName;
+      imageElement.alt = `Image ${i}`;
+      imageElement.classList.add('image');
+      imageContainer.appendChild(imageElement);
+
+      // Agendar a remoção da imagem após 0.4 segundos
+      setTimeout(() => {
+        imageContainer.removeChild(imageElement);
+      }, 200 * i); // 400 milissegundos multiplicados pelo número da imagem
+    }
+
+    const audio = document.getElementById('myAudio');
+
+    function restartAudio() {
+      audio.currentTime = 0;
+      audio.play();
+    }
+
+    audio.addEventListener('ended');
+
+    window.addEventListener('load', () => {
+      audio.play();
+    });
+  </script>
+</body>
+</html>
