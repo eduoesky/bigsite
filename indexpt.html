@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,18 +17,18 @@
             <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormulario">
                 <div class="formulario-inside">
                     <div class="div-mail">
-                        <label for="mail">Tu email (opcional):</label>
-                        <input class="nm" type="email" name="email" id="campoEmail" placeholder="ejemplo@gmail.com">
+                        <label for="mail">Seu email (opcional):</label>
+                        <input class="nm" type="email" name="email" id="campoEmail" placeholder="exemplo@gmail.com">
                     </div>
                     <div class="div-nick-pou">
                         <label for="pou-para-dar-like">
-                            Escribe tu sugerencia de mini-juego <strong class="asterisco">*</strong>:
+                            Digite a sugestão do mini-jogo!! <strong class="asterisco">*</strong>:
                         </label>
                         <textarea name="sugestaojogo" id="sugestao" cols="30" rows="6" required></textarea>
         
                     <div class="mensagem" id="divErro"></div>
-                    <button class="env" type="submit">ENVIAR SUGERENCIA</button>
-                <input type="hidden" name="_next" value="https://oesky.com/idiomas/es/index_es.html">
+                    <button class="env" type="submit">ENVIAR SUGESTÃO</button>
+                <input type="hidden" name="_next" value="https://oesky.com">
                 <input type="hidden" name="_captcha" value="false">
             </form>
             <div class="base-tr">
@@ -36,7 +36,7 @@
                     <button class="tr" id="translateBtn">Translate</button>
                     <div class="tooltip-text">
                         <ul>
-                            <li><a href="indexpt.html">Português</a></li>
+                            <li><a href="index.html">Español</a></li>
                             <li><a href="indexen.html">English</a></li>
                         </ul>
                     </div>
@@ -93,13 +93,9 @@
         });
 
         translateBtn.addEventListener('click', function(event) {
-            // Desativa temporariamente a validação do formulário
+
             form.setAttribute('novalidate', 'true');
 
-            // Adiciona a lógica adicional do botão "Translate" aqui
-            // ...
-
-            // Reativa a validação após um curto período (por exemplo, 1 segundo)
             setTimeout(function() {
                 form.removeAttribute('novalidate');
             }, 1000);
