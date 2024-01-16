@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../../natal/images/bg/bg-natal.png);
+    background-size: 280px;
+}
+
+@font-face {
+    font-family: pou;
+    src: url(../../arquivos/pou.ttf);
+}
+
+p {
+    color: white;
+    text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
+    font-family: pou;
+    text-align: center;
+    font-size: 35px;
+}
+
+.centro {
+    height: 30px;
+    max-height: 30px;
+    min-height: 30px;
+    position: fixed;
+}
+
+.snowfall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.par {
+    display: flex;
+    position: relative;
+    top: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.708);
+    padding: 25px;
+}
+
+.live {
+    color: purple;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px white, 2px -2px 2px white, -2px 2px 2px white, -2px -2px 2px white;
+}
+
+@keyframes lived {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.snewflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.snowflake {
+    position: absolute;
+    background: #ffffffac;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: snowfall linear infinite;
+    z-index: -1;
+}
+
+.snewflake {
+    position: absolute;
+    background: #ffffff61;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: snowfall linear infinite;
+    z-index: -1;
+}
+
+.snewfleke {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: snowfall linear infinite;
+}
+
+.snewflekes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+@keyframes snowfall {
+    to {
+        transform: translateY(170vh);
+    }
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+
+img {
+    transition: all .3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.ag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a89 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.569);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 85px;
+    margin-bottom: 35px;
+    width: 325px;
+    padding: 5px;
+}
+
+.a90, .a91, .x {
+    position: relative;
+}
+
+.att {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 45px;
+}
+
+.a90 p {
+    color: lime;
+}
+
+.a91 p {
+    color: red;
+    filter: drop-shadow(0 0 7px yellow);
+}

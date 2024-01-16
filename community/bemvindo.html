@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade POUESKY</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: century;
+    }
+
+    @font-face {
+        font-family: pou;
+        src: url(../arquivos/pou.ttf);
+    }
+
+    @font-face {
+        font-family: century;
+        src: url(../arquivos/century-gothic.ttf);
+    }
+
+    body {
+        background-image: url(img/bg-i.png);
+        background-size: 1200px;
+        overflow: hidden;
+    }
+
+    @media screen and (max-width: 900px) {
+        body {
+            background-size: 1600px;
+            background-position: -190px;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        body {
+            background-size: 1640px;
+            background-position: 0;
+        }
+    }
+
+    #search-input {
+        width: 300px;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    input[type='text'] {
+        border: #87ceeb 2px groove;
+        border-radius: 10px;
+    }
+
+    input[type='text']:focus {
+        outline: none;
+        border: #40bff2 2px groove;
+    }
+
+    #suggestions-container {
+        display: none;
+        border: 1px solid #000000;
+        max-height: 150px;
+        overflow-y: auto;
+    }
+    .suggestion {
+        padding: 8px;
+        cursor: pointer;
+        width: 300px;
+        text-align: center;
+        border: 1px solid #000;
+        background-color: #2dc4ff;
+    }
+
+    .suggestion:hover {
+        background-color: #fff;
+    }
+
+    .pesquisar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        width: auto;
+    }
+
+    .box {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 50px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-around;
+        width: 600px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tx {
+        padding: 40px;
+        background-color: #000;
+        border-radius: 40px;
+        width: 100px;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        font-family: pou;
+        text-shadow: 2px 2px 2px #000,2px -2px 2px #000,-2px 2px 2px #000,-2px -2px 2px #000;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    .ething {
+        background-image: url(img/all.png);
+        background-size: 240px;
+        background-position: center;
+        transition: all .3s;
+    }
+
+    .ething:hover {
+        background-size: 260px;
+    }
+
+    .accs {
+        background-image: url(img/accounts.png);
+        background-size: 210px;
+        background-position: center;
+        transition: all .3s;
+    }
+
+    .accs:hover {
+        background-size: 230px;
+    }
+
+    .updates {
+        background-image: url(img/update.png);
+        background-size: 200px;
+        background-position: center;
+        transition: all .3s;
+    }
+
+    .updates:hover {
+        background-size: 220px;
+    }
+
+    .abtme {
+        background-image: url(img/abtme.png);
+        background-size: 230px;
+        background-position: center;
+        transition: all .3s;
+    }
+
+    .abtme:hover {
+        background-size: 250px;
+    }
+
+
+    .ething:hover, .accs:hover, .updates:hover, .abtme:hover {
+        transition: all .3s;
+    }
+</style>
+<body>
+    <h1 style="font-family: pou;color: #fff;text-shadow:2px 2px 2px #000,2px -2px 2px #000,-2px 2px 2px #000,-2px -2px 2px #000;text-align:center;margin-top:20px;">Bem-vindo à comunidade POUeSKY ^^</h1> <br>
+    <p style="font-family:pou;text-align:center;">Aqui todas as informações são OFICIAIS, da ZAKEH ^_^</p><br>
+    <p style="font-family:pou;text-align:center;font-size:20px;color:#000099;">Abaixo, procure pelo artigo que você quer ler! Espero que você goste ^^</p>
+    <div class="pesquisar">
+        <input type="text" id="search-input" placeholder="Procurar...">
+        <div id="suggestions-container"></div>
+    </div>
+    <div class="box">
+        <div class="container">
+            <div class="tx ething">TODOS OS TÓPICOS</div>
+            <div class="tx accs">CONTAS DE POU</div>
+            <div class="tx updates">ATUALIZAÇÕES DO POU</div>
+            <div class="tx abtme">SOBRE MIM, OesKy ^_^</div>
+        </div>
+    </div>
+    <script>
+        const suggestionsData = [
+            { term: 'Banimento', link: 'banimento.html' },
+            { term: 'Hackeio', link: 'hackeio.html' },
+            { term: 'Limite social', link: 'limite.html' },
+            { term: 'Likes falsos', link: 'likesfalsos.html' },
+            { term: 'Pou robotizado', link: 'pourobotizado.html' },
+
+
+        ];
+
+        const searchInput = document.getElementById('search-input');
+        const suggestionsContainer = document.getElementById('suggestions-container');
+
+        searchInput.addEventListener('input', function () {
+            const inputValue = searchInput.value.toLowerCase();
+            const filteredSuggestions = suggestionsData.filter(suggestion =>
+                suggestion.term.toLowerCase().includes(inputValue)
+            );
+
+            updateSuggestions(filteredSuggestions);
+        });
+
+        function updateSuggestions(suggestions) {
+            suggestionsContainer.innerHTML = '';
+
+            if (suggestions.length > 0) {
+                suggestions.forEach(suggestion => {
+                    const suggestionElement = document.createElement('div');
+                    suggestionElement.classList.add('suggestion');
+                    suggestionElement.textContent = suggestion.term;
+
+                    suggestionElement.addEventListener('click', function () {
+                        window.location.href = suggestion.link;
+                    });
+
+                    suggestionsContainer.appendChild(suggestionElement);
+                });
+
+                suggestionsContainer.style.display = 'block';
+            } else {
+                suggestionsContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

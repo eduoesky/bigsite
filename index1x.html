@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OesKy</title>
+    <link rel="shortcut icon" href="images/icone/blue.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="desenho" style="display: flex;flex-direction: column;justify-content: center;align-items: center;position: relative;top: 20px;margin-bottom: 40px;">
+        <img src="images/galeria/oeskynocometa.png" height="220px">
+    </div>
+    
+    <div class="base-forme">
+        <div class="forme">
+            <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="meuFormulario">
+                <div class="formulario-inside">
+                    <div class="div-mail">
+                        <label for="mail">Tu email (opcional):</label>
+                        <input class="nm" type="email" name="email" id="campoEmail" placeholder="ejemplo@gmail.com">
+                    </div>
+                    <div class="div-nick-pou">
+                        <label for="pou-para-dar-like">
+                            Escribe tu sugerencia de mini-juego <strong class="asterisco">*</strong>:
+                        </label>
+                        <textarea name="sugestaojogo" id="sugestao" cols="30" rows="6" required></textarea>
+        
+                    <div class="mensagem" id="divErro"></div>
+                    <button class="env" type="submit">ENVIAR SUGERENCIA</button>
+                <input type="hidden" name="_next" value="https://oesky.com/idiomas/es/index_es.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+            <div class="base-tr">
+                <div class="tooltip" id="translateTooltip">
+                    <button class="tr" id="translateBtn">Translate</button>
+                    <div class="tooltip-text">
+                        <ul>
+                            <li><a href="indexpt.html">Português</a></li>
+                            <li><a href="indexen.html">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        var translateBtn = document.getElementById('translateBtn');
+        var translateTooltip = document.getElementById('translateTooltip');
+
+        translateBtn.addEventListener('click', function(event) {
+            // Evitar a duplicação do evento ao clicar no botão
+            event.stopPropagation();
+            
+            // Adiciona a classe 'active' para exibir a tooltip
+            translateTooltip.classList.toggle('active');
+
+            // Configura um temporizador para esconder a tooltip após 5 segundos
+            setTimeout(function() {
+                translateTooltip.classList.remove('active');
+            }, 5000);
+        });
+
+        // Esconde a tooltip ao clicar em qualquer outro lugar da tela
+        window.addEventListener('click', function() {
+            translateTooltip.classList.remove('active');
+        });
+    </script>
+       <script>
+        var form = document.getElementById('meuFormulario');
+        var divErro = document.getElementById('divErro');
+        var translateBtn = document.getElementById('translateBtn');
+
+        form.addEventListener('submit', function(event) {
+            var textarea = form.querySelector('textarea');
+            if (!textarea.checkValidity()) {
+                // A mensagem de erro padrão do navegador para campos required será removida
+                textarea.setCustomValidity('');
+
+                // Adiciona a mensagem personalizada à divErro
+                divErro.textContent = 'Porfa, dime tu sugerencia!!';
+                divErro.style.display = 'block';
+
+                // Impede o envio do formulário
+                event.preventDefault();
+            } else {
+                // Limpa a divErro se o campo estiver preenchido corretamente
+                divErro.textContent = '';
+                divErro.style.display = 'none';
+            }
+        });
+
+        translateBtn.addEventListener('click', function(event) {
+            // Desativa temporariamente a validação do formulário
+            form.setAttribute('novalidate', 'true');
+
+            // Adiciona a lógica adicional do botão "Translate" aqui
+            // ...
+
+            // Reativa a validação após um curto período (por exemplo, 1 segundo)
+            setTimeout(function() {
+                form.removeAttribute('novalidate');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

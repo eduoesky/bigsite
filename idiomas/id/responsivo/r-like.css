@@ -1,0 +1,55 @@
+@media screen and (max-width: 560px) {
+    .plike {
+        font-size: 70px;
+    }
+
+    .forme {
+        filter: drop-shadow(2px 2px 7px black);
+        width: 300px;
+        top: 100px;
+    }
+
+    .div-mail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-mail > input[type='email'] {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .estrelas {
+        position: fixed;
+        height: 20px;
+        top: -25px;
+    }
+
+    ::placeholder {
+        font-family: pou;
+    }
+
+    .basedobotao {
+        display: none;
+    }
+
+    .voltarmobile {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 55px;
+        margin-left: 5px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        padding: 40px;
+    }
+
+    .divheader {
+        margin-left: -70px;
+    }
+}
