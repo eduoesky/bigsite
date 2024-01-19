@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baneo</title>
+    <link rel="shortcut icon" href="../../images/icone/blue.ico" type="image/x-icon">
+    <link rel="stylesheet" href="com.css">
+</head>
+<body>
+    <header style="background-color: #00e5ff;padding:35px;color:white;text-shadow:2px 2px 2px #000, -2px -2px 2px #000, -2px 2px 2px #000, 2px -2px 2px #000;"><p class="cabeçalho">POUeSKY</p><img class="imgme" src="../img/oeskyme.png"></header>
+    <div class="pesquisa" id="textsearch">
+        <label for="pesquisa">Buscar: </label>
+        <input name="pesquisa" type="text" oninput="showSuggestions(this.value)"> <br>
+        <ul class="ul" id="suggestions"></ul>
+    </div>
+    <div style="padding:2px;background-color:white;"></div>
+    <div style="background-color:#beeeff;padding:20px;text-align:justify;margin:10px;position:relative;top:10px;">
+    <h2 style="font-family:pou;">Banimento</h2><br>
+    <p><i>Baneo</i> es un de los dos tipos de castigo que el juego le da al jugador que ignora las reglas de dentro del juego. Este tipo de castigo solo es dado por el propio desarrollador, <a href="">Paul G. Salameh</a>.</p> Consiste en eliminar al jugador de su cuenta y borrarla de los servidores de Pou, por un tiempo o para siempre. <br>
+    El baneo puede ser dividido en 2 categorías: el baneo temporario y el ban permanente. <br>
+    El <i>baneo temporario</i> es el tipo de baneo que elimina al jugador y borra su cuenta del server de Pou por, al menos, 10 días, podendo llegar en 1 año. Ya el <i>baneo permanente</i> es el baneo que elimina al jugador de su cuenta y la borra de los servidores de Pou para siempre, sin posibilidad de recuperar la cuenta. Si el baneo temporario exceder 1 año de no uso, la cuenta es baneada permanentemente. <br>
+    Para que un jugador sea baneado, él necesita no cumplir uno de esos quesitos: <br>
+    <ul style="margin-left:50px;">
+        <li><a href="likesfalsos.html"><i>Likes falsos</i></a></li>
+        <li><a href="pourobotizado.html"><i>Sistema robotizado</i></a></li>
+        <li><a href="hackeio.html"><i>Hackeo</i></a></li>
+        <li><i>Técnicas de malo uso o cheat</i></li>
+        <li><i>Score infinito</i></li>
+        <li><i>Monedas infinitas</i></li>
+        <li><a href="conta.html"><i>Múltiplos dispositivos conectados</i></a></li>
+        <li><a href="limite.html"><i>Limite de acciones sociales</i></a></li>
+    </ul>
+    Para que el desarrollador lo hazl desenvolvedor o faça, é necessário que tenha provas do que de fato aconteceu, como vídeos ou prints, para que tenha como ser provado. Alguns meios, como o próprio servidor, são usados para o banimento automático quando se trata de <i>Score infinito</i>, <i>Moedas infinitas</i> e <a href="pourobotizado.html"><i>Sistema robotizado</i></a>. <br>
+    <p>Ao ser banido, se for um ban temporário, o usuário verá a seguinte mensagem: "Ah, não! Algo de errado aconteceu com o seu Pou! Tente mais tarde ou entre em contato conosco.". Se for um ban permanente, o usuário é apenas removido da conta, e o que o usuário verá será a tela de login, pedindo para que o usuário logue de novo na conta. Em ambos os bans o usuário perderá o apelido Pou e o email (o tempo dependerá do tipo do ban).</p>
+    Se a conta do usuário tiver mais que 50.000 likes, a conta Pou sumirá em até 59 horas. Caso seja menor que 50.000 likes, a conta Pou sumirá instantaneamente. <br>
+    Caso seja do seu interesse, veja a lista dos Pous banidos aqui: <a href="pousbanidos.html">Pous banidos</a> ^_^.
+    </div>
+    <div style="display:flex;gap:30px;justify-content:center;align-items:center;text-align:center;position:relative;top:20px;margin-bottom:50px;"><img class="imgbtn" style="cursor:pointer;" src="../../images/botoes/voltar.png" onclick="goback()"><a href="bemvindo.html"><img class="imgbtn" src="../../images/botoes/home.png"></a></div>
+    <script>
+    function showSuggestions(inputText) {   
+        const suggestions = [
+            { text: 'Hackeio', image: '../img/pag/hackeio.png', link: 'hackeio.html' },
+            { text: 'Likes falsos', image: '../img/pag/likesfalsos.png', link: 'likesfalsos.html' },
+            { text: 'Pou robotizado', image: '../img/pag/pourobotizado.png', link: 'pourobotizado.html' },
+            { text: 'Limite social', image: '../img/pag/limite.png', link: 'limite.html' },
+            { text: 'Captcha', image: '../img/pag/captcha.png', link: 'captcha.html' },
+            { text: 'Suspensão', image: '../img/pag/suspenso.png', link: 'suspensao.html' },
+            { text: 'Mensagens', image: '../img/pag/guestbook.png', link: 'guestbook.html' },
+        ];
+
+        const filteredSuggestions = suggestions.filter(suggestion =>
+            suggestion.text.toLowerCase().includes(inputText.toLowerCase())
+        );
+
+        const suggestionsList = document.getElementById('suggestions');
+            suggestionsList.innerHTML = '';
+
+        for (let i = 0; i < Math.min(filteredSuggestions.length, 5); i++) {
+    const suggestion = filteredSuggestions[i];
+        const listItem = document.createElement('li');
+            listItem.classList.add('suggestion-item');
+            listItem.innerHTML = `<img height="40px" src="${suggestion.image}" alt="Imagem"> ${suggestion.text}`;
+            listItem.addEventListener('click', () => {
+                window.location.href = suggestion.link;
+        });
+        suggestionsList.appendChild(listItem);
+        }
+    }
+
+        function goback() {
+        window.history.back();
+    }
+    </script>
+    
+</body>
+</html>

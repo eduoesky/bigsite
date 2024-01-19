@@ -14,16 +14,16 @@
 
     @font-face {
         font-family: pou;
-        src: url(../arquivos/pou.ttf);
+        src: url(../../arquivos/pou.ttf);
     }
 
     @font-face {
         font-family: century;
-        src: url(../arquivos/century-gothic.ttf);
+        src: url(../../arquivos/century-gothic.ttf);
     }
 
     body {
-        background-image: url(img/bg-i.png);
+        background-image: url(../img/bg-i.png);
         background-size: 1200px;
         overflow: hidden;
     }
@@ -32,6 +32,7 @@
         body {
             background-size: 1600px;
             background-position: -190px;
+            overflow: auto;
         }
     }
 
@@ -39,6 +40,7 @@
         body {
             background-size: 1640px;
             background-position: 0;
+            overflow: auto;
         }
     }
 
@@ -124,7 +126,7 @@
     }
 
     .ething {
-        background-image: url(img/all.png);
+        background-image: url(../img/all.png);
         background-size: 240px;
         background-position: center;
         transition: all .3s;
@@ -135,7 +137,7 @@
     }
 
     .accs {
-        background-image: url(img/accounts.png);
+        background-image: url(../img/accounts.png);
         background-size: 210px;
         background-position: center;
         transition: all .3s;
@@ -146,7 +148,7 @@
     }
 
     .updates {
-        background-image: url(img/update.png);
+        background-image: url(../img/update.png);
         background-size: 200px;
         background-position: center;
         transition: all .3s;
@@ -157,7 +159,7 @@
     }
 
     .abtme {
-        background-image: url(img/abtme.png);
+        background-image: url(../img/abtme.png);
         background-size: 230px;
         background-position: center;
         transition: all .3s;
@@ -171,8 +173,22 @@
     .ething:hover, .accs:hover, .updates:hover, .abtme:hover {
         transition: all .3s;
     }
+
+    .warning {
+        padding: 30px;
+        background-color: yellow;
+        font-family: pou;
+        font-size: 40px;
+        color: white;
+        text-shadow:2px 2px 2px #000,2px -2px 2px #000,-2px 2px 2px #000,-2px -2px 2px #000;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
 <body>
+    <div class="warning">A COMUNIDADE AINDA NÃO ESTÁ PRONTA :( PÁGINAS: 8</div>
     <h1 style="font-family: pou;color: #fff;text-shadow:2px 2px 2px #000,2px -2px 2px #000,-2px 2px 2px #000,-2px -2px 2px #000;text-align:center;margin-top:20px;">Bem-vindo à comunidade POUeSKY ^^</h1> <br>
     <p style="font-family:pou;text-align:center;">Aqui todas as informações são OFICIAIS, da ZAKEH ^_^</p><br>
     <p style="font-family:pou;text-align:center;font-size:20px;color:#000099;">Abaixo, procure pelo artigo que você quer ler! Espero que você goste ^^</p>
@@ -195,8 +211,9 @@
             { term: 'Limite social', link: 'limite.html' },
             { term: 'Likes falsos', link: 'likesfalsos.html' },
             { term: 'Pou robotizado', link: 'pourobotizado.html' },
-
-
+            { term: 'Captcha', link: 'captcha.html'},
+            { term: 'Suspensão', link: 'suspensao.html'},
+            { term: 'Mensagens', link: 'mensagens.html'},
         ];
 
         const searchInput = document.getElementById('search-input');

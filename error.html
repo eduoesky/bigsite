@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="shortcut icon" href="images/icone/blue.ico" type="image/x-icon">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: pou;
+        color: #fff;
+    }
+
+    @font-face {
+        font-family: pou;
+        src: url(arquivos/pou.ttf);
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .imagem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 100px;
+    }
+</style>
+<body>
+    <div class="imagem"><img src="images/galeria/oeskyefantasmas.png" height="350px">
+    <p>ERROR 404</p> <br>
+    <div id="phrase-container">
+        <p id="phrase">Bem-vindo!</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+    const phrases = [
+        "Desculpe, mas esta página não foi encontrada. Tente ir à oesky.com :3",
+        "Lo siento pero esta página no fue encontrada. Intenta acceder a oesky.com :3",
+        "Am so sorry but this page was not found. Try to go to oesky.com :3"
+    ];
+
+    const phraseElement = document.getElementById("phrase");
+
+    function animatePhraseTransition() {
+        let currentPhraseIndex = 0;
+
+        function updatePhrase() {
+            phraseElement.textContent = phrases[currentPhraseIndex];
+        }
+
+        function fadeIn() {
+            phraseElement.style.opacity = 1;
+        }
+
+        function fadeOut() {
+            phraseElement.style.opacity = 0;
+        }
+
+        function nextPhrase() {
+            fadeOut();
+            setTimeout(() => {
+                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                updatePhrase();
+                fadeIn();
+            }, 0);
+        }
+        updatePhrase();
+        fadeIn();
+
+        setInterval(nextPhrase, 1000);
+    }
+    animatePhraseTransition();
+});
+    </script></div>
+        <script>
+            if (window.location.href.includes('pagina_nao_encontrada.html')) {
+                window.location.href = '/caminho/para/sua-pagina-de-erro.html';
+            }
+        </script>
+</body>
+</html>
