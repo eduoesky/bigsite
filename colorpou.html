@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pou official colors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: pou;
+            src: url(arquivos/pou.ttf);
+        }
+
+        body {
+            background-image: url(images/bg/bg.svg);
+        }
+
+        .colors {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            margin-top: 20px;
+            gap: 4px;
+        }
+
+        .col {
+            height: 85px;
+            width: 270px;
+            border: 1px solid black;
+            font-family: pou;
+            font-size: 35px;
+            color: white;
+            text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, -2px 2px 2px #000, 2px -2px 2px #000;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .tooltip {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: pou;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, -2px 2px 2px #000, 2px -2px 2px #000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999; /* Garante que a div esteja acima de outros elementos */
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998; /* Garante que o overlay esteja abaixo da div */
+    transition: opacity 0.3s ease;
+}
+
+
+    .colors .col {
+      cursor: pointer;
+    }
+
+    #tooltip_black {
+        background-color: #000;
+        color: #fff;
+        font-family: pou;
+        text-align: center;
+    }
+
+    #blacktext {
+        background-color: #000;
+        color: white;
+    }
+    textarea {
+        text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, -2px 2px 2px #000, 2px -2px 2px #000;
+        font-family: pou;
+        font-size: 25px;
+        text-align: center;
+        width: 130px;
+        resize: none;
+        border: none;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    #blacktext::selection {
+        color: #fff;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        font-family: pou;
+        font-size: 40px;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">Pou Official Colors</div>
+    <div class="colors">
+        <div class="col" id="black" style="background-color: #121212;">Black</div>
+        <div class="col" id="brown" style="background-color: #804000;">Brown</div>
+        <div class="col" id="yellow" style="background-color: #ff0;">Yellow</div>
+        <div class="col" id="gold" style="background-color: #ffd500;">Gold</div>
+        <div class="col" id="orange" style="background-color: #ff8000;">Orange</div>
+        <div class="col" id="red" style="background-color: #f00;">Red</div>
+        <div class="col" id="rose" style="background-color: #ff0054;">Rose</div>
+        <div class="col" id="fuchsia" style="background-color: #f0a;">Fuchsia</div>
+        <div class="col" id="magenta" style="background-color: #f0fe;">Magenta</div>
+        <div class="col" id="purple" style="background-color: #a900fb;">Purple</div>
+        <div class="col" id="violet" style="background-color: #6a00ff;">Violet</div>
+        <div class="col" id="blue" style="background-color: #05f;">Blue</div>
+        <div class="col" id="turquoise" style="background-color: #0af;">Turquoise</div>
+        <div class="col" id="cyan" style="background-color: #0ff;">Cyan</div>
+        <div class="col" id="aqua" style="background-color: #0fa;">Aqua</div>
+        <div class="col" id="green" style="background-color: #0f0;">Green</div>
+        <div class="col" id="lime" style="background-color: #af0;">Lime</div>
+        <div class="col" id="white" style="background-color: #fff;">White</div>
+        <div class="col" id="pink" style="background-color: #ff7f7f;">Pink</div>
+        <div class="col" id="grey" style="background-color: #7f7f7f;">Grey</div>
+
+        <div class="overlay"></div>
+        
+<div class="tooltip" id="tooltip_black">
+    <p style="user-select: none;">HEX:</p>
+    <p style="margin-bottom: 10px;">#121212</p>
+    <br>RGB: <br> (18, 18, 18)
+</div>
+<div class="tooltip" id="tooltip_brown" style="background-color: #804000;">
+    <p style="user-select: none;">HEX:</p>
+    <p style="margin-bottom: 10px;">#804000</p>
+    <br>RGB: <br> (128, 64, 0)
+</div>
+<div class="tooltip" id="tooltip_yellow" style="background-color: #ff0;">
+<p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#ffff00</p>
+<br>RGB: <br> (255, 255, 0)
+</div>
+<div class="tooltip" id="tooltip_gold" style="background-color: #ffd500;">
+<p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#ffd500</p>
+<br>RGB: <br> (255, 213, 0)
+</div>
+<div class="tooltip" id="tooltip_orange" style="background-color: #ff8000;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#ff8000</p>
+<br>RGB: <br> (255, 128, 0)
+</div>
+<div class="tooltip" id="tooltip_red" style="background-color: #f00;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#ff0000</p>
+<br>RGB: <br> (255, 0, 0)
+</div>
+<div class="tooltip" id="tooltip_rose" style="background-color: #ff0054;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#ff0054</p>
+<br>RGB: <br> (255, 0, 85)
+</div>
+<div class="tooltip" id="tooltip_fuchsia" style="background-color: #f0a;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#ff00aa</p>
+<br>RGB: <br> (255, 0, 170)
+</div>
+<div class="tooltip" id="tooltip_magenta" style="background-color: #f0f;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#ff00ff</p>
+<br>RGB: <br> (255, 0, 255)
+</div>
+<div class="tooltip" id="tooltip_purple" style="background-color: #a900fb;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#a900fb</p>
+<br>RGB: <br> (167, 0, 251)
+</div>
+<div class="tooltip" id="tooltip_violet" style="background-color: #6a00ff;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#6a00ff</p>
+<br>RGB: <br> (106, 0, 255)
+</div>
+<div class="tooltip" id="tooltip_blue" style="background-color: #05f;">
+    <p style="user-select: none;">HEX:</p>
+    <p style="margin-bottom: 10px;">#0055ff</p>
+    <br>RGB: <br> (0, 85, 255)</div>
+<div class="tooltip" id="tooltip_turquoise" style="background-color: #0af;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#00aaff</p>
+<br>RGB: <br> (0, 170, 255)
+</div>
+<div class="tooltip" id="tooltip_cyan" style="background-color: #0ff;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#00ffff</p>
+<br>RGB: <br> (0, 255, 255)
+</div>
+<div class="tooltip" id="tooltip_aqua" style="background-color: #0fa;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#00ffaa</p>
+<br>RGB: <br> (0, 255, 170)
+</div>
+<div class="tooltip" id="tooltip_green" style="background-color: #0f0;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#00ff00</p>
+<br>RGB: <br> (0, 255, 0)
+</div>
+<div class="tooltip" id="tooltip_lime" style="background-color: #af0;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#aaff00</p>
+<br>RGB: <br> (170, 255, 0)
+</div>
+<div class="tooltip" id="tooltip_white" style="background-color: #fff;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#ffffff</p>
+<br>RGB: <br> (255, 255, 255)
+</div>
+<div class="tooltip" id="tooltip_pink" style="background-color: #ff7f7f;">
+    <p style="user-select: none;">HEX:</p>
+    <p style="margin-bottom: 10px;">#ff7f7f</p>
+    <br>RGB: <br> (255, 127, 127)    
+</div>
+<div class="tooltip" id="tooltip_grey" style="background-color: #7f7f7f;">
+    <p style="user-select: none;">HEX:</p>
+<p style="margin-bottom: 10px;">#7f7f7f</p>
+<br>RGB: <br> (127, 127, 127)
+</div>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const colorDivs = document.querySelectorAll('.colors .col');
+    const tooltips = document.querySelectorAll('.tooltip');
+    const overlay = document.querySelector('.overlay');
+
+    colorDivs.forEach((colorDiv, index) => {
+        colorDiv.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevents the click event from reaching the document
+
+            // Hide all tooltips
+            tooltips.forEach(tooltip => {
+                tooltip.style.display = 'none';
+            });
+
+            // Display the corresponding tooltip
+            tooltips[index].style.display = 'flex';
+            overlay.style.display = 'block';
+        });
+    });
+
+    document.addEventListener('click', function () {
+        // Close tooltips when clicking outside
+        tooltips.forEach(tooltip => {
+            tooltip.style.display = 'none';
+        });
+        overlay.style.display = 'none';
+    });
+
+    tooltips.forEach(tooltip => {
+        tooltip.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevents the click event from reaching the document
+        });
+    });
+});
+
+      </script>
+</body>
+</html>
