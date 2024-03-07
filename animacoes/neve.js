@@ -1,5 +1,5 @@
 // PRIMEIRA FUNÇÃO - neve 
-function createSnowflake() {
+//function createSnowflake() {
     const snowflake = document.createElement("div");
     snowflake.classList.add("snowflake");
     document.querySelector(".snowflakes").appendChild(snowflake);

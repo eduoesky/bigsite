@@ -80,8 +80,8 @@ a {
 }
 
 body {
-    background-image: url(../../images/bg/xd.png);
-    background-size: 120px;
+    background-image: url(../../images/bg/xd-páscoa.png);
+    background-size: 220px;
     overflow: hidden;
 }
 
@@ -122,7 +122,8 @@ body {
 
 header {
     text-align: center;
-    background-color: #00f7ff7b;
+    background-color: #ff00ff7a;
+    /* background-color: #00f7ff7b; */
     padding: 15px;
 }
 
@@ -279,6 +280,31 @@ p {
 .mensagem {
     left: 6%;
     top: 214px;
+}
+
+.happy {
+    position: absolute;
+    bottom: 100;
+    left: 80%;
+    transform-origin: bottom left;
+    transform: rotate(-25deg);
+}
+
+.happy p {
+    font-family: pou;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @media screen and (max-width: 560px) {
