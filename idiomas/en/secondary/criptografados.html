@@ -20,6 +20,46 @@
             <img src="../../../images/botoes/lápis.png" height="60px">
         </a>
     </div>
+    <div style="display: flex; justify-content: center;">
+        <div class="idiomas-s" id="idiomas-selecao">Select Language</div>
+    </div>
+    <script>
+        var idiomas = ["Selecionar Idioma", "Select Language", "Seleccionar Idioma"];
+        var index = 0;
+        var isClicked = false;
+        
+        function changeLanguage() {
+            if (!isClicked) {
+                document.getElementById("idiomas-selecao").textContent = idiomas[index];
+                index = (index + 1) % idiomas.length;
+            }
+        }
+        
+        setInterval(changeLanguage, 1000);
+        
+        document.addEventListener("click", function(event) {
+            var idiomasDiv = document.getElementById("idiomas-selecao");
+            var targetElement = event.target;
+
+            if (!idiomasDiv.contains(targetElement) && isClicked) {
+                document.getElementById("idiomas-selecao").textContent = idiomas[index];
+                isClicked = false;
+            }
+        });
+        
+        document.getElementById("idiomas-selecao").addEventListener("click", function(event) {
+            if (!isClicked) {
+                var idiomasDiv = document.getElementById("idiomas-selecao");
+                idiomasDiv.innerHTML = "<ul><li><a href='../../../secundarios/criptografados.html'>Português</a></li><li><a href='../../es/secundarios/criptografados.html'>Español</a></li></ul>";
+                isClicked = true;
+            } else {
+                document.getElementById("idiomas-selecao").textContent = idiomas[index];
+                isClicked = false;
+            }
+            event.stopPropagation();
+        });
+        
+        </script>
     <div class="paragrafos">
         <p>⬇️⬇️ Like all those Pous ⬇️⬇️</p>
     </div>
@@ -27,6 +67,21 @@
         <p>⬇️ Like all those Pous ⬇️</p>
     </div>
     <div class="criptos">
+        <div id="pous">
+            <p class="cyber">Pretztea</p>
+        </div>
+        <div id="frase">
+            <p>Hey OesKy! Hope you have a great day! I love your Portuguese <a href="https:/pou.fandom.com/pt-br">Pou Wiki</a>! <br> <b>OesKy: Thank you so much! ^^</b>
+            </p>
+        </div>
+        <div id="pous">
+            <p class="cyber">SebasXAAAAAAAAD</p>
+        </div>
+        <div id="frase">
+            <p>I wanted to be better known in Pou 😀
+            Greetings from Venezuela 🇻🇪
+            </p>
+        </div>
         <div id="pous">
             <p class="cyber">ToolboxLikes</p>
         </div>

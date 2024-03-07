@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imagem {
+            height: 200px;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/gif.js/dist/gif.js"></script>
+</head>
+<body>
+    <img class="imagem" src="images/bg/bg-neve.png" alt="">
+
+    <script>
+        // Selecione o elemento que contém a animação CSS
+        var element = document.querySelector('.imagem');
+
+        // Iniciar a animação
+        element.style.animationPlayState = 'running';
+
+        // Capturar a animação por 3 segundos e criar o GIF
+        setTimeout(function() {
+            // Inicializar um novo objeto GIF
+            var gif = new GIF({
+                workers: 2,
+                quality: 10,
+                repeat: 0 // Repetir infinitamente
+            });
+
+            // Adicionar a imagem como quadro ao GIF
+            gif.addFrame(element, {copy: true, delay: 100}); // Ajuste o delay conforme necessário
+
+            // Quando a captura estiver concluída, salve o GIF
+            gif.on('finished', function(blob) {
+                // Crie um link de download para o GIF
+                var link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'animacao.gif';
+                link.textContent = 'Clique aqui para baixar o GIF';
+
+                // Adicione o link à página e clique nele para iniciar o download
+                document.body.appendChild(link);
+                link.click();
+
+                // Remova o link da página
+                document.body.removeChild(link);
+            });
+
+            // Finalize o GIF
+            gif.render();
+        }, 3000); // Esperar 3 segundos (tempo da animação)
+    </script>
+</body>
+</html>

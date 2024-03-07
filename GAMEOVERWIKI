@@ -1,0 +1,168 @@
+'''Game Over''' is when the [[minigame]] ends. In games with no victory-system (when {{PouC}} crashes some object), an end screen will appear to the player, saying <span style="padding: 1.5px;">{{FontC|Game Over|#f57c85}}</span> and the reason of the game ended. The reason will depends, since it can be change due the form that the game ended.
+
+==<span style="margin-left: 2px">{{FontC2|Pou fell!|#f57c85}}</span>==
+{| class="sortable fandom-table" cellpadding="1" style="margin: 0 auto; text-align: center; width: 550px; border: 1px solid #000;"
+|+
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Game
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Reason
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Illustration
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Sky Jump]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] falls from the platforms directly.}}
+|style="border: 1px solid #000;"|[[File:Skyjump-fell.png|frameless|link=]]
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Hill Drive]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] falls out of the car after the car lands upside down and touches the ground.}}
+|style="border: 1px solid #000;"|[[File:Hilldrive-fell.png|frameless|link=]]
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Cliff Jump]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] falls directly into empty space.}}
+|style="border: 1px solid #000;"|[[File:Cliffjump-fell-empty.png|frameless|link=]]
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Jet Pou]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] collides with one of the trunks or falls to the ground.}}
+|style="border: 1px solid #000;"|[[File:Jetpou-fell.gif|frameless|link=]]
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Water Hop]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] jumps out of a {{FontL2|Floaters|floater}}, falling into the water.}}
+|style="border: 1px solid #000;"|[[File:Waterhop-fell.png|frameless|link=]]
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Cliff Dash]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] is hit by a hayroll, collides with a rock, or falls directly into empty space.}}
+|style="border: 1px solid #000;"|[[File:Cliffdash-fell.gif|frameless|link=]]
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Sky Hop]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] falls from the platforms directly. (or after stepping on a cloud platform and subsequently falling)}}
+|style="border: 1px solid #000;"|[[File:Skyhop-fell.png|frameless|link=]]
+|}
+==<span style="margin-left: 2px">{{FontC2|Pou ate a bad thing!|#f57c85}}</span>==
+{| class="sortable fandom-table" cellpadding="1" style="margin: 0 auto; text-align: center; width: 550px; border: 1px solid #000;"
+|+
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Game
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Reason
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Illustration
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Food Drop]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] ate things that are not {{FontL2|Foods|food}}.}}
+|style="border: 1px solid #000;"|[[File:Fooddrop-wrong.png|frameless|link=]]
+|}
+==<span style="margin-left: 2px">{{FontC2|Pou hit a rock!|#f57c85}}</span>==
+{| class="sortable fandom-table" cellpadding="1" style="margin: 0 auto; text-align: center; width: 550px; border: 1px solid #000;"
+|+
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Game
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Reason
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Illustration
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Cliff Jump]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] hit directly in a rock.}}
+|style="border: 1px solid #000;"|[[File:Cliffjump-rock.png|frameless|link=]]
+|}
+==<span style="margin-left: 2px">{{FontC2|Pou hit a cloud!|#f57c85}}</span>==
+{| class="sortable fandom-table" cellpadding="1" style="margin: 0 auto; text-align: center; width: 550px; border: 1px solid #000;"
+|+
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Game
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Reason
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Illustration
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Cloud Pass]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] touches a cloud.}}
+|style="border: 1px solid #000;"|[[File:Cloudpass-hit.png|frameless|link=]]
+|}
+==<span style="margin-left: 2px">{{FontC2|Pou hit 5 clouds!|#f57c85}}</span>==
+{| class="sortable fandom-table" cellpadding="1" style="margin: 0 auto; text-align: center; width: 550px; border: 1px solid #000;"
+|+
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Game
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Reason
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Illustration
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Free Fall]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] hit 5 clouds, consecutive or not.}}
+|style="border: 1px solid #000;"|[[File:Freefall-hit5.png|frameless|link=]]
+<!-- [[File:Freefall-hit5.png]] - this image is available in 3 different languages. check it if you will edit it.
+*Español = "x5 Clouds" = "x5 Nubes" - access: https://pou.fandom.com/wiki/File:Freefall-hit5-es.png;
+*Polska = "x5 Clouds" = "x5 Chmury" = access: https://pou.fandom.com/wiki/File:Freefall-hit5-pl.png;
+*Deutsch = "x5 Clouds" = "x5 Wolken" = access: https://pou.fandom.com/wiki/File:Freefall-hit5-de.png
+Note: Don't delet it if you didn't download the image. If someone do it, please, after download, delet the line with your language for do not cause confusion - if possible, also delete the image from this Wiki. -->
+|}
+==<span style="margin-left: 2px">{{FontC2|Wrong [[Game items|<font color="#ffae9e">cup</font>]]!|#f57c85}}</span>==
+{| class="sortable fandom-table" cellpadding="1" style="margin: 0 auto; text-align: center; width: 550px; border: 1px solid #000;"
+|+
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Game
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Reason
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Illustration
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Find Pou]]}}
+|style="border: 1px solid #000;"|{{Font|When the player clicks on the cup where [[Pou (character)|<font color="#d7faf6">Pou</font>]] is not.}}
+|style="border: 1px solid #000;"|[[File:Findpou-wrong.png|frameless|link=]]
+|}
+==<span style="margin-left: 2px">{{FontC2|Pou hit a wall!|#f57c85}}</span>==
+{| class="sortable fandom-table" cellpadding="1" style="margin: 0 auto; text-align: center; width: 550px; border: 1px solid #000;"
+|+
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Game
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Reason
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Illustration
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Cliff Jump]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] hit the side of the ground.}}
+|style="border: 1px solid #000;"|[[File:Cliffjump-wall.png|frameless|link=]]
+|}
+==<span style="margin-left: 2px">{{FontC2|Wrong [[Pou (character)|<font color="#ffae9e">Pou</font>]]!|#f57c85}}</span>==
+{| class="sortable fandom-table" cellpadding="1" style="margin: 0 auto; text-align: center; width: 550px; border: 1px solid #000;"
+|+
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Game
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Reason
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Pou Sounds]]}}
+|style="border: 1px solid #000;"|{{Font|When the player selects the [[Pou (character)|<font color="#d7faf6">Pou</font>]] that did not sing.}}
+|}
+==<span style="margin-left: 2px">{{FontC2|You missed 5!|#f57c85}}</span>==
+{| class="sortable fandom-table" cellpadding="1" style="margin: 0 auto; text-align: center; width: 550px; border: 1px solid #000;"
+|+
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Game
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Reason
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Illustration
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Food Drop]]}}
+|style="border: 1px solid #000;"|{{Font|When [[Pou (character)|<font color="#d7faf6">Pou</font>]] hit 5 clouds, consecutive or not.}}
+|style="border: 1px solid #000;"|[[File:Fooddrop-missed5.png|frameless|link=]]
+|}
+==<span style="margin-left: 2px">{{FontC2|Time's up!|#f57c85}}</span>==
+It happens when [[minigames]] have a timer. The stopwatch time (consequently the color) may vary. When reaching the end of the time, the message "Time's up!" will appear on the final screen!
+{| class="sortable fandom-table" cellpadding="1" style="margin: 0 auto; text-align: center; width: 550px; border: 1px solid #000;"
+|+
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Game
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Time
+!style="background-color:#f57c85; border: 1px solid #000; color: #691c0d;"|Illustration
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Food Swap]]}}
+|style="border: 1px solid #000;"|{{Font|3 minutes, 10 seconds}}
+|style="border: 1px solid #000;"|
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Hill Drive]]}}
+|style="border: 1px solid #000;"|{{Font|1 minute, 30 seconds}}
+|style="border: 1px solid #000;"|
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Connect 2]]}}
+|style="border: 1px solid #000;"|{{Font|1 minute, 25 seconds}}
+|style="border: 1px solid #000;"|
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Sky Hop]]}}
+|style="border: 1px solid #000;"|{{Font|1 minute, 5 seconds}}
+|style="border: 1px solid #000;"|
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Pet Walk]]}}
+|style="border: 1px solid #000;"|{{Font|30 seconds}}
+|style="border: 1px solid #000;"|
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Hoops]]}}
+|style="border: 1px solid #000;"|{{Font|50 seconds}}
+|style="border: 1px solid #000;"|
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Memory]]}}
+|style="border: 1px solid #000;"|{{Font|13 seconds}}
+|style="border: 1px solid #000;"|
+|-
+|style="border: 1px solid #000;"|{{FontO|[[Word Find]]}}
+|style="border: 1px solid #000;"|{{Font|2 minutes, 30 seconds}}
+|style="border: 1px solid #000;"|
+|}
