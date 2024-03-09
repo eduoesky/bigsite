@@ -51,7 +51,7 @@ header {
     max-height: 300px;
     display: block;
     margin: 0 auto;
-    transition: opacity 0.5s; /* Efeito de transição de opacidade */
+    transition: opacity 0.5s;
   }
   
   .controls button {
