@@ -1,0 +1,11 @@
+.encaixe {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: pou;
+}
+
+.encaixe img {
+    height: 115px;
+}

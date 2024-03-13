@@ -54,7 +54,7 @@ const images = [
     { src: "../images/galeria/oeskyseria.png", caption: "OesKy séria" },
     { src: "../images/galeria/oeskynatal.png", caption: "OesKy no clima de natal!" },
     { src: "../images/galeria/oeskymagica.png", caption: "OesKy tirando Like_x1 de uma cartola mágica" },
-    { src: "../images/galeria/oeskyburaconegro.png", caption: "OesKy e seus amigos sendo sugados por um buraco negro (ft. qlw, Cyberattack & Pou2tiktok" },
+    { src: "../images/galeria/oeskyburaconegro.png", caption: "OesKy e seus amigos sendo sugados por um buraco negro (ft. qlw, Cyberattack & Pou2tiktok)" },
     { src: "../images/galeria/oeskymagia.png", caption: "OesKy soltando toda a sua magia congelada" },
     { src: "../images/galeria/oeskybalança.png", caption: "OesKy & NocTaFly numa balança, mas OesKy perdeu" },
     { src: "../images/galeria/oeskyteatro.png", caption: "OesKy apresentando o seu novo site" },
