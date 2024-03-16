@@ -25,7 +25,81 @@
             </button>
         </a>
     </div>
-    <p style="text-align: center; font-weight: bold;">TOTAL HOMENAGES: 0</p>
-    <p style="position: relative; text-align: center; font-size: 30px; top: 150px;">THE HOMENAGES WILL BE HERE</p>
+    <p style="text-align: center; font-weight: bold;">TOTAL HOMENAGES: <span id="counter">0</span></p>
+
+    <div style="display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center; margin: 5px;">
+        <!---->
+        <div style="text-align: justify; width: 450px; border: #000 2px solid; margin: 5px;" class="peo">
+            <div style="border-bottom: #000 1px solid;"><p style="margin: 7px;"><b>Name</b>: Mikolaj Pestretikov</p></div>
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin: 3.5px;"><b>Phrase</b>:</p><p style="margin: 3.5px;">Nie wiem za bardzo co powiedzieć, przyznam, że trochę mi smutno z powodu tej sytuacji, ale wyzdrowiej i wszystko będzie dobrze, odpoczywaj ❤️ 🙂</p>
+            </div>
+        </div>
+        <!---->
+        <div style="text-align: justify; width: 450px; border: #000 2px solid; margin: 5px;" class="peo">
+            <div style="border-bottom: #000 1px solid;"><p style="margin: 7px;"><b>Name</b>: Baylbueina Shakra</p></div>
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin: 3.5px;"><b>Phrase</b>:</p><p style="margin: 3.5px;">Te iubesc, recuperează-te, ai grijă, odihnește-te și fii în pace ❤️ 🧡 ❤️‍🩹 ⭐</p>
+            </div>
+        </div>
+        <!---->
+        <div style="text-align: justify; width: 450px; border: #000 2px solid; margin: 5px;" class="peo">
+            <div style="border-bottom: #000 1px solid;"><p style="margin: 7px;"><b>Name</b>: Windows7</p></div>
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin: 3.5px;"><b>Phrase</b>:</p><p style="margin: 3.5px;">I hope you recover and that you don't have any consequences. I really like your work at Pou and I have to say that you as a person are an incredible person and have very special qualities, go for it!</p>
+            </div>
+        </div>
+        <!---->
+        <div style="text-align: justify; width: 450px; border: #000 2px solid; margin: 5px;" class="peo">
+            <div style="border-bottom: #000 1px solid;"><p style="margin: 7px;"><b>Name</b>: DaviK55_GEGE</p></div>
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin: 3.5px;"><b>Phrase</b>:</p><p style="margin: 3.5px;">Oi oesky eu vi oq aconteceu com vc mas espero que vc esteja MT bem e sinto MT pelo q aconteceu de vdd</p>
+            </div>
+        </div>
+        <!---->
+        <div style="text-align: justify; width: 450px; border: #000 2px solid; margin: 5px;" class="peo">
+            <div style="border-bottom: #000 1px solid;"><p style="margin: 7px;"><b>Name</b>: ImKeetReed</p></div>
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin: 3.5px;"><b>Phrase</b>:</p><p style="margin: 3.5px;">Honestamente estoy totalmente orgulloso por haberte conocido, eres una persona luchadora, SUERTE!!</p>
+            </div>
+        </div>
+        <!---->
+        <div style="text-align: justify; width: 450px; border: #000 2px solid; margin: 5px;" class="peo">
+            <div style="border-bottom: #000 1px solid;"><p style="margin: 7px;"><b>Name</b>: María Gonzáles Luísa</p></div>
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin: 3.5px;"><b>Phrase</b>:</p><p style="margin: 3.5px;">Recuperate y brilla como siempre lo hiciste, te queremos mucho, anímate y mejoras siempre ❤️</p>
+            </div>
+        </div>
+        <!---->
+        <div style="text-align: justify; width: 450px; border: #000 2px solid; margin: 5px;" class="peo">
+            <div style="border-bottom: #000 1px solid;"><p style="margin: 7px;"><b>Name</b>: Khalid MohamAAad</p></div>
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin: 3.5px;"><b>Phrase</b>:</p><p style="margin: 3.5px;">Hi, I hope you come out of the coma, that you are well and that you recover as soon as possible. We miss you while you're bad! GWS</p>
+            </div>
+        </div>
+        <!---->
+        <div style="text-align: justify; width: 450px; border: #000 2px solid; margin: 5px;" class="peo">
+            <div style="border-bottom: #000 1px solid;"><p style="margin: 7px;"><b>Name</b>: Diogo Ribo</p></div>
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin: 3.5px;"><b>Phrase</b>:</p><p style="margin: 3.5px;">Quiero que te mejores pronto, eres un guerrero, todos te amamos <3</p>
+            </div>
+        </div>
+        <!---->
+        <div style="text-align: justify; width: 450px; border: #000 2px solid; margin: 5px" class="peo">
+            <div style="border-bottom: #000 1px solid;"><p style="margin: 7px;"><b>Name</b>: NocTaFly</p></div>
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin: 3.5px;"><b>Phrase</b>:</p><p style="margin: 3.5px;">Estamos contigo oesky, te quiero mucho y mejoras</p>
+            </div>
+        </div>
+        <!---->
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const counter = document.getElementById('counter');
+            const divs = document.querySelectorAll('.peo');
+    
+            counter.textContent = divs.length;
+        });
+    </script>
 </body>
 </html>
