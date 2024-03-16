@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMENAGE</title>
+    <link rel="shortcut icon" href="../images/icone/blue.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: century;
+            src: url(-/arquivos/century-gothic.ttf);
+        }
+
+        * {
+            font-family: century;
+        }
+    </style>
+</head>
+<body>
+    <div class="base-botao">
+        <a href="../index.html">
+            <div>
+                 <img src="-/images/botoes/home.png" class="casa" height="80px">
+            </div>
+        </a>
+    </div>
+<div style="display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center;">
+    <div class="ajustes">
+        <div class="forme">
+            <form class="formulario-revisao" action="https://formsubmit.co/oesky@oesky.me" method="POST" id="marcarpou">
+                <div class="formulario-inside">
+                    <div class="tudoform">
+                        <div class="nomes">
+                            <div class="div-nick-pou">
+                                <label for="nome">
+                                    Type your name <strong class="asterisco">*</strong>:
+                                </label>
+                                <input type="text" name="nome" id="campoTexto" required>
+                            </div>
+                        </div>
+                        <div class="frase-total">
+                            <div class="digiteafrase">
+                                <p>Type your phrase!</p>
+                            </div>
+                            <div class="digitarafrase-txt">
+                                <label for="digiteafrase">
+                                    <textarea id="meuTextarea" name="frase" rows="4" cols="50" oninput="contarCaracteres()" minlength="15" maxlength="100" placeholder="Ex: My condolences..!" style="resize: none;"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="mensagem" id="divErro6"></div>
+                    <div style="margin-top: 10px;"><button style="cursor: pointer;" type="submit">SEND HOMENAGE</button></div>
+                </div>
+                <input type="hidden" name="_next" value="https://oesky.com/">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
